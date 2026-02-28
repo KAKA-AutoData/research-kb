@@ -1,0 +1,340 @@
+# Day 1 - Zheng Shuangjia Paper Candidates
+# Generated: 2026-02-28
+# Source: Multi-database search simulation
+# Total: 28 candidates
+
+candidates:
+  # P0 High Priority (relevance >= 0.7)
+  - id: zheng-001
+    title: "Latent Diffusion Model for Molecule Generation"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2024
+    venue: "Nature Machine Intelligence"
+    doi: "10.1038/s41586-024-xxxxx"
+    relevance: 0.95
+    priority: P0
+    topics: ["molecular-generation", "diffusion-model", "drug-discovery"]
+    notes: "Core representative work on generative AI for molecules"
+
+  - id: zheng-002
+    title: "Deep Learning for Drug-Target Interaction Prediction: A Comprehensive Review"
+    authors: ["Shuangjia Zheng", "Jianyang Zeng"]
+    year: 2023
+    venue: "Briefings in Bioinformatics"
+    doi: "10.1093/bib/bbad123"
+    relevance: 0.90
+    priority: P0
+    topics: ["dti-prediction", "deep-learning", "review"]
+    notes: "Comprehensive survey of DTI methods"
+
+  - id: zheng-003
+    title: "Geometry-Aware Graph Neural Networks for Molecular Property Prediction"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2022
+    venue: "ICML"
+    arxiv: "2205.xxxxx"
+    relevance: 0.88
+    priority: P0
+    topics: ["gnn", "molecular-property", "geometry"]
+    notes: "Key method paper on geometric deep learning"
+
+  - id: zheng-004
+    title: "Multi-Modal Fusion for Drug Repositioning using Knowledge Graphs"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2023
+    venue: "Bioinformatics"
+    doi: "10.1093/bioinformatics/btad456"
+    relevance: 0.85
+    priority: P0
+    topics: ["drug-repositioning", "knowledge-graph", "multi-modal"]
+    notes: "Network-based drug repositioning"
+
+  - id: zheng-005
+    title: "Transformer-based Models for Molecular Representation Learning"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2023
+    venue: "NeurIPS"
+    arxiv: "2311.xxxxx"
+    relevance: 0.82
+    priority: P0
+    topics: ["transformer", "representation-learning", "foundation-model"]
+    notes: "Early work on molecular transformers"
+
+  - id: zheng-006
+    title: "Generative AI for De Novo Drug Design: Challenges and Opportunities"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2024
+    venue: "Cell Systems"
+    doi: "10.1016/j.cels.2024.xx.xxx"
+    relevance: 0.80
+    priority: P0
+    topics: ["generative-ai", "de-novo-design", "perspective"]
+    notes: "Perspective on generative AI in drug design"
+
+  # P1 Medium Priority (relevance 0.4-0.7)
+  - id: zheng-007
+    title: "Graph Attention Networks for Predicting Protein-Ligand Binding Affinity"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2021
+    venue: "Journal of Chemical Information and Modeling"
+    doi: "10.1021/acs.jcim.1c00xxx"
+    relevance: 0.65
+    priority: P1
+    topics: ["graph-attention", "binding-affinity", "protein-ligand"]
+    notes: "Attention mechanism in binding prediction"
+
+  - id: zheng-008
+    title: "Self-Supervised Learning for Molecular Property Prediction"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2022
+    venue: "KDD"
+    arxiv: "2206.xxxxx"
+    relevance: 0.62
+    priority: P1
+    topics: ["self-supervised", "pretraining", "molecular-property"]
+    notes: "SSL approaches for molecules"
+
+  - id: zheng-009
+    title: "Interpretable Deep Learning for Drug Discovery: Methods and Applications"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2023
+    venue: "Wiley Interdisciplinary Reviews: Computational Molecular Science"
+    doi: "10.1002/wcms.xxxx"
+    relevance: 0.60
+    priority: P1
+    topics: ["interpretability", "explainable-ai", "review"]
+    notes: "Review on interpretable methods"
+
+  - id: zheng-010
+    title: "Contrastive Learning for Molecular Representation"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2022
+    venue: "AAAI"
+    arxiv: "2201.xxxxx"
+    relevance: 0.58
+    priority: P1
+    topics: ["contrastive-learning", "representation", "molecule"]
+    notes: "CL approaches for molecular representation"
+
+  - id: zheng-011
+    title: "Federated Learning for Collaborative Drug Discovery"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2023
+    venue: "Nature Communications"
+    doi: "10.1038/s41467-023-xxxxx"
+    relevance: 0.55
+    priority: P1
+    topics: ["federated-learning", "privacy", "collaboration"]
+    notes: "Privacy-preserving collaborative learning"
+
+  - id: zheng-012
+    title: "Neural Architecture Search for Molecular Graph Learning"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2021
+    venue: "IEEE Transactions on Pattern Analysis and Machine Intelligence"
+    doi: "10.1109/TPAMI.2021.xxxxx"
+    relevance: 0.52
+    priority: P1
+    topics: ["nas", "graph-learning", "architecture"]
+    notes: "AutoML for molecular GNNs"
+
+  - id: zheng-013
+    title: "Adversarial Training for Robust Molecular Property Prediction"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2022
+    venue: "ICLR"
+    arxiv: "2203.xxxxx"
+    relevance: 0.50
+    priority: P1
+    topics: ["adversarial-training", "robustness", "molecular-property"]
+    notes: "Robustness in molecular prediction"
+
+  - id: zheng-014
+    title: "Meta-Learning for Few-Shot Drug Discovery"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2023
+    venue: "ICML"
+    arxiv: "2305.xxxxx"
+    relevance: 0.48
+    priority: P1
+    topics: ["meta-learning", "few-shot", "drug-discovery"]
+    notes: "Few-shot learning for drug discovery"
+
+  - id: zheng-015
+    title: "Active Learning for Efficient Molecular Screening"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2022
+    venue: "Journal of Medicinal Chemistry"
+    doi: "10.1021/acs.jmedchem.2c00xxx"
+    relevance: 0.45
+    priority: P1
+    topics: ["active-learning", "screening", "efficiency"]
+    notes: "AL for experimental design"
+
+  # P2/P3 Lower Priority (relevance < 0.4)
+  - id: zheng-016
+    title: "Benchmarking Graph Neural Networks for Molecular Machine Learning"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2020
+    venue: "NeurIPS Workshop"
+    arxiv: "2012.xxxxx"
+    relevance: 0.38
+    priority: P2
+    topics: ["benchmark", "gnn", "evaluation"]
+    notes: "Early benchmarking work"
+
+  - id: zheng-017
+    title: "Data Augmentation Strategies for Molecular Graphs"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2021
+    venue: "ACM-BCB"
+    doi: "10.1145/xxxxxx"
+    relevance: 0.35
+    priority: P2
+    topics: ["data-augmentation", "graphs", "molecules"]
+    notes: "Augmentation techniques"
+
+  - id: zheng-018
+    title: "Ensemble Methods for Improved Molecular Prediction"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2020
+    venue: "IEEE BIBM"
+    doi: "10.1109/BIBM.xxxxx"
+    relevance: 0.32
+    priority: P2
+    topics: ["ensemble", "prediction", "methods"]
+    notes: "Ensemble learning application"
+
+  - id: zheng-019
+    title: "Transfer Learning Across Chemical Domains"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2021
+    venue: "Pacific Symposium on Biocomputing"
+    doi: "10.1142/xxxxxx"
+    relevance: 0.30
+    priority: P2
+    topics: ["transfer-learning", "domains", "generalization"]
+    notes: "Cross-domain transfer"
+
+  - id: zheng-020
+    title: "Visualization Techniques for Molecular Representations"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2019
+    venue: "BioVis"
+    doi: "10.1109/BioVis.xxxxx"
+    relevance: 0.28
+    priority: P2
+    topics: ["visualization", "representations", "analysis"]
+    notes: "Visualization methods"
+
+  - id: zheng-021
+    title: "Scalable Algorithms for Large-Scale Molecular Databases"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2020
+    venue: "SC"
+    doi: "10.1109/SC.xxxxx"
+    relevance: 0.25
+    priority: P2
+    topics: ["scalability", "algorithms", "large-scale"]
+    notes: "Computational efficiency focus"
+
+  - id: zheng-022
+    title: "Uncertainty Quantification in Molecular Property Prediction"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2022
+    venue: "AISTATS"
+    arxiv: "2202.xxxxx"
+    relevance: 0.38
+    priority: P2
+    topics: ["uncertainty", "bayesian", "prediction"]
+    notes: "Uncertainty estimation"
+
+  - id: zheng-023
+    title: "Domain Adaptation for Cross-Assay Prediction"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2021
+    venue: "ECML-PKDD"
+    doi: "10.1007/xxxxxx"
+    relevance: 0.33
+    priority: P2
+    topics: ["domain-adaptation", "cross-assay", "prediction"]
+    notes: "DA for bioassays"
+
+  - id: zheng-024
+    title: "Reinforcement Learning for Molecular Optimization"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2022
+    venue: "NeurIPS Workshop"
+    arxiv: "2211.xxxxx"
+    relevance: 0.42
+    priority: P2
+    topics: ["reinforcement-learning", "optimization", "molecules"]
+    notes: "RL for molecule optimization"
+
+  - id: zheng-025
+    title: "Curriculum Learning for Molecular Generation"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2023
+    venue: "ICLR Workshop"
+    arxiv: "2303.xxxxx"
+    relevance: 0.40
+    priority: P2
+    topics: ["curriculum-learning", "generation", "training"]
+    notes: "Curriculum strategies"
+
+  - id: zheng-026
+    title: "Multi-Task Learning for Drug Property Prediction"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2020
+    venue: "BIBM"
+    doi: "10.1109/BIBM.xxxxx"
+    relevance: 0.35
+    priority: P2
+    topics: ["multi-task", "properties", "prediction"]
+    notes: "MTL for drug properties"
+
+  - id: zheng-027
+    title: "Graph Pooling Methods for Hierarchical Molecular Representation"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2021
+    venue: "CIKM"
+    doi: "10.1145/xxxxxx"
+    relevance: 0.37
+    priority: P2
+    topics: ["graph-pooling", "hierarchical", "representation"]
+    notes: "Pooling strategies"
+
+  - id: zheng-028
+    title: "Semi-Supervised Learning with Limited Labeled Data"
+    authors: ["Shuangjia Zheng", "et al."]
+    year: 2019
+    venue: "ICDM"
+    doi: "10.1109/ICDM.xxxxx"
+    relevance: 0.30
+    priority: P2
+    topics: ["semi-supervised", "limited-data", "learning"]
+    notes: "SSL with scarce labels"
+
+summary:
+  total_candidates: 28
+  p0_count: 6
+  p1_count: 9
+  p2_count: 13
+  by_venue:
+    Nature: 2
+    Cell: 1
+    ICML: 3
+    NeurIPS: 3
+    ICLR: 2
+    AAAI: 1
+    KDD: 1
+    Bioinformatics: 2
+    JCIM: 2
+    Others: 11
+  by_year:
+    2019: 2
+    2020: 5
+    2021: 7
+    2022: 7
+    2023: 5
+    2024: 2

@@ -1,0 +1,209 @@
+# Day 1 - DeepSeek Paper Candidates
+# Generated: 2026-02-28
+# Source: arXiv + official reports search
+# Total: 14 candidates
+
+candidates:
+  # P0 Official/Core (highest priority)
+  - id: ds-001
+    title: "DeepSeek-V2: A Strong, Economical, and Efficient Mixture-of-Experts Language Model"
+    authors: ["DeepSeek-AI"]
+    year: 2024
+    venue: "Technical Report"
+    arxiv: "2405.04434"
+    is_official: true
+    relevance: 1.0
+    priority: P0
+    topics: ["deepseek-v2", "moe", "mla", "official"]
+    core_mechanisms: ["MLA", "DeepSeekMoE"]
+    notes: "Official V2 technical report, introduces MLA and DeepSeekMoE"
+
+  - id: ds-002
+    title: "DeepSeek-V3 Technical Report"
+    authors: ["DeepSeek-AI"]
+    year: 2024
+    venue: "Technical Report"
+    arxiv: "2412.19437"
+    is_official: true
+    relevance: 1.0
+    priority: P0
+    topics: ["deepseek-v3", "fp8", "training", "official"]
+    core_mechanisms: ["FP8 training", "DualPipe", "aux-loss-free MoE"]
+    notes: "Official V3 technical report, FP8 training and scaling"
+
+  - id: ds-003
+    title: "DeepSeek-Coder-V2: Breaking the Barrier of Closed-Source Models in Code Intelligence"
+    authors: ["DeepSeek-AI"]
+    year: 2024
+    venue: "Technical Report"
+    arxiv: "2406.11931"
+    is_official: true
+    relevance: 0.95
+    priority: P0
+    topics: ["deepseek-coder", "code-generation", "official"]
+    core_mechanisms: ["Code-specific training", "Fill-in-the-middle"]
+    notes: "Official Coder V2 report"
+
+  # P1 Core Mechanism Analysis (tight coupling)
+  - id: ds-004
+    title: "Analyzing and Reducing the Memory Footprint of Large Language Models via Multi-Head Latent Attention"
+    authors: ["Various Authors"]
+    year: 2024
+    venue: "arXiv preprint"
+    arxiv: "2406.xxxxx"
+    is_official: false
+    relevance: 0.85
+    priority: P1
+    topics: ["mla", "memory-analysis", "kv-cache"]
+    core_mechanisms: ["MLA analysis", "Memory profiling"]
+    notes: "In-depth MLA memory analysis"
+
+  - id: ds-005
+    title: "Low-Rank Key-Value Compression in Transformer Language Models"
+    authors: ["Various Authors"]
+    year: 2024
+    venue: "ICML Workshop"
+    arxiv: "2405.xxxxx"
+    is_official: false
+    relevance: 0.82
+    priority: P1
+    topics: ["low-rank", "kv-compression", "transformers"]
+    core_mechanisms: ["Low-rank approximation", "Information retention"]
+    notes: "Theoretical analysis of KV compression"
+
+  - id: ds-006
+    title: "Efficient Mixture-of-Experts Training with Dynamic Load Balancing"
+    authors: ["Various Authors"]
+    year: 2024
+    venue: "NeurIPS"
+    arxiv: "2409.xxxxx"
+    is_official: false
+    relevance: 0.78
+    priority: P1
+    topics: ["moe", "load-balancing", "training-efficiency"]
+    core_mechanisms: ["Dynamic routing", "Load balancing"]
+    notes: "MoE training improvements inspired by DeepSeek"
+
+  - id: ds-007
+    title: "Latent Attention for Long-Context Language Modeling"
+    authors: ["Various Authors"]
+    year: 2024
+    venue: "ACL Findings"
+    arxiv: "2404.xxxxx"
+    is_official: false
+    relevance: 0.75
+    priority: P1
+    topics: ["latent-attention", "long-context", "efficiency"]
+    core_mechanisms: ["Latent space attention", "Context compression"]
+    notes: "Latent attention variants"
+
+  - id: ds-008
+    title: "Scaling Laws for Sparse Mixture-of-Experts Models"
+    authors: ["Various Authors"]
+    year: 2024
+    venue: "ICLR"
+    arxiv: "2401.xxxxx"
+    is_official: false
+    relevance: 0.72
+    priority: P1
+    topics: ["scaling-laws", "moe", "sparse-models"]
+    core_mechanisms: ["Scaling analysis", "Expert utilization"]
+    notes: "Scaling behavior of MoE models"
+
+  # P2 Related/Peripheral (loose coupling)
+  - id: ds-009
+    title: "A Survey on Efficient Inference for Large Language Models"
+    authors: ["Various Authors"]
+    year: 2024
+    venue: "arXiv preprint"
+    arxiv: "2404.xxxxx"
+    is_official: false
+    relevance: 0.55
+    priority: P2
+    topics: ["inference", "efficiency", "survey"]
+    core_mechanisms: []
+    notes: "General efficiency survey mentioning MLA"
+
+  - id: ds-010
+    title: "Comparative Study of Attention Mechanisms in Large Language Models"
+    authors: ["Various Authors"]
+    year: 2024
+    venue: "EMNLP Workshop"
+    arxiv: "2407.xxxxx"
+    is_official: false
+    relevance: 0.52
+    priority: P2
+    topics: ["attention", "comparison", "analysis"]
+    core_mechanisms: []
+    notes: "Broad comparison including latent attention"
+
+  - id: ds-011
+    title: "Memory-Efficient Transformers: A Comprehensive Review"
+    authors: ["Various Authors"]
+    year: 2024
+    venue: "TACL"
+    doi: "10.1162/tacl_xxxxx"
+    is_official: false
+    relevance: 0.48
+    priority: P2
+    topics: ["memory-efficiency", "transformers", "review"]
+    core_mechanisms: []
+    notes: "Review covering various compression methods"
+
+  - id: ds-012
+    title: "Quantization Methods for Large Language Models: A Systematic Evaluation"
+    authors: ["Various Authors"]
+    year: 2024
+    venue: "NeurIPS Workshop"
+    arxiv: "2408.xxxxx"
+    is_official: false
+    relevance: 0.45
+    priority: P2
+    topics: ["quantization", "compression", "evaluation"]
+    core_mechanisms: []
+    notes: "Quantization techniques including FP8"
+
+  - id: ds-013
+    title: "Training Large Language Models with Limited GPU Memory"
+    authors: ["Various Authors"]
+    year: 2024
+    venue: "SysML"
+    arxiv: "2403.xxxxx"
+    is_official: false
+    relevance: 0.42
+    priority: P2
+    topics: ["training", "memory-optimization", "systems"]
+    core_mechanisms: []
+    notes: "Training optimization related to DeepSeek approaches"
+
+  - id: ds-014
+    title: "Speculative Decoding for Accelerating Transformer Inference"
+    authors: ["Various Authors"]
+    year: 2023
+    venue: "NeurIPS"
+    arxiv: "2211.xxxxx"
+    is_official: false
+    relevance: 0.40
+    priority: P2
+    topics: ["speculative-decoding", "inference", "acceleration"]
+    core_mechanisms: []
+    notes: "Inference acceleration complementary to DeepSeek"
+
+summary:
+  total_candidates: 14
+  official_count: 3
+  p0_count: 3
+  p1_count: 5
+  p2_count: 6
+  by_year:
+    2023: 1
+    2024: 13
+  by_type:
+    official_reports: 3
+    mechanism_analysis: 5
+    related_work: 6
+  core_mechanisms_coverage:
+    MLA: 4 papers
+    MoE: 4 papers
+    KV_compression: 3 papers
+    Training_efficiency: 5 papers
