@@ -1,0 +1,73 @@
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Local work area
+inbox/
+cache/
+downloads/
+temp/
+
+# Logs
+*.log
+logs/
+
+# Large binary files
+*.pdf
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Images (unless specifically needed)
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.svg
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Node
+node_modules/
+package-lock.json
+yarn.lock
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*.backup
+*~
+
+# Draft files (unless explicitly added)
+draft/
+drafts/
+draft-*
