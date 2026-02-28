@@ -1,0 +1,202 @@
+# writing-usage-tags.yaml
+# 写作用途标签 - 标注论文在我的写作中的使用方式
+#
+# 用途:
+#   - 快速找到适合某个写作场景的论文
+#   - 追踪每篇论文的使用价值
+#   - 写作时快速检索相关文献
+#
+# 字段设计原则:
+#   - 标签对应写作的具体场景
+#   - 支持多标签
+#   - 包含引用上下文建议
+#
+# 更新方式:
+#   - 写作后补充使用记录
+#   - 发现新的使用场景时追加标签
+
+usage_scenarios:
+  # 引言部分
+  introduction:
+    name: "引言/背景"
+    tags:
+      - id: "intro_background"
+        name: "研究背景"
+        description: "用于介绍研究领域背景"
+        example_context: "近年来，药物发现领域..."
+      
+      - id: "intro_problem"
+        name: "问题定义"
+        description: "用于定义研究问题"
+        example_context: "然而，现有方法存在以下挑战..."
+      
+      - id: "intro_motivation"
+        name: "研究动机"
+        description: "用于说明研究必要性"
+        example_context: "因此，开发...方法具有重要意义"
+      
+      - id: "intro_gap"
+        name: "研究空白"
+        description: "用于指出研究空白"
+        example_context: "然而，...问题尚未得到充分研究"
+
+  # 相关工作部分
+  related_work:
+    name: "相关工作"
+    tags:
+      - id: "rw_drug_discovery"
+        name: "药物发现方法"
+        description: "药物发现相关工作"
+        subcategories: ["traditional", "ml_based", "dl_based", "generative"]
+      
+      - id: "rw_dti"
+        name: "DTI 预测方法"
+        description: "药物 - 靶点相互作用预测相关工作"
+      
+      - id: "rw_rna"
+        name: "RNA相关方法"
+        description: "RNA治疗/调控相关计算方法"
+      
+      - id: "rw_attention"
+        name: "Attention机制"
+        description: "Attention机制相关工作"
+      
+      - id: "rw_lora"
+        name: "LoRA/PEFT方法"
+        description: "参数高效微调相关工作"
+      
+      - id: "rw_low_rank"
+        name: "低秩方法"
+        description: "低秩近似/参数化相关工作"
+      
+      - id: "rw_mla"
+        name: "MLA相关"
+        description: "Multi-Head Latent Attention 相关工作"
+
+  # 方法部分
+  methodology:
+    name: "方法参考"
+    tags:
+      - id: "method_inspiration"
+        name: "方法灵感"
+        description: "启发我方法设计的论文"
+      
+      - id: "method_baseline"
+        name: "基线方法"
+        description: "作为对比基线的方法"
+      
+      - id: "method_component"
+        name: "方法组件"
+        description: "可复用的方法组件"
+      
+      - id: "method_theory"
+        name: "理论支撑"
+        description: "提供理论依据的论文"
+
+  # 实验部分
+  experiments:
+    name: "实验参考"
+    tags:
+      - id: "exp_dataset"
+        name: "数据集参考"
+        description: "推荐使用的数据集"
+      
+      - id: "exp_metric"
+        name: "评价指标"
+        description: "推荐使用的评价指标"
+      
+      - id: "exp_protocol"
+        name: "实验方案"
+        description: "可参考的实验设置"
+      
+      - id: "exp_result_comparison"
+        name: "结果对比"
+        description: "用于对比的实验结果"
+
+  # 讨论部分
+  discussion:
+    name: "讨论/展望"
+    tags:
+      - id: "discuss_limitation"
+        name: "局限性讨论"
+        description: "用于讨论研究局限性"
+      
+      - id: "discuss_future"
+        name: "未来方向"
+        description: "启发未来研究方向"
+      
+      - id: "discuss_implication"
+        name: "研究启示"
+        description: "研究的广泛意义"
+
+  # 摘要部分
+  abstract:
+    name: "摘要参考"
+    tags:
+      - id: "abs_problem_statement"
+        name: "问题陈述"
+        description: "摘要中的问题定义参考"
+      
+      - id: "abs_method_summary"
+        name: "方法总结"
+        description: "摘要中的方法描述参考"
+      
+      - id: "abs_result_summary"
+        name: "结果总结"
+        description: "摘要中的结果表述参考"
+
+# 写作项目追踪
+writing_projects:
+  # 论文写作
+  paper_writing:
+    name: "论文写作"
+    stages:
+      - stage: "proposal"
+        name: "开题报告"
+        needed_tags: ["intro_background", "intro_problem", "intro_gap", "rw_*"]
+      
+      - stage: "draft"
+        name: "初稿"
+        needed_tags: ["intro_*", "rw_*", "method_*", "exp_*"]
+      
+      - stage: "revision"
+        name: "修改稿"
+        needed_tags: ["discuss_*", "abs_*"]
+  
+  # 综述写作
+  survey_writing:
+    name: "综述文章"
+    needed_tags: ["rw_*", "intro_background", "discuss_future"]
+  
+  # 研究计划
+  proposal_writing:
+    name: "研究计划/基金申请"
+    needed_tags: ["intro_motivation", "intro_gap", "discuss_implication", "method_inspiration"]
+
+# 使用记录模板
+usage_record_template:
+  paper_id: "arxiv:xxx"
+  usage_tags: ["intro_background", "rw_drug_discovery"]
+  project: "my_paper_2026"
+  section: "Introduction"
+  context: "用于介绍药物发现领域的深度学习应用现状"
+  quote_suggestion: "可引用的关键句或数据"
+  date_used: "2026-03-01"
+  notes: "使用时的备注"
+
+# 检索辅助
+retrieval_hints:
+  # 根据写作场景推荐标签组合
+  by_writing_need:
+    "写引言背景": ["intro_background", "intro_problem"]
+    "写相关工作": ["rw_*"]
+    "写方法动机": ["intro_gap", "method_inspiration"]
+    "写实验设计": ["exp_dataset", "exp_metric", "exp_protocol"]
+    "写讨论": ["discuss_limitation", "discuss_future"]
+    "写摘要": ["abs_*"]
+  
+  # 根据研究方向推荐
+  by_direction:
+    biomed: ["rw_drug_discovery", "rw_dti", "rw_rna"]
+    comptheory: ["rw_attention", "rw_lora", "rw_low_rank"]
+    deepseek: ["rw_mla", "method_theory"]

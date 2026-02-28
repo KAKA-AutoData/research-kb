@@ -1,0 +1,279 @@
+# keyword-taxonomy.yaml
+# 关键词分类体系 - 用于论文标注、检索和主题归类
+#
+# 用途:
+#   - 为每篇论文分配标准化标签
+#   - 支持多维度检索 (按方法/按应用/按数据类型)
+#   - 自动归类到知识库目录结构
+#   - 趋势分析时统计热点演变
+#
+# 字段设计原则:
+#   - 层级结构：domain > category > subcategory > specific
+#   - 每个关键词有唯一ID，便于程序化处理
+#   - 包含同义词映射，避免检索遗漏
+#   - 标注优先级 (P0/P1/P2) 用于筛选
+#
+# 更新方式:
+#   - 发现新的高频关键词时补充到对应分类
+#   - 每半年 review 一次，合并冗余标签
+#   - 根据研究重心变化调整优先级
+
+domains:
+  biomed:
+    name: "生物信息与医学"
+    categories:
+      drug_discovery:
+        name: "药物发现"
+        priority: P0
+        keywords:
+          - id: "drug_discovery_general"
+            terms: ["drug discovery", "drug design", "drug development"]
+            scope: "通用药物发现"
+          - id: "drug_repositioning"
+            terms: ["drug repositioning", "drug repurposing", "drug rescue"]
+            scope: "药物重定位"
+          - id: "drug_target_interaction"
+            terms: ["drug-target interaction", "DTI prediction", "target identification"]
+            scope: "药物-靶点相互作用预测"
+          - id: "drug_response"
+            terms: ["drug response", "drug sensitivity", "therapeutic response"]
+            scope: "药物响应/敏感性"
+          - id: "drug_mechanism"
+            terms: ["mechanism of action", "MOA", "drug mechanism"]
+            scope: "药物作用机制"
+          - id: "small_molecule"
+            terms: ["small molecule", "small molecule drug"]
+            scope: "小分子药物"
+          - id: "rna_drug"
+            terms: ["RNA drug", "RNA therapeutic", "RNA-based therapy"]
+            scope: "RNA药物"
+
+      rna_biology:
+        name: "RNA生物学"
+        priority: P0
+        keywords:
+          - id: "mirna"
+            terms: ["miRNA", "microRNA", "micro RNA"]
+            scope: "微小RNA"
+          - id: "lncrna"
+            terms: ["lncRNA", "long non-coding RNA", "long noncoding RNA"]
+            scope: "长链非编码RNA"
+          - id: "circrna"
+            terms: ["circRNA", "circular RNA", "circular RNA"]
+            scope: "环状RNA"
+          - id: "rna_regulation"
+            terms: ["RNA regulation", "post-transcriptional regulation", "RNA processing"]
+            scope: "RNA调控"
+          - id: "rna_therapeutics"
+            terms: ["RNA therapeutics", "RNA therapy", "RNA-based treatment"]
+            scope: "RNA治疗"
+          - id: "rna_drug_delivery"
+            terms: ["RNA delivery", "nanoparticle delivery", "lipid nanoparticle"]
+            scope: "RNA递送"
+
+      disease_mechanism:
+        name: "疾病机制"
+        priority: P1
+        keywords:
+          - id: "disease_mechanism"
+            terms: ["disease mechanism", "pathogenesis", "disease pathway"]
+            scope: "疾病机制"
+          - id: "translational_medicine"
+            terms: ["translational medicine", "bench to bedside", "clinical translation"]
+            scope: "转化医学"
+          - id: "precision_medicine"
+            terms: ["precision medicine", "personalized medicine", "stratified medicine"]
+            scope: "精准医学"
+          - id: "biomarker"
+            terms: ["biomarker", "biological marker", "predictive marker"]
+            scope: "生物标志物"
+          - id: "multi_omics"
+            terms: ["multi-omics", "integrative omics", "omics integration"]
+            scope: "多组学整合"
+
+      data_types:
+        name: "数据类型"
+        priority: P2
+        keywords:
+          - id: "genomics"
+            terms: ["genomics", "genome", "genomic data"]
+          - id: "transcriptomics"
+            terms: ["transcriptomics", "RNA-seq", "gene expression"]
+          - id: "proteomics"
+            terms: ["proteomics", "mass spectrometry", "protein data"]
+          - id: "metabolomics"
+            terms: ["metabolomics", "metabolite", "metabolic profiling"]
+          - id: "epigenomics"
+            terms: ["epigenomics", "methylation", "chromatin"]
+          - id: "clinical_data"
+            terms: ["clinical data", "EHR", "electronic health record"]
+
+  comptheory:
+    name: "计算机理论"
+    categories:
+      attention:
+        name: "Attention机制"
+        priority: P0
+        keywords:
+          - id: "attention_general"
+            terms: ["attention mechanism", "self-attention", "attention layer"]
+            scope: "Attention通用"
+          - id: "multi_head_attention"
+            terms: ["multi-head attention", "MHA", "multi-head self-attention"]
+            scope: "多头Attention"
+          - id: "latent_attention"
+            terms: ["latent attention", "latent representation attention"]
+            scope: "潜在空间Attention"
+          - id: "compressed_attention"
+            terms: ["compressed attention", "attention compression"]
+            scope: "压缩Attention"
+          - id: "kv_cache"
+            terms: ["KV cache", "key-value cache", "attention cache"]
+            scope: "KV缓存"
+          - id: "kv_compression"
+            terms: ["KV compression", "key-value compression", "cache compression"]
+            scope: "KV压缩"
+          - id: "attention_complexity"
+            terms: ["attention complexity", "quadratic complexity", "linear attention"]
+            scope: "Attention复杂度"
+          - id: "attention_analysis"
+            terms: ["attention analysis", "attention interpretation", "attention visualization"]
+            scope: "Attention分析"
+
+      low_rank:
+        name: "低秩方法"
+        priority: P0
+        keywords:
+          - id: "low_rank_general"
+            terms: ["low-rank", "low rank", "low-rank approximation"]
+            scope: "低秩通用"
+          - id: "low_rank_parameterization"
+            terms: ["low-rank parameterization", "low-rank factorization"]
+            scope: "低秩参数化"
+          - id: "low_rank_attention"
+            terms: ["low-rank attention", "low-rank self-attention"]
+            scope: "低秩Attention"
+          - id: "low_rank_adaptation"
+            terms: ["low-rank adaptation", "low-rank fine-tuning"]
+            scope: "低秩适配"
+          - id: "rank_analysis"
+            terms: ["rank analysis", "intrinsic dimension", "effective rank"]
+            scope: "秩分析"
+
+      lora:
+        name: "LoRA"
+        priority: P0
+        keywords:
+          - id: "lora_general"
+            terms: ["LoRA", "Low-Rank Adaptation", "lora fine-tuning"]
+            scope: "LoRA通用"
+          - id: "lora_mechanism"
+            terms: ["lora mechanism", "how lora works", "lora learning"]
+            scope: "LoRA机制"
+          - id: "lora_rank"
+            terms: ["lora rank", "lora rank selection", "rank tuning"]
+            scope: "LoRA秩选择"
+          - id: "lora_vs_finetuning"
+            terms: ["lora vs fine-tuning", "lora comparison", "parameter-efficient"]
+            scope: "LoRA与全量微调对比"
+          - id: "lora_forgetting"
+            terms: ["lora forgetting", "catastrophic forgetting", "lora stability"]
+            scope: "LoRA与遗忘"
+          - id: "lora_generalization"
+            terms: ["lora generalization", "lora out-of-distribution"]
+            scope: "LoRA泛化"
+          - id: "lora_variants"
+            terms: ["lora variants", "lora extension", "lora improvement"]
+            scope: "LoRA变体"
+
+      relation_modeling:
+        name: "关系建模"
+        priority: P1
+        keywords:
+          - id: "relation_modeling"
+            terms: ["relation modeling", "relational reasoning", "relationship learning"]
+          - id: "representation_analysis"
+            terms: ["representation analysis", "internal representation", "hidden representation"]
+          - id: "module_interaction"
+            terms: ["module interaction", "layer interaction", "cross-layer"]
+          - id: "token_relation"
+            terms: ["token relation", "token interaction", "attention pattern"]
+
+      theory_analysis:
+        name: "理论分析"
+        priority: P1
+        keywords:
+          - id: "expressivity"
+            terms: ["expressivity", "expressive power", "representation capacity"]
+          - id: "optimization"
+            terms: ["optimization", "convergence", "training dynamics"]
+          - id: "generalization"
+            terms: ["generalization", "generalization bound", "out-of-distribution"]
+          - id: "complexity_analysis"
+            terms: ["complexity analysis", "computational complexity", "memory complexity"]
+
+  deepseek:
+    name: "DeepSeek专项"
+    categories:
+      official:
+        name: "官方工作"
+        priority: P0
+        keywords:
+          - id: "deepseek_official"
+            terms: ["DeepSeek", "DeepSeek-V2", "DeepSeek-V3", "DeepSeek-Coder"]
+            scope: "DeepSeek官方"
+          - id: "deepseek_mla"
+            terms: ["Multi-Head Latent Attention", "MLA", "latent attention deepseek"]
+            scope: "MLA机制"
+          - id: "deepseek_moe"
+            terms: ["DeepSeekMoE", "Mixture of Experts", "MoE deepseek"]
+            scope: "MoE结构"
+          - id: "deepseek_architecture"
+            terms: ["DeepSeek architecture", "DeepSeek structure", "DeepSeek design"]
+            scope: "整体架构"
+
+      external:
+        name: "外部研究"
+        priority: P1
+        keywords:
+          - id: "deepseek_analysis"
+            terms: ["DeepSeek analysis", "DeepSeek study", "DeepSeek investigation"]
+            scope: "DeepSeek分析"
+          - id: "mla_theory"
+            terms: ["MLA theory", "latent attention theory", "MLA analysis"]
+            scope: "MLA理论分析"
+          - id: "mla_application"
+            terms: ["MLA application", "MLA extension", "MLA variant"]
+            scope: "MLA应用扩展"
+
+# 交叉领域标签
+cross_domain:
+  ai_for_drug_discovery:
+    terms: ["AI drug discovery", "deep learning drug", "machine learning drug", "generative drug design"]
+  ai_for_rna:
+    terms: ["AI RNA", "deep learning RNA", "RNA structure prediction", "RNA design"]
+
+# 郑双佳专项关键词
+zheng_shuangjia:
+  name: "郑双佳团队研究"
+  priority: P0
+  keywords:
+    - id: "zheng_drug_discovery"
+      terms: ["Shuangjia Zheng", "郑双佳"]
+      scope: "郑双佳团队药物发现研究"
+      auto_tag: true  # 出现即自动标注
+    - id: "zheng_rna_therapeutics"
+      terms: ["Shuangjia Zheng", "郑双佳"]
+      scope: "郑双佳团队 RNA 治疗研究"
+      auto_tag: true
+    - id: "zheng_network_pharmacology"
+      terms: ["Shuangjia Zheng", "郑双佳", "network pharmacology"]
+      scope: "郑双佳团队网络药理学研究"
+      auto_tag: true
+
+# 检索扩展规则
+search_expansion:
+  drug_discovery: ["drug design", "virtual screening", "molecular docking", "QSAR"]
+  rna: ["non-coding RNA", "RNA structure", "RNA function"]
+  attention: ["transformer", "self-attention", "attention mechanism"]
+  lora: ["parameter-efficient", "PEFT", "adapter", "prompt tuning"]

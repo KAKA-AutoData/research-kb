@@ -1,0 +1,312 @@
+# reproducibility-rubric.yaml
+# 可复现性评估标准 - 用于评估论文的可复现程度
+#
+# 用途:
+#   - 快速判断论文的可复现性
+#   - 优先选择高可复现性的工作
+#   - 识别复现难点和风险
+#
+# 字段设计原则:
+#   - 量化评分 (1-5 分)
+#   - 覆盖复现的关键要素
+#   - 包含具体的检查清单
+#
+# 更新方式:
+#   - 根据实际复现经验调整评分标准
+#   - 发现新的评估维度时补充
+
+scoring_dimensions:
+  # 代码开源
+  code_availability:
+    name: "代码开源"
+    weight: 0.25
+    levels:
+      score_5:
+        label: "优秀"
+        criteria:
+          - "官方代码仓库可用"
+          - "包含完整的训练和推理代码"
+          - "有详细的 README 和安装说明"
+          - "提供预训练模型/检查点"
+          - "代码有清晰注释"
+      score_4:
+        label: "良好"
+        criteria:
+          - "官方代码仓库可用"
+          - "包含核心代码"
+          - "有基本的使用说明"
+          - "可能缺少预训练模型"
+      score_3:
+        label: "一般"
+        criteria:
+          - "有代码但不够完整"
+          - "缺少部分关键实现"
+          - "文档不完善"
+      score_2:
+        label: "较差"
+        criteria:
+          - "代码质量低"
+          - "缺少关键组件"
+          - "难以直接使用"
+      score_1:
+        label: "无代码"
+        criteria:
+          - "无公开代码"
+          - "或代码不可用"
+  
+  # 数据可获取
+  data_availability:
+    name: "数据可获取"
+    weight: 0.20
+    levels:
+      score_5:
+        label: "优秀"
+        criteria:
+          - "所有数据集公开可用"
+          - "提供数据下载链接"
+          - "有详细的数据预处理说明"
+          - "提供处理后的数据"
+      score_4:
+        label: "良好"
+        criteria:
+          - "数据集公开"
+          - "有获取说明"
+          - "预处理步骤清晰"
+      score_3:
+        label: "一般"
+        criteria:
+          - "部分数据公开"
+          - "部分数据需要申请"
+          - "预处理说明不够详细"
+      score_2:
+        label: "较差"
+        criteria:
+          - "数据获取困难"
+          - "预处理步骤缺失"
+      score_1:
+        label: "无数据"
+        criteria:
+          - "数据不公开"
+          - "或无法获取"
+  
+  # 方法描述清晰度
+  method_clarity:
+    name: "方法描述清晰度"
+    weight: 0.25
+    levels:
+      score_5:
+        label: "优秀"
+        criteria:
+          - "方法描述非常详细"
+          - "有完整的算法伪代码"
+          - "所有超参数都有说明"
+          - "有架构图和流程图"
+          - "关键实现细节都有"
+      score_4:
+        label: "良好"
+        criteria:
+          - "方法描述较为详细"
+          - "有算法描述"
+          - "主要超参数有说明"
+          - "有架构图"
+      score_3:
+        label: "一般"
+        criteria:
+          - "方法描述基本清晰"
+          - "部分细节缺失"
+          - "部分超参数未说明"
+      score_2:
+        label: "较差"
+        criteria:
+          - "方法描述模糊"
+          - "关键细节缺失"
+          - "难以理解实现"
+      score_1:
+        label: "不清晰"
+        criteria:
+          - "方法描述非常简略"
+          - "无法理解如何实现"
+  
+  # 实验可复现
+  experiment_reproducibility:
+    name: "实验可复现"
+    weight: 0.20
+    levels:
+      score_5:
+        label: "优秀"
+        criteria:
+          - "实验设置描述完整"
+          - "所有基线都有说明"
+          - "有详细的超参数设置"
+          - "提供训练日志/曲线"
+          - "有统计显著性分析"
+      score_4:
+        label: "良好"
+        criteria:
+          - "实验设置较为完整"
+          - "基线方法清晰"
+          - "主要超参数有说明"
+          - "有主要结果"
+      score_3:
+        label: "一般"
+        criteria:
+          - "实验设置基本清晰"
+          - "部分基线未说明"
+          - "部分超参数缺失"
+      score_2:
+        label: "较差"
+        criteria:
+          - "实验设置不完整"
+          - "基线对比不充分"
+          - "超参数大量缺失"
+      score_1:
+        label: "不可复现"
+        criteria:
+          - "实验设置描述极少"
+          - "无法复现实验"
+  
+  # 计算资源需求
+  compute_requirements:
+    name: "计算资源需求"
+    weight: 0.10
+    levels:
+      score_5:
+        label: "低需求"
+        criteria:
+          - "可在普通 GPU 上运行"
+          - "训练时间短 (<1 天)"
+          - "内存需求低 (<16GB)"
+          - "适合个人研究者"
+      score_4:
+        label: "中等需求"
+        criteria:
+          - "需要中等 GPU"
+          - "训练时间中等 (1-7 天)"
+          - "内存需求中等 (16-32GB)"
+      score_3:
+        label: "较高需求"
+        criteria:
+          - "需要高端 GPU"
+          - "训练时间较长 (1-2 周)"
+          - "内存需求较高 (32-64GB)"
+      score_2:
+        label: "高需求"
+        criteria:
+          - "需要多 GPU/TPU"
+          - "训练时间长 (2-4 周)"
+          - "内存需求高 (>64GB)"
+      score_1:
+        label: "极高需求"
+        criteria:
+          - "需要大规模集群"
+          - "训练时间极长 (>1 月)"
+          - "仅大型机构可复现"
+
+# 综合评级
+overall_rating:
+  A_excellent:
+    score_range: [4.5, 5.0]
+    description: "优秀 - 高度可复现，推荐优先参考"
+    action: "优先入库，可作为基线"
+  
+  B_good:
+    score_range: [3.5, 4.5)
+    description: "良好 - 基本可复现，可参考"
+    action: "正常入库"
+  
+  C_fair:
+    score_range: [2.5, 3.5)
+    description: "一般 - 复现有一定难度"
+    action: "入库但标注复现难点"
+  
+  D_poor:
+    score_range: [1.5, 2.5)
+    description: "较差 - 复现困难"
+    action: "谨慎参考，需额外验证"
+  
+  F_unreproducible:
+    score_range: [1.0, 1.5)
+    description: "不可复现 - 不建议作为参考"
+    action: "考虑拒绝或仅做理论参考"
+
+# 复现检查清单
+reproducibility_checklist:
+  # 复现前检查
+  pre_reproduction:
+    - "是否已获取代码？"
+    - "是否已获取数据？"
+    - "是否理解方法流程？"
+    - "是否有足够的计算资源？"
+    - "是否已阅读所有补充材料？"
+  
+  # 复现中记录
+  during_reproduction:
+    - "记录环境配置 (CUDA 版本、依赖库等)"
+    - "记录运行时间和资源使用"
+    - "记录遇到的问题和解决方案"
+    - "记录与原文结果的差异"
+  
+  # 复现后评估
+  post_reproduction:
+    - "结果是否与原文一致？"
+    - "如不一致，差异在哪里？"
+    - "是否找到了原因？"
+    - "是否联系作者确认？"
+
+# 复现难度预测
+difficulty_prediction:
+  easy:
+    indicators:
+      - "代码完整 + 数据公开"
+      - "方法描述清晰"
+      - "计算需求低"
+      - "有预训练模型"
+  
+  medium:
+    indicators:
+      - "代码基本完整"
+      - "数据部分公开"
+      - "计算需求中等"
+  
+  hard:
+    indicators:
+      - "代码不完整"
+      - "数据需要申请"
+      - "计算需求高"
+      - "方法描述模糊"
+  
+  very_hard:
+    indicators:
+      - "无公开代码"
+      - "数据不可获取"
+      - "需要大规模计算资源"
+      - "方法描述极简略"
+
+# 复现状态追踪
+reproduction_status:
+  not_attempted: "未尝试复现"
+  in_progress: "复现中"
+  success: "复现成功"
+  partial_success: "部分复现成功"
+  failed: "复现失败"
+  abandoned: "放弃复现"
+
+# 复现报告模板
+reproduction_report_template:
+  paper_id: "xxx"
+  reproduction_date: "YYYY-MM-DD"
+  environment:
+    hardware: "GPU 型号、数量"
+    software: "CUDA 版本、框架版本"
+  status: "success/partial/failed"
+  results_comparison:
+    original: "原文结果"
+    reproduced: "复现结果"
+    gap: "差异分析"
+  issues_encountered:
+    - "问题 1"
+    - "问题 2"
+  solutions:
+    - "解决方案 1"
+  recommendations:
+    - "给后续复现者的建议"

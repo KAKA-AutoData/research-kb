@@ -1,0 +1,215 @@
+# journal-tiers.yaml
+# 期刊/会议分级表 - 用于快速判断论文质量门槛
+# 
+# 用途:
+#   - 初筛时快速评估发表 venue 的质量
+#   - 为每篇论文分配 quality_tier 标签
+#   - 检索时优先扫描高 tier 来源
+#
+# 字段设计原则:
+#   - tier: 1-4 数字越小越权威
+#   - category: 区分综合刊、子刊、领域顶刊、会议
+#   - scope: 该 venue 的主要覆盖范围
+#   - match_score: 与我研究方向的匹配度 (1-5)
+#   - auto_accept: 是否满足条件即自动进入深度分析
+#
+# 更新方式:
+#   - 新增重要 venue 时追加到对应 tier
+#   - 每年 review 一次，根据影响因子变化调整 tier
+#   - 发现新的高质量会议时及时补充
+
+tiers:
+  tier_1_nature_science_cell:
+    description: "顶级综合期刊 - 任何主题都值得一看"
+    venues:
+      - name: "Nature"
+        issn: "0028-0836"
+        scope: ["all_sciences"]
+        match_score: 3
+        auto_accept: true
+      - name: "Science"
+        issn: "0036-8075"
+        scope: ["all_sciences"]
+        match_score: 3
+        auto_accept: true
+      - name: "Cell"
+        issn: "0092-8674"
+        scope: ["life_sciences", "medicine"]
+        match_score: 4
+        auto_accept: true
+
+  tier_2_nature_sub_journals:
+    description: "Nature 子刊 - 生信/医学方向重点关注"
+    venues:
+      - name: "Nature Medicine"
+        scope: ["clinical_medicine", "translational_medicine"]
+        match_score: 5
+        auto_accept: true
+      - name: "Nature Biotechnology"
+        scope: ["biotechnology", "method_development"]
+        match_score: 4
+        auto_accept: true
+      - name: "Nature Methods"
+        scope: ["method_development", "computational_biology"]
+        match_score: 4
+        auto_accept: true
+      - name: "Nature Communications"
+        scope: ["all_sciences"]
+        match_score: 3
+        auto_accept: false
+      - name: "Nature Reviews Drug Discovery"
+        scope: ["drug_discovery", "pharmacology"]
+        match_score: 5
+        auto_accept: true
+      - name: "Nature Cancer"
+        scope: ["cancer_biology", "oncology"]
+        match_score: 4
+        auto_accept: false
+      - name: "Nature Machine Intelligence"
+        scope: ["ai", "machine_learning", "computational_methods"]
+        match_score: 5
+        auto_accept: true
+
+  tier_2_cell_press:
+    description: "Cell Press 期刊"
+    venues:
+      - name: "Cancer Cell"
+        scope: ["cancer_biology", "oncology"]
+        match_score: 4
+        auto_accept: false
+      - name: "Cell Research"
+        scope: ["molecular_biology", "cell_biology"]
+        match_score: 4
+        auto_accept: false
+      - name: "Molecular Cell"
+        scope: ["molecular_biology"]
+        match_score: 3
+        auto_accept: false
+      - name: "Cell Systems"
+        scope: ["systems_biology", "computational_biology"]
+        match_score: 4
+        auto_accept: true
+
+  tier_3_bioinformatics_leaders:
+    description: "生物信息学领域顶刊"
+    venues:
+      - name: "Nucleic Acids Research"
+        scope: ["bioinformatics", "genomics", "rna_research"]
+        match_score: 5
+        auto_accept: true
+      - name: "Genome Biology"
+        scope: ["genomics", "bioinformatics", "systems_biology"]
+        match_score: 4
+        auto_accept: true
+      - name: "Briefings in Bioinformatics"
+        scope: ["bioinformatics", "computational_biology"]
+        match_score: 4
+        auto_accept: true
+      - name: "Bioinformatics"
+        scope: ["bioinformatics", "computational_biology"]
+        match_score: 4
+        auto_accept: false
+      - name: "PLOS Computational Biology"
+        scope: ["computational_biology", "systems_biology"]
+        match_score: 3
+        auto_accept: false
+      - name: "GigaScience"
+        scope: ["big_data", "genomics", "bioinformatics"]
+        match_score: 3
+        auto_accept: false
+
+  tier_3_ml_ai_top:
+    description: "机器学习/AI 顶会顶刊"
+    venues:
+      - name: "NeurIPS"
+        type: "conference"
+        scope: ["machine_learning", "deep_learning", "ai"]
+        match_score: 5
+        auto_accept: true
+      - name: "ICML"
+        type: "conference"
+        scope: ["machine_learning", "deep_learning"]
+        match_score: 5
+        auto_accept: true
+      - name: "ICLR"
+        type: "conference"
+        scope: ["representation_learning", "deep_learning"]
+        match_score: 5
+        auto_accept: true
+      - name: "ACL"
+        type: "conference"
+        scope: ["nlp", "computational_linguistics"]
+        match_score: 4
+        auto_accept: false
+      - name: "EMNLP"
+        type: "conference"
+        scope: ["nlp", "computational_linguistics"]
+        match_score: 4
+        auto_accept: false
+      - name: "JMLR"
+        type: "journal"
+        scope: ["machine_learning"]
+        match_score: 4
+        auto_accept: true
+      - name: "TPAMI"
+        type: "journal"
+        scope: ["pattern_recognition", "machine_learning"]
+        match_score: 4
+        auto_accept: true
+
+  tier_4_solid_journals:
+    description: "可靠期刊 - 需要额外评估内容质量"
+    venues:
+      - name: "BMC Bioinformatics"
+        scope: ["bioinformatics"]
+        match_score: 3
+        auto_accept: false
+      - name: "Frontiers in Genetics"
+        scope: ["genetics", "genomics"]
+        match_score: 2
+        auto_accept: false
+      - name: "Scientific Reports"
+        scope: ["all_sciences"]
+        match_score: 2
+        auto_accept: false
+      - name: "PeerJ"
+        scope: ["biology", "medicine"]
+        match_score: 2
+        auto_accept: false
+
+  tier_arxiv_preprints:
+    description: "预印本 - 需严格评估内容"
+    venues:
+      - name: "arXiv"
+        scope: ["all_sciences"]
+        match_score: 2
+        auto_accept: false
+        notes: "计算机理论方向的高价值工作常先发arXiv，需特别关注DeepSeek相关"
+      - name: "bioRxiv"
+        scope: ["biology", "medicine"]
+        match_score: 2
+        auto_accept: false
+      - name: "medRxiv"
+        scope: ["medicine", "clinical_research"]
+        match_score: 2
+        auto_accept: false
+
+# 快速查询辅助索引
+by_scope:
+  drug_discovery: ["Nature Reviews Drug Discovery", "Nature Medicine", "Nature Biotechnology", "Nucleic Acids Research"]
+  rna_research: ["Nucleic Acids Research", "Cell Research", "Nature Methods"]
+  machine_learning_theory: ["NeurIPS", "ICML", "ICLR", "JMLR", "Nature Machine Intelligence"]
+  attention_mechanisms: ["NeurIPS", "ICML", "ICLR", "ACL", "EMNLP"]
+  deepseek_related: ["arXiv"]  # DeepSeek工作主要首发arXiv
+
+# 质量门槛规则
+quality_thresholds:
+  biomed_direction:
+    min_tier: 3  # BioMed方向最低接受tier 3
+    exceptions: ["郑双佳相关论文可放宽至tier 4或有影响力的预印本"]
+  comptheory_direction:
+    min_tier: 3  # 理论方向tier 3或同等影响力会议
+    arxiv_allowed: true  # 允许高质量arXiv
+  deepseek_priority:
+    min_tier: 4  # DeepSeek相关可放宽，因为最新工作可能未正式发表
+    arxiv_required: true  # 必须监控arXiv

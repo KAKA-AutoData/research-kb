@@ -1,0 +1,253 @@
+# institution-priority.yaml
+# 机构与研究者优先级配置 (v2.0 - 2026-02-28 更新)
+#
+# 用途:
+#   - 初筛时快速判断论文来源的重要性
+#   - 为特定研究者设置自动提醒或优先处理
+#   - 评估合作网络和研究趋势
+#
+# 字段设计原则:
+#   - priority: 1-5，数字越小越优先
+#   - auto_accept: 该作者相关论文是否自动进入深度分析
+#   - match_threshold: 相关性阈值，低于此值即使高优先级也不收录
+#   - track_new_pub: 是否监控该作者的新发表
+#
+# 更新方式:
+#   - 发现新的重要研究者时追加
+#   - 每季度 review 追踪列表的有效性
+#   - 根据研究重心变化调整优先级
+
+researchers:
+  # ============================================================
+  # TIER 1: 最高优先级 - 核心关注研究者
+  # ============================================================
+  tier_1_core:
+    description: "核心研究者 - 所有相关论文必收并深度分析"
+    
+    researchers:
+      # -------------------- 郑双佳 (最高优先级) --------------------
+      - name: "郑双佳"
+        name_en: "Shuangjia Zheng"
+        affiliation: "Shanghai Jiao Tong University"
+        department: "School of Medicine / Bioinformatics"
+        priority: 1
+        is_highest_priority: true
+        
+        # 作者识别规则
+        name_variants:
+          - "郑双佳"
+          - "Shuangjia Zheng"
+          - "S Zheng"
+          - "Zheng S"
+          - "Zheng SJ"
+          - "S.J. Zheng"
+        
+        institution_variants:
+          - "Shanghai Jiao Tong University"
+          - "SJTU"
+          - "上海交通大学"
+          - "上海交通大学医学院"
+          - "Shanghai Jiao Tong University School of Medicine"
+        
+        # 研究方向关键词 (可扩展)
+        research_keywords:
+          core_directions:
+            - "AI-driven drug discovery"
+            - "drug design"
+            - "drug repositioning"
+            - "protein-ligand interaction"
+            - "binding structure prediction"
+            - "molecular generation"
+            - "generative AI for molecules"
+            - "retrosynthesis"
+            - "biosynthetic pathway planning"
+            - "biomolecular structure prediction"
+            - "foundation models for biomolecules"
+            - "enzyme retrieval"
+            - "computational biology"
+            - "generative AI in biomedicine"
+          
+          extended_keywords:
+            - "deep learning drug"
+            - "graph neural network drug"
+            - "transformer molecular"
+            - "diffusion model molecule"
+            - "VAE drug"
+            - "GAN molecule"
+            - "reinforcement learning drug"
+            - "multi-modal drug"
+            - "knowledge graph drug"
+            - "target identification"
+            - "ADMET prediction"
+            - "molecular property prediction"
+            - "de novo design"
+            - "lead optimization"
+        
+        # 入库规则
+        auto_accept: true
+        archive_all_papers: true  # 所有论文必须进入作者档案
+        match_threshold: 0.3      # 即使弱相关也收录
+        track_new_pub: true       # 持续追踪新发表
+        
+        # 分析分层规则
+        analysis_tiers:
+          tier_high:              # 高度相关 → 完整深度分析
+            relevance_score: ">= 0.7"
+            action: "full_analysis"
+            criteria:
+              - "与我核心研究边界直接相关"
+              - "具有方法论创新或理论贡献"
+              - "发表在高质量期刊或会议"
+          
+          tier_medium:            # 中度相关 → 中等深度分析
+            relevance_score: "[0.4, 0.7)"
+            action: "medium_analysis"
+            criteria:
+              - "与我的研究有一定关联"
+              - "可作为参考或对比"
+          
+          tier_low:               # 弱相关 → 保留metadata + 简要摘要
+            relevance_score: "< 0.4"
+            action: "minimal_archive"
+            criteria:
+              - "仅名字匹配，内容关联较弱"
+              - "用于完整性归档"
+        
+        # 作者档案路径
+        author_directory: "research-kb/biomed/authors/zheng-shuangjia/"
+        
+        # 备注
+        notes: |
+          当前知识库最高优先级研究者。
+          所有论文必须进入作者专属档案，按相关性分层处理。
+          同时维护主题线索引（药物发现、AI for biomedicine等）。
+
+  # ============================================================
+  # TIER 2: 高优先级 - 密切关注的机构和团队
+  # ============================================================
+  tier_2_high:
+    description: "高优先级机构 - 相关高质量工作优先关注"
+    
+    institutions:
+      - name: "Shanghai Jiao Tong University School of Medicine"
+        location: "Shanghai, China"
+        priority: 2
+        auto_accept: false
+        match_threshold: 0.7
+        track_new_pub: true
+        focus_areas: ["precision medicine", "translational medicine", "clinical bioinformatics"]
+
+      - name: "Zhengzhou University First Affiliated Hospital"
+        location: "Zhengzhou, China"
+        priority: 2
+        auto_accept: false
+        match_threshold: 0.7
+        track_new_pub: true
+        focus_areas: ["clinical research", "disease mechanism"]
+
+  # ============================================================
+  # TIER 3: 中优先级 - 领域知名机构
+  # ============================================================
+  tier_3_medium:
+    description: "领域知名机构 - 顶刊工作值得关注"
+    
+    institutions:
+      - name: "MIT"
+        priority: 3
+        focus_areas: ["machine learning", "computational biology"]
+      
+      - name: "Stanford University"
+        priority: 3
+        focus_areas: ["AI", "bioinformatics", "medicine"]
+      
+      - name: "Harvard University"
+        priority: 3
+        focus_areas: ["biomedical informatics", "systems biology"]
+      
+      - name: "UC Berkeley"
+        priority: 3
+        focus_areas: ["machine learning theory", "AI"]
+      
+      - name: "Google DeepMind"
+        priority: 3
+        focus_areas: ["AlphaFold", "protein structure", "drug discovery"]
+      
+      - name: "Microsoft Research"
+        priority: 3
+        focus_areas: ["healthcare AI", "biomedical NLP"]
+      
+      - name: "OpenAI"
+        priority: 3
+        focus_areas: ["large language models", "reasoning"]
+      
+      - name: "DeepSeek AI"
+        priority: 3
+        auto_accept: true
+        match_threshold: 0.5
+        focus_areas: ["MLA", "MoE", "efficient architecture"]
+        notes: "DeepSeek官方出品，技术报告必收"
+
+# ============================================================
+# 作者识别规则
+# ============================================================
+author_identification:
+  # 识别策略
+  strategy: "name + institution + topic"
+  
+  # 置信度评分
+  confidence_scoring:
+    name_match: 0.4
+    institution_match: 0.3
+    topic_match: 0.3
+    
+    thresholds:
+      high_confidence: 0.8    # 直接纳入核心档案
+      medium_confidence: 0.5  # 标记待确认
+      low_confidence: 0.5     # 暂不纳入，人工复核
+  
+  # 待确认处理
+  pending_confirmation:
+    action: "flag_for_review"
+    required_evidence:
+      - "作者主页确认"
+      - "ORCID 确认"
+      - "机构官网确认"
+
+# ============================================================
+# 作者线与主题线双轨维护规则
+# ============================================================
+dual_track_maintenance:
+  # 作者线
+  author_track:
+    primary_location: "{author_directory}/papers/"
+    purpose: "完整追踪研究者全部输出"
+    
+  # 主题线
+  topic_track:
+    primary_location: "research-kb/{direction}/{topic}/analyses/"
+    purpose: "按主题组织，便于横向比较"
+    
+  # 关联规则
+  linking_strategy:
+    master_copy: "author_track"  # 主存放位置在作者目录
+    topic_reference: "symlink_or_index"  # 主题目录用索引或软链接
+    avoid_duplication: true
+
+# ============================================================
+# 自动提醒配置
+# ============================================================
+alerts:
+  new_publication:
+    tier_1: immediate        # 郑双佳新论文立即通知
+    tier_2: daily_digest
+    tier_3: weekly_digest
+  
+  citation_milestone:
+    enabled: true
+    milestones: [10, 50, 100, 500, 1000]
+  
+  # 郑双佳专项提醒
+  zheng_shuangjia_specific:
+    new_paper_alert: true
+    high_citation_alert: true
+    collaboration_network_alert: true  # 新合作者提醒

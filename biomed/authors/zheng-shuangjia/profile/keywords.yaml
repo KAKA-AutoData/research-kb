@@ -1,0 +1,319 @@
+# 郑双佳 - 研究方向关键词集合
+# 
+# 用途:
+#   - 论文自动标注和分类
+#   - 检索策略制定
+#   - 研究趋势分析
+#
+# 更新方式:
+#   - 根据新发表论文持续扩展
+#   - 每季度 review 并调整权重
+
+author: "Shuangjia Zheng"
+last_updated: "2026-02-28"
+version: "1.0"
+
+# ============================================================
+# 核心方向关键词 (P0 - 最高优先级)
+# ============================================================
+core_directions:
+  ai_driven_drug_discovery:
+    name: "AI-driven Drug Discovery"
+    priority: P0
+    keywords:
+      primary:
+        - "AI drug discovery"
+        - "deep learning drug discovery"
+        - "machine learning drug discovery"
+        - "artificial intelligence drug"
+      secondary:
+        - "computational drug discovery"
+        - "in silico drug discovery"
+        - "intelligent drug discovery"
+    
+  drug_design:
+    name: "Drug Design"
+    priority: P0
+    keywords:
+      primary:
+        - "drug design"
+        - "molecular design"
+        - "ligand design"
+        - "lead optimization"
+        - "de novo design"
+      secondary:
+        - "structure-based drug design"
+        - "ligand-based drug design"
+        - "fragment-based drug design"
+    
+  drug_repositioning:
+    name: "Drug Repositioning"
+    priority: P0
+    keywords:
+      primary:
+        - "drug repositioning"
+        - "drug repurposing"
+        - "drug rescue"
+        - "therapeutic switching"
+      secondary:
+        - "drug redirection"
+        - "indication expansion"
+        - "network pharmacology"
+    
+  protein_ligand_interaction:
+    name: "Protein-Ligand Interaction"
+    priority: P0
+    keywords:
+      primary:
+        - "protein-ligand interaction"
+        - "protein-ligand binding"
+        - "molecular docking"
+        - "binding affinity prediction"
+        - "binding pose prediction"
+      secondary:
+        - "docking score"
+        - "scoring function"
+        - "binding free energy"
+    
+  binding_structure_prediction:
+    name: "Binding Structure Prediction"
+    priority: P0
+    keywords:
+      primary:
+        - "binding structure prediction"
+        - "complex structure prediction"
+        - "protein-ligand complex"
+        - "docking pose generation"
+      secondary:
+        - "conformational sampling"
+        - "binding site identification"
+        - "pocket detection"
+
+# ============================================================
+# 生成模型方向 (P0 - 核心方法)
+# ============================================================
+generative_models:
+  molecular_generation:
+    name: "Molecular Generation"
+    priority: P0
+    keywords:
+      primary:
+        - "molecular generation"
+        - "molecule generation"
+        - "de novo molecular design"
+        - "generative chemistry"
+      methods:
+        - "VAE molecule"
+        - "GAN molecule"
+        - "diffusion model molecule"
+        - "flow-based molecule"
+        - "autoregressive molecule"
+        - "transformer molecule"
+    
+  generative_ai_molecules:
+    name: "Generative AI for Molecules"
+    priority: P0
+    keywords:
+      primary:
+        - "generative AI molecules"
+        - "generative models molecules"
+        - "deep generative models"
+        - "neural molecule generation"
+      secondary:
+        - "latent space molecule"
+        - "molecular latent representation"
+        - "chemical space exploration"
+
+# ============================================================
+# 合成与路径规划 (P1 - 扩展方向)
+# ============================================================
+synthesis_planning:
+  retrosynthesis:
+    name: "Retrosynthesis"
+    priority: P1
+    keywords:
+      primary:
+        - "retrosynthesis"
+        - "retrosynthetic analysis"
+        - "synthetic route planning"
+        - "reaction prediction"
+      methods:
+        - "template-based retrosynthesis"
+        - "template-free retrosynthesis"
+        - "neural retrosynthesis"
+    
+  biosynthetic_pathway:
+    name: "Biosynthetic Pathway Planning"
+    priority: P1
+    keywords:
+      primary:
+        - "biosynthetic pathway"
+        - "metabolic pathway"
+        - "pathway engineering"
+        - "enzyme pathway"
+      secondary:
+        - "pathway prediction"
+        - "pathway optimization"
+        - "synthetic biology"
+
+# ============================================================
+# 结构预测 (P1 - 扩展方向)
+# ============================================================
+structure_prediction:
+  biomolecular_structure:
+    name: "Biomolecular Structure Prediction"
+    priority: P1
+    keywords:
+      primary:
+        - "biomolecular structure prediction"
+        - "protein structure prediction"
+        - "RNA structure prediction"
+        - "complex structure modeling"
+      secondary:
+        - "contact prediction"
+        - "distance prediction"
+        - "tertiary structure"
+    
+  foundation_models_biomolecules:
+    name: "Foundation Models for Biomolecules"
+    priority: P1
+    keywords:
+      primary:
+        - "foundation models biomolecules"
+        - "large language models biology"
+        - "pretrained models molecules"
+        - "self-supervised learning molecules"
+      secondary:
+        - "transfer learning biology"
+        - "representation learning molecules"
+        - "molecular embedding"
+
+# ============================================================
+# 酶工程 (P2 - 关注方向)
+# ============================================================
+enzyme_engineering:
+  enzyme_retrieval:
+    name: "Enzyme Retrieval"
+    priority: P2
+    keywords:
+      primary:
+        - "enzyme retrieval"
+        - "enzyme search"
+        - "enzyme classification"
+        - "enzyme function prediction"
+      secondary:
+        - "enzyme annotation"
+        - "EC number prediction"
+        - "catalytic activity prediction"
+
+# ============================================================
+# 计算生物学综合 (P1)
+# ============================================================
+computational_biology:
+  name: "Computational Biology"
+  priority: P1
+  keywords:
+    primary:
+      - "computational biology"
+      - "bioinformatics"
+      - "systems biology"
+      - "structural bioinformatics"
+    secondary:
+      - "chemoinformatics"
+      - "pharmacoinformatics"
+      - "quantitative biology"
+
+# ============================================================
+# 生物医学AI综合 (P1)
+# ============================================================
+generative_ai_biomedicine:
+  name: "Generative AI in Biomedicine"
+  priority: P1
+  keywords:
+    primary:
+      - "generative AI biomedicine"
+      - "AI biomedical research"
+      - "machine learning biomedicine"
+      - "deep learning biomedicine"
+    secondary:
+      - "AI healthcare"
+      - "precision medicine AI"
+      - "personalized medicine AI"
+
+# ============================================================
+# 扩展关键词 (持续更新)
+# ============================================================
+extended_keywords:
+  # 方法学
+  methods:
+    - "graph neural network"
+    - "GNN drug"
+    - "transformer drug"
+    - "attention mechanism drug"
+    - "reinforcement learning drug"
+    - "multi-task learning drug"
+    - "meta-learning drug"
+    - "federated learning drug"
+  
+  # 数据类型
+  data_types:
+    - "SMILES"
+    - "molecular graph"
+    - "3D conformer"
+    - "protein sequence"
+    - "binding pocket"
+    - "pharmacophore"
+  
+  # 性质预测
+  property_prediction:
+    - "ADMET prediction"
+    - "toxicity prediction"
+    - "solubility prediction"
+    - "bioavailability prediction"
+    - "blood-brain barrier"
+    - "hERG prediction"
+  
+  # 数据库
+  databases:
+    - "ChEMBL"
+    - "PubChem"
+    - "DrugBank"
+    - "BindingDB"
+    - "PDB"
+    - "ZINC"
+
+# ============================================================
+# 检索策略配置
+# ============================================================
+search_strategy:
+  arxiv:
+    query_template: 'au:"Shuangjia Zheng" AND ({keywords})'
+    frequency: "daily"
+    max_results: 50
+  
+  pubmed:
+    query_template: '"Zheng S"[Author] AND ({keywords})'
+    frequency: "weekly"
+    max_results: 100
+  
+  google_scholar:
+    alert_enabled: true
+    keywords: ["Shuangjia Zheng", "drug discovery", "molecular generation"]
+
+# ============================================================
+# 自动标注规则
+# ============================================================
+auto_tagging:
+  enabled: true
+  rules:
+    - condition: "title contains 'generation' OR abstract contains 'generate'"
+      tag: "molecular_generation"
+    
+    - condition: "title contains 'docking' OR abstract contains 'binding affinity'"
+      tag: "protein_ligand_interaction"
+    
+    - condition: "title contains 'repositioning' OR abstract contains 'repurposing'"
+      tag: "drug_repositioning"
+    
+    - condition: "title contains 'retrosynthesis' OR abstract contains 'synthetic route'"
+      tag: "retrosynthesis"

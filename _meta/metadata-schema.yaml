@@ -1,0 +1,379 @@
+# metadata-schema.yaml
+# 论文元数据标准 schema - 每篇入库论文的必填/选填字段定义
+#
+# 用途:
+#   - 标准化每篇论文的信息记录
+#   - 支持程序化检索和过滤
+#   - 为后续分析提供结构化数据
+#
+# 字段设计原则:
+#   - 必填字段 (required): 缺一不可
+#   - 条件必填 (conditional): 满足特定条件时必须填写
+#   - 选填字段 (optional): 有则更好
+#   - 所有字段都有明确的类型和格式要求
+#
+# 更新方式:
+#   - 发现新的重要维度时追加字段
+#   - 根据实际使用体验优化字段设计
+
+schema_version: "1.0"
+last_updated: "2026-02-28"
+
+# 核心元数据 (每篇论文必填)
+core_metadata:
+  paper_id:
+    type: string
+    required: true
+    format: "{source}:{identifier}"
+    examples: ["arxiv:2501.12345", "doi:10.1038/s41591-024-01234-5", "pmid:12345678"]
+    description: "论文唯一标识符"
+  
+  title:
+    type: string
+    required: true
+    max_length: 500
+    description: "完整标题"
+  
+  authors:
+    type: array
+    required: true
+    item_type: object
+    item_schema:
+      name: string
+      affiliation: string (optional)
+      corresponding: boolean (optional)
+    description: "作者列表"
+  
+  institutions:
+    type: array
+    required: true
+    item_type: string
+    description: "主要机构列表 (第一作者和通讯作者单位)"
+  
+  publication:
+    type: object
+    required: true
+    properties:
+      venue: string  # 期刊/会议名称
+      year: integer
+      volume: string (optional)
+      issue: string (optional)
+      pages: string (optional)
+      doi: string (optional)
+      pmid: string (optional)
+      arxiv_id: string (optional)
+    description: "发表信息"
+  
+  urls:
+    type: object
+    required: true
+    properties:
+      paper_url: string  # 论文链接
+      pdf_url: string (optional)  # PDF下载链接
+      code_url: string (optional)  # 代码仓库
+      data_url: string (optional)  # 数据资源
+    description: "资源链接"
+
+# 分类标签 (必填)
+classification:
+  direction:
+    type: string
+    required: true
+    enum: ["biomed", "comptheory", "deepseek", "cross-domain"]
+    description: "所属研究方向"
+  
+  topic:
+    type: string
+    required: true
+    description: "具体主题 (来自 keyword-taxonomy.yaml)"
+    examples: ["drug_discovery", "lora_mechanism", "mla"]
+  
+  tags:
+    type: array
+    required: true
+    item_type: string
+    max_items: 10
+    description: "关键词标签 (来自 keyword-taxonomy.yaml 的 keyword id)"
+  
+  journal_tier:
+    type: integer
+    required: true
+    enum: [1, 2, 3, 4, 5]
+    description: "期刊/会议级别 (来自 journal-tiers.yaml)"
+  
+  quality_score:
+    type: integer
+    required: true
+    range: [1, 5]
+    description: "质量评分 (1-5)"
+
+# 筛选决策 (必填)
+screening:
+  status:
+    type: string
+    required: true
+    enum: ["pending", "analyzing", "analyzed", "reviewed", "rejected"]
+    description: "处理状态"
+  
+  decision:
+    type: string
+    required: true
+    enum: ["ACCEPT", "REJECT", "UNDECIDED"]
+    description: "入库决策"
+  
+  decision_date:
+    type: string
+    required: true
+    format: "YYYY-MM-DD"
+    description: "决策日期"
+  
+  reject_reason:
+    type: string
+    required: false
+    enum: ["out_of_scope", "low_quality", "incremental", "no_code", "duplicate", "other"]
+    description: "拒绝原因 (如被拒绝)"
+  
+  analyst:
+    type: string
+    required: true
+    description: "分析者"
+  
+  analysis_date:
+    type: string
+    required: true
+    format: "YYYY-MM-DD"
+    description: "分析完成日期"
+
+# 内容摘要 (必填)
+content:
+  one_sentence_summary:
+    type: string
+    required: true
+    max_length: 100
+    description: "一句话总结核心贡献"
+  
+  abstract:
+    type: string
+    required: true
+    description: "原文摘要"
+  
+  key_contributions:
+    type: array
+    required: true
+    item_type: string
+    max_items: 5
+    description: "核心贡献列表 (最多5条)"
+  
+  methodology:
+    type: string
+    required: true
+    description: "方法概述"
+  
+  limitations:
+    type: array
+    required: false
+    item_type: string
+    description: "局限性列表"
+
+# 深度分析 (条件必填 - 接受入库的论文必填)
+deep_analysis:
+  theoretical_contribution:
+    type: string
+    conditional: "direction == 'comptheory' OR direction == 'deepseek'"
+    description: "理论贡献 (计科方向必填)"
+  
+  theoretical_contribution_types:
+    type: array
+    item_type: string
+    enum:
+      - "novel_architecture"      # 新架构
+      - "theoretical_proof"       # 理论证明
+      - "complexity_analysis"     # 复杂度分析
+      - "expressivity_analysis"   # 表达能力分析
+      - "optimization_analysis"   # 优化特性分析
+      - "empirical_study"         # 实证研究
+      - "survey_review"           # 综述
+    conditional: "direction == 'comptheory' OR direction == 'deepseek'"
+    description: "理论贡献类型 (多选)"
+  
+  experimental_validation:
+    type: object
+    required: false
+    properties:
+      datasets: array
+      metrics: array
+      baselines: array
+      key_results: string
+    description: "实验验证信息"
+  
+  relevance_to_my_research:
+    type: string
+    required: true
+    description: "与我研究的关联 (必填，禁止空泛)"
+  
+  potential_applications:
+    type: array
+    required: false
+    item_type: string
+    description: "可能的应用场景"
+  
+  follow_up_questions:
+    type: array
+    required: false
+    item_type: string
+    description: "需要跟进的问题"
+
+# 关联关系 (选填但推荐)
+relations:
+  cited_papers:
+    type: array
+    required: false
+    item_type:
+      paper_id: string
+      title: string
+      relevance: string
+    description: "本文引用的重要论文"
+  
+  cited_by:
+    type: array
+    required: false
+    item_type:
+      paper_id: string
+      title: string
+    description: "引用本文的论文 (后续补充)"
+  
+  related_papers:
+    type: array
+    required: false
+    item_type:
+      paper_id: string
+      relationship: string  # "extends", "compares", "applies", etc.
+    description: "相关论文"
+  
+  is_zheng_shuangjia_paper:
+    type: boolean
+    required: true
+    default: false
+    description: "是否为郑双佳论文"
+  
+  is_deepseek_official:
+    type: boolean
+    required: true
+    default: false
+    description: "是否为 DeepSeek 官方工作"
+
+# 资源状态 (新增)
+resource_status:
+  code_status:
+    type: string
+    required: true
+    enum:
+      - "official_repo"      # 官方仓库
+      - "unofficial_impl"    # 非官方实现
+      - "partial_code"       # 部分代码
+      - "no_code"            # 无代码
+      - "code_requested"     # 已申请代码
+    default: "no_code"
+    description: "代码开源状态"
+  
+  data_status:
+    type: string
+    required: true
+    enum:
+      - "public_dataset"     # 公开数据集
+      - "custom_dataset"     # 自建数据集
+      - "data_on_request"    # 需申请
+      - "no_data"            # 无数据
+    default: "no_data"
+    description: "数据可获取状态"
+  
+  reproduction_status:
+    type: string
+    required: false
+    enum:
+      - "not_attempted"
+      - "in_progress"
+      - "success"
+      - "partial_success"
+      - "failed"
+    default: "not_attempted"
+    description: "复现状态"
+  
+  reading_status:
+    type: string
+    required: true
+    enum:
+      - "to_read"
+      - "skimming"
+      - "reading"
+      - "analyzed"
+      - "reviewed"
+    default: "analyzed"
+    description: "阅读状态"
+
+# 使用追踪 (选填)
+usage:
+  cited_in_my_writing:
+    type: array
+    required: false
+    item_type:
+      document: string
+      context: string
+      date: string
+    description: "在我的写作中被引用的情况"
+  
+  referenced_in_notes:
+    type: array
+    required: false
+    item_type: string
+    description: "在哪些笔记中被引用"
+  
+  last_reviewed:
+    type: string
+    required: false
+    format: "YYYY-MM-DD"
+    description: "最后复查日期"
+
+# 文件路径 (系统自动管理)
+file_paths:
+  analysis_file:
+    type: string
+    required: true
+    format: "research-kb/{direction}/{topic}/analyses/{year}-{author}-{short_title}.md"
+    description: "分析文档路径"
+  
+  pdf_file:
+    type: string
+    required: false
+    description: "PDF存储路径 (如下载)"
+  
+  notes_file:
+    type: string
+    required: false
+    description: "零散笔记路径"
+
+# 校验规则
+validation_rules:
+  required_for_accept:
+    - core_metadata.*
+    - classification.*
+    - screening.*
+    - content.one_sentence_summary
+    - content.key_contributions
+    - content.methodology
+    - content.relevance_to_my_research
+    - relations.is_zheng_shuangjia_paper
+    - relations.is_deepseek_official
+  
+  required_for_reject:
+    - core_metadata.*
+    - classification.*
+    - screening.status
+    - screening.decision
+    - screening.reject_reason
+  
+  quality_checks:
+    - one_sentence_summary must not contain "this paper", "the authors"
+    - relevance_to_my_research must be specific (no generic phrases)
+    - key_contributions must have at least 1 item
+    - tags must have at least 2 items

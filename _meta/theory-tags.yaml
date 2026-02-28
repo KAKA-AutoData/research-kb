@@ -1,0 +1,282 @@
+# theory-tags.yaml
+# 理论分析标签 - 用于标注计科/DeepSeek 方向的理论贡献类型
+#
+# 用途:
+#   - 快速识别论文的理论贡献类型
+#   - 支持理论方向的检索和比较
+#   - 帮助定位理论支撑文献
+#
+# 字段设计原则:
+#   - 覆盖主要理论分析维度
+#   - 标签之间有清晰的边界
+#   - 包含具体的分析要点提示
+#
+# 更新方式:
+#   - 发现新的理论分析维度时补充
+#   - 根据实际分析需求细化标签
+
+theory_categories:
+  # 表达能力分析
+  expressivity:
+    name: "表达能力/表示能力分析"
+    tags:
+      - id: "expressivity_general"
+        name: "通用表达能力"
+        description: "模型/结构的通用表示能力"
+        analysis_points:
+          - "能表示什么函数类？"
+          - "与 baseline 相比表达能力如何？"
+          - "是否存在表达瓶颈？"
+      
+      - id: "expressivity_rank"
+        name: "秩相关表达能力"
+        description: "低秩结构对表达能力的影响"
+        analysis_points:
+          - "秩与表达能力的关系？"
+          - "最小需要多少秩？"
+          - "秩不足会丢失什么信息？"
+      
+      - id: "expressivity_attention"
+        name: "Attention 表达能力"
+        description: "Attention 结构的表示能力分析"
+        analysis_points:
+          - "Attention 能建模什么关系？"
+          - "多头的作用是什么？"
+          - "Attention 的表达能力边界？"
+
+  # 优化特性分析
+  optimization:
+    name: "优化特性分析"
+    tags:
+      - id: "optimization_convergence"
+        name: "收敛性分析"
+        description: "方法的收敛性质"
+        analysis_points:
+          - "是否保证收敛？"
+          - "收敛速度如何？"
+          - "收敛到什么样的解？"
+      
+      - id: "optimization_landscape"
+        name: "优化景观分析"
+        description: "损失曲面的性质"
+        analysis_points:
+          - "是否存在局部最优？"
+          - "鞍点问题？"
+          - "优化难度分析？"
+      
+      - id: "optimization_stability"
+        name: "训练稳定性"
+        description: "训练过程的稳定性分析"
+        analysis_points:
+          - "对超参数的敏感度？"
+          - "训练是否稳定？"
+          - "是否需要特殊技巧？"
+
+  # 泛化特性分析
+  generalization:
+    name: "泛化特性分析"
+    tags:
+      - id: "generalization_bound"
+        name: "泛化界分析"
+        description: "理论泛化界"
+        analysis_points:
+          - "是否有理论泛化界？"
+          - "界的形式和依赖？"
+          - "与模型复杂度的关系？"
+      
+      - id: "generalization_ood"
+        name: "分布外泛化"
+        description: "OOD 泛化能力"
+        analysis_points:
+          - "OOD 表现如何？"
+          - "是否保持泛化？"
+          - "影响 OOD 的因素？"
+      
+      - id: "generalization_forgetting"
+        name: "遗忘分析"
+        description: "灾难性遗忘研究"
+        analysis_points:
+          - "是否出现遗忘？"
+          - "遗忘的程度？"
+          - "如何缓解遗忘？"
+
+  # 复杂度分析
+  complexity:
+    name: "复杂度分析"
+    tags:
+      - id: "complexity_time"
+        name: "时间复杂度"
+        description: "计算复杂度分析"
+        analysis_points:
+          - "理论时间复杂度？"
+          - "实际运行时间？"
+          - "与序列长度的关系？"
+      
+      - id: "complexity_memory"
+        name: "空间复杂度"
+        description: "内存复杂度分析"
+        analysis_points:
+          - "理论空间复杂度？"
+          - "KV cache 大小？"
+          - "内存优化方法？"
+      
+      - id: "complexity_parameter"
+        name: "参数复杂度"
+        description: "参数量分析"
+        analysis_points:
+          - "可训练参数量？"
+          - "参数效率如何？"
+          - "与性能的关系？"
+
+  # 结构分析
+  structure:
+    name: "结构分析"
+    tags:
+      - id: "structure_attention_pattern"
+        name: "Attention 模式分析"
+        description: "Attention 权重的模式"
+        analysis_points:
+          - "Attention 聚焦在哪里？"
+          - "是否有固定模式？"
+          - "模式的可解释性？"
+      
+      - id: "structure_layer_interaction"
+        name: "层间交互分析"
+        description: "不同层之间的信息流"
+        analysis_points:
+          - "各层的作用？"
+          - "信息如何传递？"
+          - "是否存在冗余层？"
+      
+      - id: "structure_module_interaction"
+        name: "模块交互分析"
+        description: "不同模块之间的协作"
+        analysis_points:
+          - "模块如何协作？"
+          - "是否存在耦合？"
+          - "模块的独立性？"
+      
+      - id: "structure_information_flow"
+        name: "信息流分析"
+        description: "信息在网络中的流动"
+        analysis_points:
+          - "信息如何传播？"
+          - "是否存在瓶颈？"
+          - "信息保留程度？"
+
+  # 低秩专项分析
+  low_rank_specific:
+    name: "低秩专项分析"
+    tags:
+      - id: "lowrank_intrinsic_dim"
+        name: "本征维度分析"
+        description: "任务的本征维度"
+        analysis_points:
+          - "任务的本征维度是多少？"
+          - "如何估计本征维度？"
+          - "与最优秩的关系？"
+      
+      - id: "lowrank_approximation_error"
+        name: "近似误差分析"
+        description: "低秩近似的误差"
+        analysis_points:
+          - "近似误差有多大？"
+          - "误差的分布？"
+          - "误差对性能的影响？"
+      
+      - id: "lowrank_adaptation_mechanism"
+        name: "低秩适配机制"
+        description: "LoRA 等方法的适配机制"
+        analysis_points:
+          - "低秩如何适配新任务？"
+          - "学习的是什么？"
+          - "与全量微调的差异？"
+
+  # MLA 专项分析
+  mla_specific:
+    name: "MLA 专项分析"
+    tags:
+      - id: "mla_latent_compression"
+        name: "潜在空间压缩"
+        description: "MLA 的潜在空间压缩机制"
+        analysis_points:
+          - "压缩率是多少？"
+          - "信息损失多少？"
+          - "压缩的原理？"
+      
+      - id: "mla_kv_compression"
+        name: "KV 压缩机制"
+        description: "MLA 中 KV 的压缩方式"
+        analysis_points:
+          - "KV 如何压缩？"
+          - "压缩后的表示？"
+          - "与标准 Attention 的差异？"
+      
+      - id: "mla_efficiency"
+        name: "效率分析"
+        description: "MLA 的效率优势"
+        analysis_points:
+          - "推理速度提升？"
+          - "内存节省多少？"
+          - "训练效率如何？"
+
+# 理论深度评级
+theory_depth_levels:
+  level_5_groundbreaking:
+    name: "突破性理论"
+    description: "提出全新的理论框架或证明重要定理"
+    criteria:
+      - "提出新的理论框架"
+      - "证明重要的理论性质"
+      - "改变领域认知"
+  
+  level_4_significant:
+    name: "重要理论贡献"
+    description: "深入的理论分析，有清晰的理论洞察"
+    criteria:
+      - "系统的理论分析"
+      - "清晰的理论洞察"
+      - "对实践有指导意义"
+  
+  level_3_solid:
+    name: "扎实的理论分析"
+    description: "有理论分析，但深度一般"
+    criteria:
+      - "有理论分析"
+      - "分析较为系统"
+      - "有一定的洞察"
+  
+  level_2_preliminary:
+    name: "初步理论探讨"
+    description: "理论分析较浅或仅为推测"
+    criteria:
+      - "理论分析较少"
+      - "缺乏系统性"
+      - "主要是经验观察"
+  
+  level_1_none:
+    name: "无理论分析"
+    description: "纯经验性工作"
+    criteria:
+      - "无理论分析"
+      - "纯实验驱动"
+      - "仅有性能报告"
+
+# 理论论文快速识别
+theory_paper_indicators:
+  strong_signals:
+    - "contains theorem/proof/lemma"
+    - "contains convergence analysis"
+    - "contains complexity analysis"
+    - "contains expressivity analysis"
+    - "title contains 'theory', 'analysis', 'understanding'"
+  
+  weak_signals:
+    - "contains ablation study"
+    - "contains visualization analysis"
+    - "contains discussion of mechanism"
+  
+  negative_signals:
+    - "only performance comparison"
+    - "only application to task"
+    - "only engineering optimization"

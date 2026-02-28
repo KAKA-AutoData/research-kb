@@ -1,0 +1,336 @@
+# topic-scope.yaml
+# 主题范围定义 - 明确研究边界的操作化规则
+#
+# 用途:
+#   - 初筛时判断论文是否符合研究边界
+#   - 为每篇论文计算相关性得分
+#   - 自动化入库时的决策依据
+#
+# 字段设计原则:
+#   - 每个主题有明确的包含/排除规则
+#   - 相关性计算有可量化的标准
+#   - 支持多维度匹配 (关键词/方法/数据)
+#
+# 更新方式:
+#   - 根据实际检索结果调整匹配规则
+#   - 发现边界模糊时补充说明
+
+directions:
+  biomed:
+    name: "生物信息与医学方向"
+    enabled: true
+    priority: P0
+    
+    topics:
+      drug_discovery:
+        name: "药物发现"
+        enabled: true
+        priority: P0
+        
+        include_rules:
+          - must_contain_keywords: ["drug discovery", "drug design", "drug development"]
+          - must_contain_keywords: ["machine learning", "deep learning", "neural network"]
+          - should_have: ["experimental validation", "clinical data", "wet-lab validation"]
+        
+        exclude_rules:
+          - exclude_if: ["review only", "no computational method", "pure chemistry synthesis"]
+          - exclude_if: ["only molecular docking", "no ML/DL method"]
+        
+        relevance_threshold: 0.7  # 相关性低于此值不收录
+        
+        quality_requirements:
+          min_journal_tier: 3
+          exceptions: ["郑双佳论文可放宽", "顶会论文可放宽"]
+      
+      drug_repositioning:
+        name: "药物重定位"
+        enabled: true
+        priority: P0
+        
+        include_rules:
+          - must_contain_keywords: ["drug repositioning", "drug repurposing", "drug rescue"]
+          - should_have: ["computational prediction", "validation"]
+        
+        exclude_rules:
+          - exclude_if: ["only literature review", "no novel method"]
+        
+        relevance_threshold: 0.7
+      
+      drug_target_interaction:
+        name: "药物-靶点相互作用"
+        enabled: true
+        priority: P0
+        
+        include_rules:
+          - must_contain_keywords: ["drug-target interaction", "DTI", "target prediction"]
+          - should_have: ["prediction method", "benchmark comparison"]
+        
+        exclude_rules:
+          - exclude_if: ["only database curation", "no prediction method"]
+        
+        relevance_threshold: 0.6
+      
+      rna_therapeutics:
+        name: "RNA治疗"
+        enabled: true
+        priority: P0
+        
+        include_rules:
+          - must_contain_keywords: ["RNA therapeutic", "RNA drug", "RNA therapy"]
+          - should_contain_keywords: ["miRNA", "lncRNA", "circRNA", "siRNA", "mRNA"]
+        
+        exclude_rules:
+          - exclude_if: ["only RNA sequencing", "no therapeutic application"]
+        
+        relevance_threshold: 0.7
+      
+      rna_regulation:
+        name: "RNA调控"
+        enabled: true
+        priority: P0
+        
+        include_rules:
+          - must_contain_keywords: ["RNA regulation", "post-transcriptional", "RNA processing"]
+          - should_contain_keywords: ["miRNA", "lncRNA", "circRNA", "RBP"]
+        
+        exclude_rules:
+          - exclude_if: ["only expression analysis", "no mechanism study"]
+        
+        relevance_threshold: 0.6
+      
+      disease_mechanism:
+        name: "疾病机制"
+        enabled: true
+        priority: P1
+        
+        include_rules:
+          - must_contain_keywords: ["disease mechanism", "pathogenesis", "disease pathway"]
+          - should_have: ["multi-omics", "computational analysis", "mechanism insight"]
+        
+        exclude_rules:
+          - exclude_if: ["only clinical observation", "no molecular mechanism"]
+        
+        relevance_threshold: 0.6
+      
+      biomarker:
+        name: "生物标志物"
+        enabled: true
+        priority: P1
+        
+        include_rules:
+          - must_contain_keywords: ["biomarker", "predictive marker", "prognostic marker"]
+          - should_have: ["mechanism depth", "method innovation", "clinical validation"]
+        
+        exclude_rules:
+          - exclude_if: ["only statistical association", "no biological insight"]
+        
+        relevance_threshold: 0.7  # biomarker研究需更严格
+
+  comptheory:
+    name: "计算机理论方向"
+    enabled: true
+    priority: P0
+    
+    topics:
+      attention_mechanism:
+        name: "Attention机制分析"
+        enabled: true
+        priority: P0
+        
+        include_rules:
+          - must_contain_keywords: ["attention", "self-attention", "attention mechanism"]
+          - should_have: ["theoretical analysis", "mechanism study", "structural analysis"]
+        
+        exclude_rules:
+          - exclude_if: ["only application", "only engineering optimization", "no theoretical contribution"]
+          - exclude_if: ["only performance improvement", "no mechanism insight"]
+        
+        relevance_threshold: 0.7
+        
+        quality_requirements:
+          min_journal_tier: 3
+          arxiv_allowed: true  # 允许高质量arXiv理论工作
+      
+      kv_compression:
+        name: "KV缓存压缩"
+        enabled: true
+        priority: P0
+        
+        include_rules:
+          - must_contain_keywords: ["KV cache", "key-value cache", "cache compression"]
+          - should_have: ["compression method", "efficiency analysis"]
+        
+        exclude_rules:
+          - exclude_if: ["only implementation", "no theoretical analysis"]
+        
+        relevance_threshold: 0.6
+      
+      low_rank:
+        name: "低秩方法理论"
+        enabled: true
+        priority: P0
+        
+        include_rules:
+          - must_contain_keywords: ["low-rank", "low rank", "low-rank approximation"]
+          - should_have: ["theoretical analysis", "expressivity study", "rank analysis"]
+        
+        exclude_rules:
+          - exclude_if: ["only application", "only performance tuning"]
+        
+        relevance_threshold: 0.7
+      
+      lora:
+        name: "LoRA机制分析"
+        enabled: true
+        priority: P0
+        
+        include_rules:
+          - must_contain_keywords: ["LoRA", "Low-Rank Adaptation"]
+          - should_have: ["mechanism analysis", "theoretical study", "comparison with full FT"]
+        
+        exclude_rules:
+          - exclude_if: ["only applying LoRA to task", "no mechanism insight"]
+          - exclude_if: ["only hyperparameter tuning"]
+        
+        relevance_threshold: 0.7
+      
+      relation_modeling:
+        name: "关系建模"
+        enabled: true
+        priority: P1
+        
+        include_rules:
+          - must_contain_keywords: ["relation modeling", "relational reasoning", "representation analysis"]
+          - should_have: ["internal representation study", "module interaction analysis"]
+        
+        exclude_rules:
+          - exclude_if: ["only downstream task", "no representation analysis"]
+        
+        relevance_threshold: 0.6
+
+  deepseek:
+    name: "DeepSeek专项"
+    enabled: true
+    priority: P0  # 最高优先级
+    
+    topics:
+      official_reports:
+        name: "DeepSeek官方技术报告"
+        enabled: true
+        priority: P0
+        
+        include_rules:
+          - must_contain_keywords: ["DeepSeek", "DeepSeek-V2", "DeepSeek-V3", "DeepSeek-Coder"]
+          - author_must_include: ["DeepSeek AI", "DeepSeek team"]
+        
+        exclude_rules: []  # 官方报告全部收录
+        
+        relevance_threshold: 0.3  # 几乎全部收录
+        auto_accept: true
+      
+      mla:
+        name: "MLA机制"
+        enabled: true
+        priority: P0
+        
+        include_rules:
+          - must_contain_keywords: ["Multi-Head Latent Attention", "MLA", "latent attention"]
+        
+        exclude_rules: []
+        
+        relevance_threshold: 0.5
+        auto_accept: true
+      
+      moe:
+        name: "DeepSeekMoE"
+        enabled: true
+        priority: P0
+        
+        include_rules:
+          - must_contain_keywords: ["DeepSeekMoE", "Mixture of Experts", "MoE"]
+          - should_contain_keywords: ["DeepSeek", "sparse MoE"]
+        
+        exclude_rules:
+          - exclude_if: ["only general MoE", "no DeepSeek connection"]
+        
+        relevance_threshold: 0.6
+
+# 相关性计算规则
+relevance_scoring:
+  keyword_match_weight: 0.4
+  method_match_weight: 0.3
+  data_type_match_weight: 0.1
+  institution_match_weight: 0.2  # 郑双佳论文此项加权
+  
+  bonus_rules:
+    - condition: "author_is_zheng_shuangjia"
+      bonus: 0.5  # 郑双佳论文额外加分
+      note: "所有郑双佳论文必须进入作者档案"
+    - condition: "is_deepseek_official"
+      bonus: 0.4  # DeepSeek官方额外加分
+    - condition: "journal_tier_1"
+      bonus: 0.2  # 顶刊额外加分
+
+# 郑双佳专项分析分层规则
+zheng_shuangjia_analysis_tiers:
+  enabled: true
+  description: "郑双佳论文按相关性分层处理"
+  
+  tier_high:
+    name: "高度相关"
+    relevance_score: ">= 0.7"
+    action: "full_analysis"
+    location: "papers/full-analysis/"
+    requirements:
+      - "完整深度分析 (所有标准章节)"
+      - "同时进入主题知识库索引"
+      - "标注与我研究的直接关联"
+    criteria:
+      - "与我核心研究边界直接相关"
+      - "具有方法论创新或理论贡献"
+      - "发表在高质量期刊或会议"
+  
+  tier_medium:
+    name: "中度相关"
+    relevance_score: "[0.4, 0.7)"
+    action: "medium_analysis"
+    location: "papers/medium-analysis/"
+    requirements:
+      - "中等深度分析 (核心章节)"
+      - "简要摘要 + 关键发现 + 与我关联"
+      - "主题知识库索引"
+    criteria:
+      - "与我的研究有一定关联"
+      - "可作为参考或对比"
+      - "方法或数据有借鉴价值"
+  
+  tier_low:
+    name: "弱相关"
+    relevance_score: "< 0.4"
+    action: "minimal_archive"
+    location: "papers/minimal-archive/"
+    requirements:
+      - "保留完整 metadata"
+      - "一句话摘要"
+      - "主题标签"
+      - "用于完整性归档"
+    criteria:
+      - "仅名字匹配，内容关联较弱"
+      - "研究方向偏离我的核心领域"
+      - "但为了作者档案完整性仍需收录"
+
+# 决策规则
+decision_rules:
+  auto_accept:
+    - condition: "relevance_score >= 0.8 AND journal_tier <= 2"
+    - condition: "author_is_zheng_shuangjia AND relevance_score >= 0.5"
+    - condition: "is_deepseek_official == true"  # DeepSeek 官方报告自动接受
+  
+  auto_reject:
+    - condition: "relevance_score < 0.4"
+    - condition: "exclude_rule_matched"
+    - condition: "journal_tier > 4 AND not_preprint"
+  
+  manual_review:
+    - condition: "relevance_score in [0.4, 0.7]"
+    - condition: "journal_tier == 3 AND unknown_author"
