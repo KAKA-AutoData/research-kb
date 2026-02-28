@@ -21,7 +21,7 @@ research-kb/
 │   └── reproducibility-rubric.yaml
 ├── biomed/                    # Biomedical research
 │   ├── authors/               # Author-specific archives
-│   │   └── zheng-shuangjia/   # Zheng Shuangjia author archive
+│   │   └── ZSJ/   # Zheng Shuangjia author archive
 │   └── papers/                # Paper analyses (to be populated)
 ├── comptheory/                # Computational theory research
 ├── deepseek/                  # DeepSeek-specific research

@@ -56,7 +56,7 @@
 | | 中型专题趋势 | `.md` | `_trends/medium/` |
 | | 阶段性全局报告 | `.md` | `_trends/comprehensive/` |
 | **空白分析** | 研究空白分析 | `.md` | `_gaps/` |
-| **作者档案** | 郑双佳完整档案 | `.md/.yaml` | `biomed/authors/zheng-shuangjia/` |
+| **作者档案** | ZSJ完整档案 | `.md/.yaml` | `biomed/authors/ZSJ/` |
 | **索引文件** | 全局论文索引 | `.yaml` | `_indices/global-paper-index.yaml` |
 | | 主题索引 | `.yaml` | `_indices/topic-*.yaml` |
 | | 作者索引 | `.yaml` | `_indices/author-*.yaml` |
@@ -586,17 +586,17 @@ metadata_history:
 ```
 核心原则: 单一主存储 + 多维度索引
 
-├── 作者线: 郑双佳论文全部进入 author 目录
+├── 作者线: ZSJ论文全部进入 author 目录
 ├── 主题线: 通过索引引用，不重复存储正文
 └── 保证: 作者线完整、主题线清晰、仓库不冗余
 ```
 
-### 7.2 郑双佳作者线写入规则
+### 7.2 ZSJ作者线写入规则
 
 ```markdown
 ## 规则1: 全收录
-所有郑双佳论文必须进入:
-biomed/authors/zheng-shuangjia/papers/
+所有ZSJ论文必须进入:
+biomed/authors/ZSJ/papers/
 
 ## 规则2: 分层存储
 根据相关性分层:
@@ -605,7 +605,7 @@ biomed/authors/zheng-shuangjia/papers/
 └── minimal-archive/   # relevance < 0.4
 
 ## 规则3: 额外字段
-郑双佳论文必须包含特定字段:
+ZSJ论文必须包含特定字段:
 ```yaml
 zheng_shuangjia_specific:
   is_core_work: true/false
@@ -619,7 +619,7 @@ zheng_shuangjia_specific:
 ```yaml
 # _indices/topic-drug-discovery.yaml
 papers:
-  - ref: "biomed/authors/zheng-shuangjia/papers/full-analysis/2025-zheng-xxx.md"
+  - ref: "biomed/authors/ZSJ/papers/full-analysis/2025-zheng-xxx.md"
     relevance_to_topic: 0.9
 ```
 ```
@@ -639,7 +639,7 @@ papers:
 ```yaml
 # _indices/topic-rna-therapeutics.yaml
 papers:
-  - path: "../../authors/zheng-shuangjia/papers/full-analysis/2025-zheng-rna.md"
+  - path: "../../authors/ZSJ/papers/full-analysis/2025-zheng-rna.md"
     topic_relevance: 0.85
     notes: "Key paper on RNA structure prediction"
 ```
@@ -705,7 +705,7 @@ _indices/
 │   ├── topic-rna-therapeutics.yaml
 │   └── topic-attention-mechanisms.yaml
 ├── authors/                   # 作者索引
-│   ├── author-zheng-shuangjia.yaml
+│   ├── author-ZSJ.yaml
 │   └── author-deepseek-team.yaml
 ├── deepseek/                  # DeepSeek专项
 │   ├── deepseek-mla.yaml
@@ -973,7 +973,7 @@ du -sh cache/
 - attention-mechanisms (+3)
 
 ### 作者线
-- zheng-shuangjia (+5)
+- ZSJ (+5)
 - smith-lab (+2)
 - deepseek-team (+1)
 
@@ -987,13 +987,13 @@ du -sh cache/
 ## 需关注事项
 
 1. **主题接近阈值**: drug-discovery 已达 18篇，再增2篇触发中型比较
-2. **作者线进展**: 郑双佳论文达 32篇，建议启动趋势分析
+2. **作者线进展**: ZSJ论文达 32篇，建议启动趋势分析
 3. **待升级条目**: 有 5 篇轻量归档可考虑升级
 
 ## 下一步建议
 
 - [ ] 继续补档 drug-discovery 方向 (目标: 20篇触发比较)
-- [ ] 启动郑双佳作者线趋势分析
+- [ ] 启动ZSJ作者线趋势分析
 - [ ] 审查并升级 5 篇候选轻量归档
 ```
 
@@ -1146,7 +1146,7 @@ research-kb/
 ├── WORKFLOW_SPEC.md                   # 工作规范说明
 ├── GITEE_REPO_DESIGN.md               # 仓库结构设计
 ├── _meta/                             # 8个模板文件
-└── biomed/authors/zheng-shuangjia/    # 郑双佳档案
+└── biomed/authors/ZSJ/    # ZSJ档案
 ```
 
 ### 13.2 首轮试运行方案

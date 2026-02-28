@@ -19,7 +19,7 @@
 | RNA相关 | miRNA, lncRNA, circRNA, RNA regulation, RNA biology, RNA therapeutics | P0 |
 
 **研究者/团队优先级 (降序):**
-1. **郑双佳** (Shanghai Jiao Tong University) - 最高优先级，其所有论文必收并深度分析
+1. **ZSJ** (Shanghai Jiao Tong University) - 最高优先级，其所有论文必收并深度分析
 2. 其他高水平团队 (Nature/Science/Cell主刊及子刊)
 
 **期刊层级:**
@@ -112,11 +112,11 @@ research-kb/
 | PubMed | 每周 | (drug discovery[Title/Abstract] OR drug repositioning[...]) AND (machine learning[...] OR deep learning[...]) |
 | bioRxiv/medRxiv | 每周 | 同上 + 预印本标签 |
 | arXiv cs.LG/cs.CL | 每日 | attention mechanism, low-rank, LoRA, KV cache, transformer theory |
-| **Google Scholar (郑双佳)** | **每日** | **author:"Shuangjia Zheng" OR author:"郑双佳"** |
+| **Google Scholar (ZSJ)** | **每日** | **author:"Shuangjia Zheng" OR author:"ZSJ"** |
 | Google Scholar Alerts | 实时 | 针对特定作者/机构设置 |
 | Twitter/X Academic | 每日 | 关注关键研究者动态 |
 
-**郑双佳专项监控:**
+**ZSJ专项监控:**
 - 每日检查 Google Scholar 新发表
 - 监控其 GitHub 仓库更新
 - 跟踪其课题组网站/博客
@@ -474,9 +474,9 @@ related_papers:
 
 每篇论文进入正式知识库前:
 
-- [ ] **郑双佳优先检查**: 如果是郑双佳的论文，自动进入核心库
+- [ ] **ZSJ优先检查**: 如果是ZSJ的论文，自动进入核心库
 - [ ] **相关性检查**: 确实符合研究边界，非表面相关
-- [ ] **质量检查**: 通过深度筛选标准至少一项 (郑双佳论文可适度放宽)
+- [ ] **质量检查**: 通过深度筛选标准至少一项 (ZSJ论文可适度放宽)
 - [ ] **重复检查**: 未与已有论文重复 (查标题+作者+年份)
 - [ ] **完整性检查**: 分析文档包含所有必需章节
 - [ ] **准确性检查**: 关键事实、数据、公式已核对

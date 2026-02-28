@@ -25,8 +25,8 @@ researchers:
     description: "核心研究者 - 所有相关论文必收并深度分析"
     
     researchers:
-      # -------------------- 郑双佳 (最高优先级) --------------------
-      - name: "郑双佳"
+      # -------------------- ZSJ (最高优先级) --------------------
+      - name: "ZSJ"
         name_en: "Shuangjia Zheng"
         affiliation: "Shanghai Jiao Tong University"
         department: "School of Medicine / Bioinformatics"
@@ -35,7 +35,7 @@ researchers:
         
         # 作者识别规则
         name_variants:
-          - "郑双佳"
+          - "ZSJ"
           - "Shuangjia Zheng"
           - "S Zheng"
           - "Zheng S"
@@ -114,7 +114,7 @@ researchers:
               - "用于完整性归档"
         
         # 作者档案路径
-        author_directory: "research-kb/biomed/authors/zheng-shuangjia/"
+        author_directory: "research-kb/biomed/authors/ZSJ/"
         
         # 备注
         notes: |
@@ -238,7 +238,7 @@ dual_track_maintenance:
 # ============================================================
 alerts:
   new_publication:
-    tier_1: immediate        # 郑双佳新论文立即通知
+    tier_1: immediate        # ZSJ新论文立即通知
     tier_2: daily_digest
     tier_3: weekly_digest
   
@@ -246,7 +246,7 @@ alerts:
     enabled: true
     milestones: [10, 50, 100, 500, 1000]
   
-  # 郑双佳专项提醒
+  # ZSJ专项提醒
   zheng_shuangjia_specific:
     new_paper_alert: true
     high_citation_alert: true

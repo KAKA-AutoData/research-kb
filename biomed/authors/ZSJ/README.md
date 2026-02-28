@@ -1,7 +1,7 @@
-# 郑双佳作者档案 - 目录结构说明
+# ZSJ作者档案 - 目录结构说明
 
 ```
-research-kb/biomed/authors/zheng-shuangjia/
+research-kb/biomed/authors/ZSJ/
 │
 ├── profile/                    # 作者基本信息
 │   ├── profile.md              # 研究者主档案 (当前文件)
@@ -45,7 +45,7 @@ research-kb/biomed/authors/zheng-shuangjia/
 ## 使用说明
 
 ### 新增论文流程
-1. **识别** → 通过名称+机构+主题确认是郑双佳论文
+1. **识别** → 通过名称+机构+主题确认是ZSJ论文
 2. **评估相关性** → 计算与我研究的相关性得分
 3. **分层处理**:
    - 相关性 ≥ 0.7 → `full-analysis/` + 主题知识库

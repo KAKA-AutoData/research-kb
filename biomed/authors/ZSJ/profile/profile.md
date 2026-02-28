@@ -1,4 +1,4 @@
-# 郑双佳 (Shuangjia Zheng) - 研究者档案
+# ZSJ (Shuangjia Zheng) - 研究者档案
 
 > **知识库最高优先级研究者**  
 > 档案创建日期: 2026-02-28  
@@ -10,7 +10,7 @@
 
 | 项目 | 内容 |
 |------|------|
-| **中文名** | 郑双佳 |
+| **中文名** | ZSJ |
 | **英文名** | Shuangjia Zheng |
 | **当前机构** | Shanghai Jiao Tong University (上海交通大学) |
 | **院系** | School of Medicine / Bioinformatics |
@@ -21,7 +21,7 @@
 ## 作者识别信息
 
 ### 名称变体
-- 郑双佳
+- ZSJ
 - Shuangjia Zheng
 - S Zheng
 - Zheng S
@@ -174,7 +174,7 @@
 
 ## 备注
 
-- 本档案为郑双佳研究者的主记录
+- 本档案为ZSJ研究者的主记录
 - 所有相关论文的详细分析见 `papers/` 目录
 - 研究演变时间线见 `timeline/` 目录
 - 主题分布图见 `topic-map/` 目录

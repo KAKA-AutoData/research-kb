@@ -8,7 +8,7 @@
 
 ## Day 1 (周一): 论文检索与筛选
 
-### Morning - 郑双佳论文批量检索
+### Morning - ZSJ论文批量检索
 - [ ] Google Scholar 检索: "Shuangjia Zheng" + drug discovery
 - [ ] PubMed 检索: "Zheng S"[Author] + AI
 - [ ] arXiv 检索: author:"Zheng, Shuangjia"
@@ -28,7 +28,7 @@
 
 ## Day 2 (周二): 优先级判定与快速筛选
 
-### Morning - 郑双佳论文分级
+### Morning - ZSJ论文分级
 - [ ] P0 (≥0.7 relevance): 预计 5-8 篇
 - [ ] P1 (0.4-0.7): 预计 8-12 篇  
 - [ ] P2/P3 (<0.4): 剩余
@@ -47,7 +47,7 @@
 ## Day 3 (周三): 完整深度分析 × 5
 
 ### Target Papers
-- 郑双佳 P0: 3 篇
+- ZSJ P0: 3 篇
 - DeepSeek P0: 2 篇
 
 ### Output
@@ -59,7 +59,7 @@
 ## Day 4 (周四): 中等深度分析 × 5
 
 ### Target Papers
-- 郑双佳 P1: 3 篇
+- ZSJ P1: 3 篇
 - DeepSeek P1: 2 篇
 
 ### Output
@@ -71,13 +71,13 @@
 ## Day 5 (周五): 轻量归档 + 索引更新
 
 ### Morning - 轻量归档
-- [ ] 郑双佳 P2/P3: 5-10 篇 → `minimal-archive/`
+- [ ] ZSJ P2/P3: 5-10 篇 → `minimal-archive/`
 - [ ] DeepSeek P2: 3-5 篇 → `minimal-archive/`
 
 ### Afternoon - 索引构建
 - [ ] 全局论文索引
 - [ ] 主题索引 (drug-discovery, deepseek-mla)
-- [ ] 作者索引 (zheng-shuangjia)
+- [ ] 作者索引 (ZSJ)
 
 ### Git Push
 ```bash

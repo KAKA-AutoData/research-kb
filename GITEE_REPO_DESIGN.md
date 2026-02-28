@@ -43,10 +43,10 @@
 | **年份线** | `indices/by-year/{YYYY}.md` | 索引列表 |
 | **报告线** | `reports/{type}/{date}-{title}.md` | 独立文档 |
 
-**郑双佳特殊处理**:
-- 所有郑双佳论文的主存储位置: `authors/zheng-shuangjia/papers/`
+**ZSJ特殊处理**:
+- 所有ZSJ论文的主存储位置: `authors/ZSJ/papers/`
 - 按相关性分层: `full-analysis/` / `medium-analysis/` / `minimal-archive/`
-- 主题线索引: `topics/biomed/drug-discovery/papers/zheng-shuangjia-*.md` (引用)
+- 主题线索引: `topics/biomed/drug-discovery/papers/ZSJ-*.md` (引用)
 
 ### 1.3 如何适配长期自动化写入
 
@@ -133,7 +133,7 @@ research-kb-gitee/                          # 仓库根目录
 │   │   ├── cs-theory-index.md
 │   │   └── deepseek-index.md
 │   ├── by-author/                          # 按作者索引
-│   │   ├── zheng-shuangjia-index.md        # 郑双佳专属索引
+│   │   ├── ZSJ-index.md        # ZSJ专属索引
 │   │   └── other-authors-index.md
 │   └── by-venue/                           # 按期刊/会议索引
 │       ├── nature-index.md
@@ -173,7 +173,7 @@ research-kb-gitee/                          # 仓库根目录
 │
 ├── authors/                                # 作者线 (最高优先级)
 │   │
-│   └── zheng-shuangjia/                    # 郑双佳专属档案
+│   └── ZSJ/                    # ZSJ专属档案
 │       ├── README.md                       # 作者档案入口
 │       │
 │       ├── profile/                        # 作者基本信息
@@ -205,7 +205,7 @@ research-kb-gitee/                          # 仓库根目录
 │           ├── by-year-index.yaml
 │           └── by-collaborator-index.yaml
 │
-├── papers/                                 # 单篇论文主存储 (非郑双佳)
+├── papers/                                 # 单篇论文主存储 (非ZSJ)
 │   └── (按年份分)
 │       ├── 2024/
 │       │   └── YYYY-author-slug.md
@@ -311,19 +311,19 @@ research-kb-gitee/                          # 仓库根目录
 
 **是否适合细分**: 是 (最多4级深度)
 
-**郑双佳论文的处理**:
+**ZSJ论文的处理**:
 ```
 topics/biomed/drug-discovery/papers/
-└── 2025-zheng-molecular-generation-gnn.md  ->  ../../../../../authors/zheng-shuangjia/papers/full-analysis/2025-zheng-molecular-generation-gnn.md
+└── 2025-zheng-molecular-generation-gnn.md  ->  ../../../../../authors/ZSJ/papers/full-analysis/2025-zheng-molecular-generation-gnn.md
 ```
 (使用相对路径软链接或引用)
 
 ---
 
-### 3.4 authors/zheng-shuangjia/ - 作者线 (核心)
+### 3.4 authors/ZSJ/ - 作者线 (核心)
 
 **用来放什么**:
-- 郑双佳所有论文的完整分析 (按相关性分层)
+- ZSJ所有论文的完整分析 (按相关性分层)
 - 作者 profile 和时间线
 - 主题分布图
 - 横向比较
@@ -344,14 +344,14 @@ topics/biomed/drug-discovery/papers/
 
 ---
 
-### 3.5 papers/ - 单篇论文主存储 (非郑双佳)
+### 3.5 papers/ - 单篇论文主存储 (非ZSJ)
 
 **用来放什么**:
-- 非郑双佳论文的完整分析
+- 非ZSJ论文的完整分析
 - 按年份分目录存储
 
 **不该放什么**:
-- 郑双佳论文 (在 authors/zheng-shuangjia/)
+- ZSJ论文 (在 authors/ZSJ/)
 - 索引文件
 
 **更新频率**: 中 (每周批量入库)
@@ -376,8 +376,8 @@ topics/biomed/drug-discovery/papers/
 ### 4.1 文件位置
 
 ```
-# 郑双佳论文
-authors/zheng-shuangjia/papers/{tier}/YYYY-{lastname}-{slug}.md
+# ZSJ论文
+authors/ZSJ/papers/{tier}/YYYY-{lastname}-{slug}.md
 
 # 其他论文
 papers/YYYY/YYYY-{lastname}-{slug}.md
@@ -492,10 +492,10 @@ last_updated: "2026-02-28"
 
 ## 五、作者目录设计 (重点)
 
-### 5.1 authors/zheng-shuangjia/ 结构
+### 5.1 authors/ZSJ/ 结构
 
 ```
-authors/zheng-shuangjia/
+authors/ZSJ/
 ├── README.md                    # 作者档案入口
 │
 ├── profile/                     # 静态信息
@@ -528,7 +528,7 @@ authors/zheng-shuangjia/
 ### 5.2 作者线与主题线关联
 
 **单点存储原则**:
-- 郑双佳论文的 **唯一完整版本** 存放在 `authors/zheng-shuangjia/papers/`
+- ZSJ论文的 **唯一完整版本** 存放在 `authors/ZSJ/papers/`
 - 主题目录下 **只存引用/索引**，不重复内容
 
 **实现方式**:
@@ -537,7 +537,7 @@ authors/zheng-shuangjia/
 ```markdown
 <!-- topics/biomed/drug-discovery/papers/2025-zheng-graph-transformer.md -->
 # 此文件为引用，完整分析见：
-[完整分析](../../../../../authors/zheng-shuangjia/papers/full-analysis/2025-zheng-graph-transformer.md)
+[完整分析](../../../../../authors/ZSJ/papers/full-analysis/2025-zheng-graph-transformer.md)
 
 ## 简要信息
 - 标题: Graph Transformer for DTI
@@ -551,8 +551,8 @@ authors/zheng-shuangjia/
 papers:
   - paper_id: "arxiv:2501.12345"
     title: "Graph Transformer for DTI"
-    author: "zheng-shuangjia"
-    path: "authors/zheng-shuangjia/papers/full-analysis/2025-zheng-graph-transformer.md"
+    author: "ZSJ"
+    path: "authors/ZSJ/papers/full-analysis/2025-zheng-graph-transformer.md"
     relevance: 0.85
 ```
 
@@ -636,7 +636,7 @@ def generate_slug(title, year, first_author):
 
 ```
 # 格式: {lastname}-{firstname}
-zheng-shuangjia/                ✅
+ZSJ/                ✅
 wang-wei/                       ✅
 
 # 中文名拼音化
@@ -667,7 +667,7 @@ tags: ["gnn", "transformer", "dti"]  # 在 front-matter 中
 ```
 # 目录名: 英文优先
 topics/biomed/                  ✅ (不用 生物信息/)
-authors/zheng-shuangjia/        ✅ (拼音)
+authors/ZSJ/        ✅ (拼音)
 
 # 文件名: 英文优先
 2025-zheng-graph-transformer.md ✅
@@ -767,7 +767,7 @@ authors/zheng-shuangjia/        ✅ (拼音)
   },
   
   "paths": {
-    "main_storage": "authors/zheng-shuangjia/papers/full-analysis/2025-zheng-graph-transformer-dti.md",
+    "main_storage": "authors/ZSJ/papers/full-analysis/2025-zheng-graph-transformer-dti.md",
     "topic_indices": [
       "topics/biomed/drug-discovery/papers/2025-zheng-graph-transformer-dti.md"
     ]
@@ -798,7 +798,7 @@ authors/zheng-shuangjia/        ✅ (拼音)
 | `tags` | array | ✅ | 关键词标签 |
 | `institution_priority` | int | ✅ | 机构优先级 1-5 |
 | `author_priority` | int | ✅ | 作者优先级 1-5 |
-| `is_zheng_shuangjia` | bool | ✅ | 是否为郑双佳论文 |
+| `is_zheng_shuangjia` | bool | ✅ | 是否为ZSJ论文 |
 | `deepseek_related` | bool | ✅ | 是否 DeepSeek 相关 |
 | `relevance_score` | float | ✅ | 与我研究的相关性 0-1 |
 | `analysis_depth` | enum | ✅ | full/medium/minimal |
@@ -881,14 +881,14 @@ authors/zheng-shuangjia/        ✅ (拼音)
 ```yaml
 # 不好的做法: 重复存储
 # topics/biomed/drug-discovery/papers/paper-1.md  (完整内容)
-# authors/zheng-shuangjia/papers/paper-1.md       (完整内容重复)
+# authors/ZSJ/papers/paper-1.md       (完整内容重复)
 
 # 好的做法: 单点存储 + 索引
-# authors/zheng-shuangjia/papers/full-analysis/paper-1.md  (唯一完整版本)
+# authors/ZSJ/papers/full-analysis/paper-1.md  (唯一完整版本)
 # topics/biomed/drug-discovery/index.yaml:
 papers:
   - paper_id: "arxiv:2501.12345"
-    ref: "authors/zheng-shuangjia/papers/full-analysis/paper-1.md"
+    ref: "authors/ZSJ/papers/full-analysis/paper-1.md"
 ```
 
 ### 8.4 引用化策略
@@ -899,7 +899,7 @@ papers:
 <!-- topics/biomed/drug-discovery/papers/2025-zheng-graph-transformer.md -->
 # 引用文件
 
-完整分析见：[authors/zheng-shuangjia/papers/full-analysis/2025-zheng-graph-transformer.md](../../../authors/zheng-shuangjia/papers/full-analysis/2025-zheng-graph-transformer.md)
+完整分析见：[authors/ZSJ/papers/full-analysis/2025-zheng-graph-transformer.md](../../../authors/ZSJ/papers/full-analysis/2025-zheng-graph-transformer.md)
 
 ## 简要信息
 - 相关性: 0.85
@@ -1007,7 +1007,7 @@ git push origin v2026.03
 - [DeepSeek 专项](topics/deepseek/README.md)
 
 ### 按作者
-- [郑双佳 (最高优先级)](authors/zheng-shuangjia/README.md)
+- [ZSJ (最高优先级)](authors/ZSJ/README.md)
 
 ### 按类型
 - [最新论文](indices/by-year/2026.md)
@@ -1018,11 +1018,11 @@ git push origin v2026.03
 ## 统计概览
 - 总论文数: XXX
 - 本月新增: XX
-- 郑双佳论文: XX
+- ZSJ论文: XX
 - DeepSeek 相关: XX
 
 ## 最近更新
-- 2026-02-28: 初始化仓库，建立郑双佳作者档案
+- 2026-02-28: 初始化仓库，建立ZSJ作者档案
 
 ## 使用规范
 详见 [schemas/README.md](schemas/README.md)
@@ -1063,7 +1063,7 @@ git push -u origin main
 - [ ] DeepSeek LLM 简版分析
 - [ ] DeepSeekMoE 简版分析
 
-**郑双佳方向** (需检索):
+**ZSJ方向** (需检索):
 - [ ] Google Scholar 搜索获取真实论文列表
 - [ ] 选择 3-5 篇高影响力论文进行深度分析
 - [ ] 建立完整的 publications.bib
@@ -1083,7 +1083,7 @@ scripts/
 #### 5. 设置监控与提醒
 
 - Gitee Webhook (如有需要)
-- Google Scholar Alert (郑双佳 + DeepSeek)
+- Google Scholar Alert (ZSJ + DeepSeek)
 - 定期 cron 任务 (每周检索)
 
 ---

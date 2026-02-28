@@ -254,7 +254,7 @@ relations:
     type: boolean
     required: true
     default: false
-    description: "是否为郑双佳论文"
+    description: "是否为ZSJ论文"
   
   is_deepseek_official:
     type: boolean

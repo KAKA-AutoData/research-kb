@@ -51,7 +51,7 @@
 
 #### 适用场景
 
-- **P0 优先级**: 郑双佳高度相关论文、DeepSeek 官方核心论文
+- **P0 优先级**: ZSJ高度相关论文、DeepSeek 官方核心论文
 - **P1 优先级**: 核心知识库代表论文、Nature/Science/Cell 主刊
 - **其他**: 对我的研究有直接启发的关键论文
 
@@ -83,7 +83,7 @@
 #### 适用场景
 
 - **P2 优先级**: 可作为对比对象或补充材料的论文
-- **作者线中度相关**: 郑双佳相关性 0.4-0.7 的论文
+- **作者线中度相关**: ZSJ相关性 0.4-0.7 的论文
 - **扩展主题**: 有参考价值但非核心的工作
 
 #### 目标与深度
@@ -110,7 +110,7 @@
 #### 适用场景
 
 - **P3 辅助优先级**: 弱相关但需保留完整性索引
-- **作者线弱相关**: 郑双佳相关性 < 0.4 但不可遗漏
+- **作者线弱相关**: ZSJ相关性 < 0.4 但不可遗漏
 - **综述/背景**: 仅需知道存在，无需深入
 
 #### 目标与深度
@@ -686,7 +686,7 @@ main_storage, topic_indices[]
 ### 5.1 适用判断
 
 适合做轻量归档的情况：
-- 郑双佳弱相关论文 (relevance < 0.4)
+- ZSJ弱相关论文 (relevance < 0.4)
 - 综述类文章 (仅需知道存在)
 - 背景材料 (为进一步阅读做标记)
 - 暂时没时间深入，但不想遗漏
@@ -714,11 +714,11 @@ upgrade-suggestion:
 
 ---
 
-## 六、作者线特殊要求 (郑双佳)
+## 六、作者线特殊要求 (ZSJ)
 
 ### 6.1 全收录原则
 
-**所有郑双佳论文必须进入作者档案**，按相关性分层：
+**所有ZSJ论文必须进入作者档案**，按相关性分层：
 
 | 相关性 | 模板 | 存储位置 |
 |--------|------|---------|
@@ -728,7 +728,7 @@ upgrade-suggestion:
 
 ### 6.2 额外记录字段
 
-郑双佳论文需在 metadata 中额外记录：
+ZSJ论文需在 metadata 中额外记录：
 
 ```yaml
 zheng_shuangjia_specific:
@@ -737,7 +737,7 @@ zheng_shuangjia_specific:
   related_papers: [
 ### 6.2 额外记录字段
 
-郑双佳论文需在 metadata 中额外记录：
+ZSJ论文需在 metadata 中额外记录：
 
 ```yaml
 zheng_shuangjia_specific:
@@ -750,7 +750,7 @@ zheng_shuangjia_specific:
 
 ### 6.3 与其他论文的关系图谱
 
-在分析郑双佳论文时，需建立关系图谱：
+在分析ZSJ论文时，需建立关系图谱：
 
 ```markdown
 ## 关系图谱
@@ -764,7 +764,7 @@ zheng_shuangjia_specific:
 ### 同期相关工作
 - [相似方法的对比]
 
-### 郑双佳团队内关联
+### ZSJ团队内关联
 - [与作者其他论文的承接或分支关系]
 ```
 
@@ -828,7 +828,7 @@ zheng_shuangjia_specific:
 ### 8.1 推荐目录结构
 
 ```
-authors/zheng-shuangjia/papers/
+authors/ZSJ/papers/
 ├── full-analysis/
 │   └── YYYY-author-slug.md          # 完整分析文档
 ├── medium-analysis/
@@ -992,7 +992,7 @@ topics/biomed/drug-discovery/
 - ✅ 工作规范说明 (`WORKFLOW_SPEC.md`)
 - ✅ Gitee 仓库结构设计 (`GITEE_REPO_DESIGN.md`)
 - ✅ 模板与 schema 体系 (8个 YAML 文件)
-- ✅ 郑双佳作者档案框架
+- ✅ ZSJ作者档案框架
 - ✅ DeepSeek 试点验证
 - ✅ **单篇论文模板化深度分析规范** (本文档)
 
@@ -1035,7 +1035,7 @@ git commit -m "Phase 1 complete: research scope, analysis spec, templates, autho
 ### A.1 模板选择速查
 
 ```
-P0 优先级 (郑双佳≥0.7 / DeepSeek官方 / Nature/Science/Cell)
+P0 优先级 (ZSJ≥0.7 / DeepSeek官方 / Nature/Science/Cell)
     ↓
 完整深度分析 (12章, 3000-8000字)
 

@@ -206,7 +206,7 @@ by_scope:
 quality_thresholds:
   biomed_direction:
     min_tier: 3  # BioMed方向最低接受tier 3
-    exceptions: ["郑双佳相关论文可放宽至tier 4或有影响力的预印本"]
+    exceptions: ["ZSJ相关论文可放宽至tier 4或有影响力的预印本"]
   comptheory_direction:
     min_tier: 3  # 理论方向tier 3或同等影响力会议
     arxiv_allowed: true  # 允许高质量arXiv

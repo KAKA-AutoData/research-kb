@@ -167,20 +167,20 @@ reading_status:
 decision_rules:
   auto_accept:
     - condition: "is_deepseek_official == true"  # 官方报告自动接受
-    - condition: "author_is_zheng_shuangjia == true"  # 郑双佳论文自动接受
+    - condition: "author_is_zheng_shuangjia == true"  # ZSJ论文自动接受
 ```
 
 #### keyword-taxonomy.yaml 需补充:
 
 ```yaml
-# 新增：郑双佳相关关键词
+# 新增：ZSJ相关关键词
 zheng_shuangjia_keywords:
   - id: "zheng_drug_discovery"
-    terms: ["郑双佳", "Shuangjia Zheng"]
-    scope: "郑双佳团队药物发现研究"
+    terms: ["ZSJ", "Shuangjia Zheng"]
+    scope: "ZSJ团队药物发现研究"
   - id: "zheng_rna"
-    terms: ["郑双佳", "Shuangjia Zheng"]
-    scope: "郑双佳团队 RNA 相关研究"
+    terms: ["ZSJ", "Shuangjia Zheng"]
+    scope: "ZSJ团队 RNA 相关研究"
 ```
 
 ### 3.3 需要调整的字段
@@ -293,7 +293,7 @@ research-kb/
    - DeepSeekMoE (2405.04434) - 简版分析
 
 3. **测试 BioMed 方向**
-   - 选择郑双佳的一篇论文测试 biomed/ 流程
+   - 选择ZSJ的一篇论文测试 biomed/ 流程
    - 验证 journal-tiers.yaml 和 institution-priority.yaml
 
 ### 6.2 中期 (本月)
@@ -388,7 +388,7 @@ research-kb/
 | metadata-schema.yaml | 添加 theoretical_contribution_types | P0 |
 | metadata-schema.yaml | 添加 reading_status | P1 |
 | topic-scope.yaml | 添加 DeepSeek 官方自动接受规则 | P0 |
-| keyword-taxonomy.yaml | 添加郑双佳相关关键词 | P0 |
+| keyword-taxonomy.yaml | 添加ZSJ相关关键词 | P0 |
 | journal-tiers.yaml | 无重大更新 | - |
 | theory-tags.yaml | 无重大更新 | - |
 | reproducibility-rubric.yaml | 无重大更新 | - |

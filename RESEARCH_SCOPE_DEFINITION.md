@@ -55,7 +55,7 @@
 - 提出新的计算方法或模型架构
 - 有清晰的机制解释或生物学洞察
 - 发表在 Nature/Science/Cell 主刊或子刊
-- 郑双佳团队相关 (自动进入核心)
+- ZSJ团队相关 (自动进入核心)
 
 #### 2.1.2 扩展主题 (P1 - 中等深度分析)
 
@@ -76,7 +76,7 @@
 
 | 主题 | 处理方式 |
 |------|---------|
-| **General Multi-omics** | 仅保留郑双佳相关或顶级期刊 |
+| **General Multi-omics** | 仅保留ZSJ相关或顶级期刊 |
 | **Single-cell analysis** | 除非涉及药物响应或疾病机制 |
 | **Imaging-based diagnosis** | 除非结合分子机制 |
 | **Clinical trial design** | 除非涉及计算优化方法 |
@@ -184,24 +184,24 @@
 
 | 层级 | 研究者/团队 | 规则 |
 |------|------------|------|
-| **Tier 0 (最高)** | 郑双佳 (Shuangjia Zheng, SJTU) | 所有论文必收，按相关性分层处理 |
+| **Tier 0 (最高)** | ZSJ (Shuangjia Zheng, SJTU) | 所有论文必收，按相关性分层处理 |
 | **Tier 1 (高)** | DeepSeek 官方团队 | 所有技术报告必收 |
 | **Tier 2 (中)** | SJTU医学院、郑大附院相关团队 | 高质量工作优先关注 |
 | **Tier 3 (一般)** | MIT、Stanford、Harvard、Google DeepMind 等 | 顶刊/顶会工作值得关注 |
 
-### 3.2 郑双佳专属规则
+### 3.2 ZSJ专属规则
 
 #### 3.2.1 全收录原则
 
-**所有郑双佳相关论文必须进入作者专属档案**，不漏一篇。
+**所有ZSJ相关论文必须进入作者专属档案**，不漏一篇。
 
 #### 3.2.2 分层分析规则
 
 | 相关性得分 | 层级 | 分析深度 | 存储位置 |
 |-----------|------|---------|---------|
-| ≥ 0.7 | 高度相关 | 完整深度分析 (10+章节) | `authors/zheng-shuangjia/papers/full-analysis/` |
-| 0.4 - 0.7 | 中度相关 | 中等深度分析 (5-7章节) | `authors/zheng-shuangjia/papers/medium-analysis/` |
-| < 0.4 | 弱相关 | 简要归档 (metadata+摘要) | `authors/zheng-shuangjia/papers/minimal-archive/` |
+| ≥ 0.7 | 高度相关 | 完整深度分析 (10+章节) | `authors/ZSJ/papers/full-analysis/` |
+| 0.4 - 0.7 | 中度相关 | 中等深度分析 (5-7章节) | `authors/ZSJ/papers/medium-analysis/` |
+| < 0.4 | 弱相关 | 简要归档 (metadata+摘要) | `authors/ZSJ/papers/minimal-archive/` |
 
 #### 3.2.3 相关性计算维度
 
@@ -209,7 +209,7 @@
 relevance_score = 
     0.4 × keyword_match (关键词匹配)
   + 0.3 × method_match (方法匹配)
-  + 0.2 × institution_match (机构匹配，郑双佳此项加权)
+  + 0.2 × institution_match (机构匹配，ZSJ此项加权)
   + 0.1 × data_type_match (数据类型匹配)
 
 bonus:
@@ -219,7 +219,7 @@ bonus:
 #### 3.2.4 防止范围无限扩大的机制
 
 **机制 1: 硬边界约束**
-- 即使郑双佳论文，也必须通过基础质量门槛 (非随意涂鸦)
+- 即使ZSJ论文，也必须通过基础质量门槛 (非随意涂鸦)
 - 弱相关论文只存 minimal-archive，不进主题知识库索引
 
 **机制 2: 主题关联阈值**
@@ -227,7 +227,7 @@ bonus:
 - 避免作者线与主题线过度耦合
 
 **机制 3: 定期 review**
-- 每季度回顾郑双佳论文收录情况
+- 每季度回顾ZSJ论文收录情况
 - 调整相关性评分标准和分层阈值
 
 ### 3.3 作者线与主题线关系
@@ -238,14 +238,14 @@ bonus:
 ├─────────────────────────────────────────────────────────────┤
 │                                                             │
 │   作者线 (主存储)                                            │
-│   authors/zheng-shuangjia/papers/full-analysis/xxx.md       │
+│   authors/ZSJ/papers/full-analysis/xxx.md       │
 │        ↑                                                    │
 │        │ 唯一完整版本                                       │
 │        ↓                                                    │
 │   主题线 (引用/索引)                                         │
 │   topics/biomed/drug-discovery/index.yaml                   │
 │     - paper_id: xxx                                         │
-│     - ref: "authors/zheng-shuangjia/..."                    │
+│     - ref: "authors/ZSJ/..."                    │
 │     - relevance: 0.85                                       │
 │                                                             │
 │   规则:                                                     │
@@ -334,13 +334,13 @@ bonus:
 | # | 条件 | 检查方式 |
 |---|------|---------|
 | 1 | **主题相关性** | 属于三大主线之一，且非排除项 |
-| 2 | **来源层级** | Tier 1-2，或郑双佳/Tier 0 作者 |
+| 2 | **来源层级** | Tier 1-2，或ZSJ/Tier 0 作者 |
 | 3 | **理论/方法价值** | 有理论贡献、方法创新或机制深度 |
 | 4 | **可服务性** | 能支持我的研究设计、理论切入或论文写作 |
 
 #### 充分条件 (满足任一即可优先考虑)
 
-- 郑双佳团队论文 (自动进入)
+- ZSJ团队论文 (自动进入)
 - DeepSeek 官方论文 (自动进入)
 - Nature/Science/Cell 主刊 (快速通道)
 - 高引用 (>100) 且主题高度相关
@@ -349,7 +349,7 @@ bonus:
 
 ```markdown
 □ 主题检查: 是否属于 BioMed/CompTheory/DeepSeek 主线?
-□ 来源检查: 是否 Tier 1-2 或郑双佳/DeepSeek?
+□ 来源检查: 是否 Tier 1-2 或ZSJ/DeepSeek?
 □ 质量检查: 是否有理论/方法/机制贡献?
 □ 价值检查: 是否能服务于我的研究?
 □ 排除检查: 是否触碰排除红线?
@@ -379,7 +379,7 @@ bonus:
 ```
 论文初筛
     ↓
-是否郑双佳/DeepSeek官方? ──Yes──► 纳入 (跳过后续检查)
+是否ZSJ/DeepSeek官方? ──Yes──► 纳入 (跳过后续检查)
     ↓ No
 是否Tier 1-2来源? ──No──► 大概率排除 (除非特别相关)
     ↓ Yes
@@ -409,7 +409,7 @@ bonus:
 #### P0 - 核心优先级 (完整深度分析)
 
 **标准** (满足任一):
-- 郑双佳团队 + 相关性 ≥ 0.7
+- ZSJ团队 + 相关性 ≥ 0.7
 - DeepSeek 官方技术报告
 - Nature/Science/Cell 主刊 + 主题高度相关
 - NeurIPS/ICML/ICLR + 理论贡献显著
@@ -422,7 +422,7 @@ bonus:
 #### P1 - 次级优先级 (中等深度分析)
 
 **标准** (满足任一):
-- 郑双佳团队 + 相关性 0.4-0.7
+- ZSJ团队 + 相关性 0.4-0.7
 - Tier 1-2 期刊 + 方法有启发性
 - 可作为对比基线或方法参考
 - 跨领域启发 (如 CompTheory 方法应用于 BioMed)
@@ -435,7 +435,7 @@ bonus:
 #### P2 - 辅助优先级 (简要归档)
 
 **标准** (满足任一):
-- 郑双佳团队 + 相关性 < 0.4 (完整性需要)
+- ZSJ团队 + 相关性 < 0.4 (完整性需要)
 - Tier 3 来源 + 有一定参考价值
 - 综述类文章 (权威作者的系统性综述)
 
@@ -473,7 +473,7 @@ bonus:
 
 当多条规则冲突时，优先级如下：
 
-1. **作者优先级 > 主题优先级**: 郑双佳弱相关 > 其他人高度相关
+1. **作者优先级 > 主题优先级**: ZSJ弱相关 > 其他人高度相关
 2. **来源优先级 > 主题优先级**: Nature 主刊边缘主题 > 普通期刊核心主题
 3. **排除规则 > 纳入规则**: 触碰红线的论文一律排除
 
@@ -500,7 +500,7 @@ bonus:
 - ✅ 工作规范说明 (`WORKFLOW_SPEC.md`)
 - ✅ Gitee 仓库结构设计方案 (`GITEE_REPO_DESIGN.md`)
 - ✅ 模板与 schema 体系 (8个 YAML 文件)
-- ✅ 郑双佳作者档案框架
+- ✅ ZSJ作者档案框架
 - ✅ DeepSeek 试点验证
 
 ### 9.2 Phase 1 最合理的下一个动作
@@ -523,7 +523,7 @@ git commit -m "Phase 1 complete: research scope, workflow spec, templates, autho
 **Week 1**: 基础设施完善
 - Gitee 仓库初始化
 - 自动化检索脚本部署
-- 首批 5-10 篇论文入库 (郑双佳 + DeepSeek)
+- 首批 5-10 篇论文入库 (ZSJ + DeepSeek)
 
 **Week 2-4**: 批量建设
 - 每周 3-5 篇深度分析
@@ -542,7 +542,7 @@ git commit -m "Phase 1 complete: research scope, workflow spec, templates, autho
 ### A.1 纳入检查清单 (5秒版)
 
 ```
-□ 郑双佳/DeepSeek? → 自动纳入
+□ ZSJ/DeepSeek? → 自动纳入
 □ Nature/Science/Cell? → 快速通道
 □ 核心主题? → 继续检查
 □ 理论/方法价值? → 继续检查
@@ -558,9 +558,9 @@ git commit -m "Phase 1 complete: research scope, workflow spec, templates, autho
 ### A.3 优先级速查
 
 ```
-P0: 郑双佳≥0.7 / DeepSeek官方 / Nature/Science/Cell
-P1: 郑双佳0.4-0.7 / Tier1-2有价值 / 可对比参考
-P2: 郑双佳<0.4(完整性) / Tier3有价值 / 权威综述
+P0: ZSJ≥0.7 / DeepSeek官方 / Nature/Science/Cell
+P1: ZSJ0.4-0.7 / Tier1-2有价值 / 可对比参考
+P2: ZSJ<0.4(完整性) / Tier3有价值 / 权威综述
 ```
 
 ---

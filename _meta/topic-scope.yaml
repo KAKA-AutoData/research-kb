@@ -40,7 +40,7 @@ directions:
         
         quality_requirements:
           min_journal_tier: 3
-          exceptions: ["郑双佳论文可放宽", "顶会论文可放宽"]
+          exceptions: ["ZSJ论文可放宽", "顶会论文可放宽"]
       
       drug_repositioning:
         name: "药物重定位"
@@ -260,21 +260,21 @@ relevance_scoring:
   keyword_match_weight: 0.4
   method_match_weight: 0.3
   data_type_match_weight: 0.1
-  institution_match_weight: 0.2  # 郑双佳论文此项加权
+  institution_match_weight: 0.2  # ZSJ论文此项加权
   
   bonus_rules:
     - condition: "author_is_zheng_shuangjia"
-      bonus: 0.5  # 郑双佳论文额外加分
-      note: "所有郑双佳论文必须进入作者档案"
+      bonus: 0.5  # ZSJ论文额外加分
+      note: "所有ZSJ论文必须进入作者档案"
     - condition: "is_deepseek_official"
       bonus: 0.4  # DeepSeek官方额外加分
     - condition: "journal_tier_1"
       bonus: 0.2  # 顶刊额外加分
 
-# 郑双佳专项分析分层规则
+# ZSJ专项分析分层规则
 zheng_shuangjia_analysis_tiers:
   enabled: true
-  description: "郑双佳论文按相关性分层处理"
+  description: "ZSJ论文按相关性分层处理"
   
   tier_high:
     name: "高度相关"

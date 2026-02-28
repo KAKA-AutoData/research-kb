@@ -253,22 +253,22 @@ cross_domain:
   ai_for_rna:
     terms: ["AI RNA", "deep learning RNA", "RNA structure prediction", "RNA design"]
 
-# 郑双佳专项关键词
+# ZSJ专项关键词
 zheng_shuangjia:
-  name: "郑双佳团队研究"
+  name: "ZSJ团队研究"
   priority: P0
   keywords:
     - id: "zheng_drug_discovery"
-      terms: ["Shuangjia Zheng", "郑双佳"]
-      scope: "郑双佳团队药物发现研究"
+      terms: ["Shuangjia Zheng", "ZSJ"]
+      scope: "ZSJ团队药物发现研究"
       auto_tag: true  # 出现即自动标注
     - id: "zheng_rna_therapeutics"
-      terms: ["Shuangjia Zheng", "郑双佳"]
-      scope: "郑双佳团队 RNA 治疗研究"
+      terms: ["Shuangjia Zheng", "ZSJ"]
+      scope: "ZSJ团队 RNA 治疗研究"
       auto_tag: true
     - id: "zheng_network_pharmacology"
-      terms: ["Shuangjia Zheng", "郑双佳", "network pharmacology"]
-      scope: "郑双佳团队网络药理学研究"
+      terms: ["Shuangjia Zheng", "ZSJ", "network pharmacology"]
+      scope: "ZSJ团队网络药理学研究"
       auto_tag: true
 
 # 检索扩展规则

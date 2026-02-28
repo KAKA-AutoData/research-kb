@@ -24,7 +24,7 @@
 
 | 层级 | 定义 | 规则位置 | 状态 |
 |------|------|---------|------|
-| **P0 (最高)** | 郑双佳 + DeepSeek官方 + 核心主题 | institution-priority.yaml + topic-scope.yaml | ✅ 一致 |
+| **P0 (最高)** | ZSJ + DeepSeek官方 + 核心主题 | institution-priority.yaml + topic-scope.yaml | ✅ 一致 |
 | **P1 (高)** | 高质量期刊/会议 + 理论贡献 | journal-tiers.yaml tier_1-3 | ✅ 一致 |
 | **P2 (中)** | 领域知名机构 + 方法创新 | journal-tiers.yaml tier_3 | ✅ 一致 |
 | **P3 (低)** | 其他可靠来源 | journal-tiers.yaml tier_4 | ✅ 一致 |
@@ -35,14 +35,14 @@
 
 | 规则项 | 定义位置 | 实现状态 |
 |--------|---------|---------|
-| **最高优先级作者** | institution-priority.yaml tier_1_core | ✅ 郑双佳 |
+| **最高优先级作者** | institution-priority.yaml tier_1_core | ✅ ZSJ |
 | **名称变体** | institution-priority.yaml name_variants | ✅ 6种变体 |
 | **机构变体** | institution-priority.yaml institution_variants | ✅ 5种变体 |
 | **分层分析规则** | topic-scope.yaml zheng_shuangjia_analysis_tiers | ✅ 高/中/低三层 |
-| **专属目录** | GITEE_REPO_DESIGN.md §5 | ✅ authors/zheng-shuangjia/ |
+| **专属目录** | GITEE_REPO_DESIGN.md §5 | ✅ authors/ZSJ/ |
 | **关键词集合** | keywords.yaml | ✅ 14核心方向+扩展 |
 
-**核对结论**: 郑双佳作者线已完整纳入规则体系。
+**核对结论**: ZSJ作者线已完整纳入规则体系。
 
 ### 1.4 仓库结构与模板字段一致性检查 ⚠️
 
@@ -91,7 +91,7 @@ metadata.json ──┬──► 决定存储路径 (direction/topic/analysis_de
 
 | 冲突描述 | 位置 | 严重程度 | 修正方案 |
 |---------|------|---------|---------|
-| ~~institution-priority.yaml 中上交/郑大优先级表述模糊~~ | §1.1 | 中等 | ✅ 已修正为"郑双佳个人最高优先级" |
+| ~~institution-priority.yaml 中上交/郑大优先级表述模糊~~ | §1.1 | 中等 | ✅ 已修正为"ZSJ个人最高优先级" |
 | ~~journal-tiers.yaml 中 auto_accept 规则与 topic-scope.yaml 决策规则重复~~ | 多处 | 低 | ✅ 已统一以 topic-scope.yaml 为准 |
 
 **当前状态**: 无重大冲突。
@@ -149,12 +149,12 @@ metadata.json ──┬──► 决定存储路径 (direction/topic/analysis_de
 
 | 优先级 | 对象 | 自动接受 | 分析深度 | 存储位置 |
 |--------|------|---------|---------|---------|
-| **P0** | 郑双佳所有论文 + DeepSeek官方 | ✅ 是 | 按相关性分层 | authors/zheng-shuangjia/papers/ |
+| **P0** | ZSJ所有论文 + DeepSeek官方 | ✅ 是 | 按相关性分层 | authors/ZSJ/papers/ |
 | **P1** | Tier 1-2 期刊 + 顶会 + 高相关 | 否 | 完整分析 | topics/{topic}/analyses/ |
 | **P2** | Tier 3 期刊 + 方法创新 | 否 | 中等分析 | topics/{topic}/analyses/ |
 | **P3** | Tier 4 + 预印本 + 弱相关 | 否 | 简要归档 | inbox/rejected/ 或 minimal-archive |
 
-**相关性分层 (郑双佳专属)**:
+**相关性分层 (ZSJ专属)**:
 - ≥0.7: full-analysis (完整10+章节)
 - 0.4-0.7: medium-analysis (核心5-7章节)
 - <0.4: minimal-archive (metadata+摘要)
@@ -173,13 +173,13 @@ research-kb-gitee/                    # Gitee 主仓库 (<50MB)
 │   ├── cs-theory/
 │   └── deepseek/
 ├── authors/                          # 作者线 (主存储)
-│   └── zheng-shuangjia/              # 最高优先级作者
+│   └── ZSJ/              # 最高优先级作者
 │       ├── profile/
 │       ├── papers/{full,medium,minimal}/
 │       ├── timeline/
 │       ├── topic-map/
 │       └── indices/
-├── papers/                           # 非郑双佳论文主存储
+├── papers/                           # 非ZSJ论文主存储
 ├── comparisons/                      # 横向比较
 ├── trends/                           # 趋势报告
 ├── gaps/                             # 空白分析
@@ -233,7 +233,7 @@ main_storage, topic_indices[]
 ```
 作者线 (主存储)
 ================
-authors/zheng-shuangjia/papers/full-analysis/2025-zheng-xxx.md
+authors/ZSJ/papers/full-analysis/2025-zheng-xxx.md
     ↑
     │ 自动生成/更新
     ↓
@@ -241,13 +241,13 @@ authors/zheng-shuangjia/papers/full-analysis/2025-zheng-xxx.md
 ================
 topics/biomed/drug-discovery/index.yaml:
   - paper_id: "arxiv:2501.12345"
-    ref: "authors/zheng-shuangjia/papers/full-analysis/2025-zheng-xxx.md"
+    ref: "authors/ZSJ/papers/full-analysis/2025-zheng-xxx.md"
     relevance: 0.85
 
 年份线 (索引引用)
 ================
 indices/by-year/2025.md:
-  - [2025-zheng-xxx](authors/zheng-shuangjia/papers/...)
+  - [2025-zheng-xxx](authors/ZSJ/papers/...)
 ```
 
 **避免重复**: 主题目录下只存 YAML/JSON 索引或 Markdown 引用，不存完整分析内容。
@@ -277,7 +277,7 @@ indices/by-year/2025.md:
 | 研究知识库工作规范说明 | ✅ 完成 | `WORKFLOW_SPEC.md` |
 | Gitee 仓库结构设计方案 | ✅ 完成 | `GITEE_REPO_DESIGN.md` |
 | 8个核心模板文件 | ✅ 完成 | `_meta/*.yaml` |
-| 郑双佳作者档案 | ✅ 完成 | `biomed/authors/zheng-shuangjia/` |
+| ZSJ作者档案 | ✅ 完成 | `biomed/authors/ZSJ/` |
 | DeepSeek 试点运行 | ✅ 完成 | `deepseek/mla-analysis/` |
 
 ### 4.2 是否视为完成？
@@ -312,7 +312,7 @@ indices/by-year/2025.md:
 Week 1: 基础设施
   ├── 创建 Gitee 仓库并推送 Phase 1 成果
   ├── 设置自动化检索脚本 (arXiv每日 + PubMed每周)
-  └── 入库首批 5-10 篇论文 (郑双佳 + DeepSeek)
+  └── 入库首批 5-10 篇论文 (ZSJ + DeepSeek)
 
 Week 2-4: 批量建设
   ├── 每周完成 3-5 篇深度分析
@@ -342,7 +342,7 @@ Month 2: 综合产出
 | `WORKFLOW_SPEC.md` | 完整工作规范 |
 | `GITEE_REPO_DESIGN.md` | 仓库结构设计 |
 | `_meta/*.yaml` | 8个模板文件 |
-| `biomed/authors/zheng-shuangjia/profile/` | 郑双佳档案 |
+| `biomed/authors/ZSJ/profile/` | ZSJ档案 |
 | `deepseek/mla-analysis/analyses/` | 试点样例 |
 
 ### 5.2 关键决策记录
@@ -351,7 +351,7 @@ Month 2: 综合产出
 |------|------|
 | 默认模型改为 glm-5 | 速度 ~33 tokens/s，中文优秀 |
 | Claude Code 接百炼 Coding Plan | 官方支持，qwen3.5-plus ~64 tokens/s |
-| 郑双佳最高优先级 | 研究方向完全匹配，需完整追踪 |
+| ZSJ最高优先级 | 研究方向完全匹配，需完整追踪 |
 | Gitee 而非自建 | 轻量化、稳定、免费 |
 
 ### 5.3 待决策事项 (Phase 2 处理)
