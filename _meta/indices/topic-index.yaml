@@ -1,0 +1,27 @@
+generated_at: "2026-03-02T07:58:54.038369+00:00"
+topics:
+  - domain: "biomed"
+    count: 1
+    refs:
+      - "biomed/papers/medium-analysis/2026-03-02-pmid-41736507-select-small-non-coding-rnas-are-determinants-of-survival-in-older-adults.md"
+  - domain: "comptheory"
+    count: 2
+    refs:
+      - "comptheory/kv-compression/2026-03-02-arxiv-2602-24082v1-preference-packing-efficient-preference-optimization-for-large-language-models.md"
+      - "comptheory/lora-analysis/2026-03-02-arxiv-2602-24283v1-taming-momentum-rethinking-optimizer-states-through-low-rank-approximation.md"
+  - domain: "unknown"
+    count: 13
+    refs:
+      - "biomed/papers/full-analysis/2026-words-to-amino-acids.md"
+      - "biomed/papers/minimal-archive/2026-covalent-drug-discovery.md"
+      - "biomed/papers/minimal-archive/2026-halo-localization.md"
+      - "biomed/papers/minimal-archive/2026-llm-protein-function.md"
+      - "biomed/papers/minimal-archive/2026-peptide-kinetics.md"
+      - "biomed/papers/minimal-archive/2026-plm-diverge-nlp.md"
+      - "biomed/papers/minimal-archive/2026-plm-zinc-binding.md"
+      - "biomed/papers/minimal-archive/2026-venom-peptide-platform.md"
+      - "biomed/papers/minimal-archive/2026-words-to-amino-acids.md"
+      - "deepseek/papers/full-analysis/2026-snapmla.md"
+      - "deepseek/papers/minimal-archive/2025-tpla.md"
+      - "deepseek/papers/minimal-archive/2026-snapmla.md"
+      - "deepseek/papers/minimal-archive/2026-typhoonmla.md"

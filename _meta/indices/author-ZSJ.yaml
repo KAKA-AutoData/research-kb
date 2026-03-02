@@ -1,0 +1,7 @@
+generated_at: "2026-03-02T07:58:54.038566+00:00"
+author: "Shuangjia Zheng"
+count: 1
+refs:
+  - paper_id: "arxiv:2602.24283v1"
+    title: "Taming Momentum: Rethinking Optimizer States Through Low-Rank Approximation"
+    path: "comptheory/lora-analysis/2026-03-02-arxiv-2602-24283v1-taming-momentum-rethinking-optimizer-states-through-low-rank-approximation.md"
