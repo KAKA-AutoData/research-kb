@@ -1,135 +1,156 @@
-version: 1.0.0
+version: 1.1.0
 updated_at: 2026-03-02
 authority:
   primary_repo: /root/openclaw-workspace/research-kb
   source_docs:
-    - RESEARCH_SCOPE_DEFINITION.md
-    - PAPER_ANALYSIS_SPEC.md
-    - COMPARISON_RULES_SPEC.md
-    - TREND_GAP_ANALYSIS_SPEC.md
-    - GITEE_UPDATE_SPEC.md
-    - WORKFLOW_SPEC.md
-
+  - RESEARCH_SCOPE_DEFINITION.md
+  - PAPER_ANALYSIS_SPEC.md
+  - COMPARISON_RULES_SPEC.md
+  - TREND_GAP_ANALYSIS_SPEC.md
+  - GITEE_UPDATE_SPEC.md
+  - WORKFLOW_SPEC.md
+collection_whitelist:
+  enforce_only_whitelist: true
+  allowed_sources:
+  - arxiv
+  - pubmed
+  allowed_domains:
+  - biomed
+  - comptheory
+  - deepseek
+  min_topic_hits: 1
+  fallback_window_days: 7
+  allow_google_scholar: false
 source_priority:
   tier0:
     description: ZSJ, DeepSeek official, top venue
     score: 1.0
     signals:
       author_contains:
-        - Shuangjia Zheng
-        - Zheng S
-        - ZSJ
+      - Shuangjia Zheng
+      - Zheng S
+      - ZSJ
       title_or_abstract_contains:
-        - DeepSeek
+      - DeepSeek
       venue_in:
-        - Nature
-        - Science
-        - Cell
-        - NeurIPS
-        - ICML
-        - ICLR
+      - Nature
+      - Science
+      - Cell
+      - NeurIPS
+      - ICML
+      - ICLR
   tier1:
     description: strong venue or trusted research outlet
     score: 0.75
     sources:
-      - arxiv
-      - pubmed
-      - biorxiv
-      - medrxiv
+    - arxiv
+    - pubmed
+    - biorxiv
+    - medrxiv
   tier2:
     description: weak signal source
     score: 0.5
-
 weights:
   topic_match: 0.45
   source_priority: 0.25
-  author_priority: 0.20
-  novelty: 0.10
-
+  author_priority: 0.2
+  novelty: 0.1
 topic_scope:
   biomed:
     keywords:
-      - drug discovery
-      - drug repositioning
-      - drug repurposing
-      - drug-target interaction
-      - DTI
-      - RNA therapeutics
-      - miRNA
-      - lncRNA
-      - circRNA
-      - disease mechanism
-      - precision medicine
-      - biomarker
+    - drug discovery
+    - drug repositioning
+    - drug repurposing
+    - drug-target interaction
+    - DTI
+    - RNA therapeutics
+    - miRNA
+    - lncRNA
+    - circRNA
+    - disease mechanism
+    - precision medicine
+    - biomarker
   comptheory:
     keywords:
-      - attention
-      - self-attention
-      - low-rank
-      - LoRA
-      - KV cache
-      - KV compression
-      - relation modeling
-      - representation analysis
-      - transformer theory
+    - attention
+    - self-attention
+    - low-rank
+    - LoRA
+    - KV cache
+    - KV compression
+    - relation modeling
+    - representation analysis
+    - transformer theory
   deepseek:
     keywords:
-      - DeepSeek
-      - MLA
-      - DeepSeekMoE
-      - latent attention
-      - key-value compression
-
+    - DeepSeek
+    - MLA
+    - DeepSeekMoE
+    - latent attention
+    - key-value compression
 priority_mapping:
   p0:
     rules:
-      - zsj_relevance_gte: 0.7
-      - deepseek_official: true
-      - high_venue_and_high_relevance: true
+    - zsj_relevance_gte: 0.7
+    - deepseek_official: true
+    - high_venue_and_high_relevance: true
   p1:
     rules:
-      - medium_high_relevance: true
-      - high_value_extension: true
+    - medium_high_relevance: true
+    - high_value_extension: true
   p2:
     rules:
-      - weak_relevance_but_archive_value: true
-      - output_mode: minimal_archive
+    - weak_relevance_but_archive_value: true
+    - output_mode: minimal_archive
   p3:
     rules:
-      - default_reject: true
-
+    - default_reject: true
 daily_quota:
   min: 2
-  target: 3
+  target: 5
   max: 5
   fallback_window_days: 7
   min_p0_p1_required: 2
   allow_p2_when_insufficient: true
   max_p2_fallback: 2
-
 quality_gates:
-  - unique_id
-  - source_tier
-  - topic_match
-  - priority_valid
-  - template_completeness
-  - path_valid
-  - index_updated
-  - repo_hygiene
-
+- unique_id
+- source_tier
+- topic_match
+- priority_valid
+- template_completeness
+- path_valid
+- index_updated
+- repo_hygiene
 comparison_triggers:
   lightweight: 5
   medium: 15
   deep: 30
-
 trend_triggers:
   small: 20
   medium: 40
   global: 80
-
 outputs:
   candidates: /root/openclaw-workspace/research-kb/inbox/candidates-YYYY-MM-DD.json
   selected_p0_p1: /root/openclaw-workspace/research-kb/inbox/selected_p0_p1.json
   selected_p2_fallback: /root/openclaw-workspace/research-kb/inbox/selected_p2_fallback.json
   rejected: /root/openclaw-workspace/research-kb/inbox/rejected.json
+  whitelist_rejected: /root/openclaw-workspace/research-kb/inbox/whitelist_rejected.json
   decision_md: /root/openclaw-workspace/research-kb/_meta/daily/decision-YYYY-MM-DD.md
+deep_analysis:
+  enabled: true
+  language: zh-CN
+  template: tier1_12_sections
+  evidence_mode: strict
+  fulltext_policy: prefer_fulltext_fallback_abstract
+  acceptance:
+    min_zh_chars: 3000
+    required_sections: 12
+    min_evidence_anchors: 8
+  daily_output:
+    min_new: 2
+    target_new: 5
+    max_new: 5
+    daily_backfill_upgrade: 1
+  storage:
+    p0_p1_path_mode: full_analysis

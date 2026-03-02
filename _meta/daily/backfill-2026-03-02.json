@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-03-02T13:09:26.372126+00:00",
+  "candidate": "/root/openclaw-workspace/research-kb/comptheory/lora-analysis/2026-03-02-arxiv-2602-24283v1-taming-momentum-rethinking-optimizer-states-through-low-rank-approximation.md",
+  "paper_id": "arxiv:2602.24283v1",
+  "steps": {
+    "fetch": {
+      "rc": 0,
+      "stdout": "output=/tmp/kb_backfill_9vwxq09f/fulltext.json\ncount=1 fulltext=1 fallback=0",
+      "stderr": ""
+    },
+    "generate": {
+      "rc": 0,
+      "stdout": "output=/tmp/kb_backfill_9vwxq09f/generated.json\nfailed_output=/tmp/kb_backfill_9vwxq09f/failed.json\ngenerated=0 failed=1",
+      "stderr": ""
+    },
+    "quality": {
+      "rc": 0,
+      "stdout": "output=/tmp/kb_backfill_9vwxq09f/quality.json\nfailed_output=/tmp/kb_backfill_9vwxq09f/quality_failed.json\npass=0 fail=1",
+      "stderr": ""
+    }
+  },
+  "status": "failed",
+  "reason": "quality_no_passed_item"
+}

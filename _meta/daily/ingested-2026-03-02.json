@@ -1,23 +1,7 @@
 {
-  "generated_at": "2026-03-02T08:04:47.564897+00:00",
-  "created_count": 0,
-  "skipped_count": 3,
-  "created": [],
-  "skipped": [
-    {
-      "paper_id": "pmid:41736507",
-      "path": "/root/openclaw-workspace/research-kb/biomed/papers/medium-analysis/2026-03-02-pmid-41736507-select-small-non-coding-rnas-are-determinants-of-survival-in-older-adults.md",
-      "reason": "exists"
-    },
-    {
-      "paper_id": "arxiv:2602.24283v1",
-      "path": "/root/openclaw-workspace/research-kb/comptheory/lora-analysis/2026-03-02-arxiv-2602-24283v1-taming-momentum-rethinking-optimizer-states-through-low-rank-approximation.md",
-      "reason": "exists"
-    },
-    {
-      "paper_id": "arxiv:2602.24082v1",
-      "path": "/root/openclaw-workspace/research-kb/comptheory/kv-compression/2026-03-02-arxiv-2602-24082v1-preference-packing-efficient-preference-optimization-for-large-language-models.md",
-      "reason": "exists"
-    }
-  ]
+  "generated_at": "2026-03-02T13:09:26.473954+00:00",
+  "created_count": 1,
+  "skipped_count": 0,
+  "backfill_status": "failed",
+  "from_quality_report": "/root/openclaw-workspace/research-kb/_meta/daily/deep-quality-2026-03-02.json"
 }

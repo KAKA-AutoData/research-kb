@@ -1,0 +1,34 @@
+version: 1.0
+updated_at: 2026-03-02
+name: tier1_12_sections
+language: zh-CN
+required_sections:
+  - summary
+  - problem-setting
+  - method-breakdown
+  - training-inference
+  - experiment-breakdown
+  - result-interpretation
+  - limitations
+  - reproducibility
+  - ideas-for-my-work
+  - writing-usage
+  - theory-notes
+  - metadata
+section_titles:
+  summary: "Summary"
+  problem-setting: "Problem Setting"
+  method-breakdown: "Method Breakdown"
+  training-inference: "Training and Inference"
+  experiment-breakdown: "Experiment Breakdown"
+  result-interpretation: "Result Interpretation"
+  limitations: "Limitations"
+  reproducibility: "Reproducibility"
+  ideas-for-my-work: "Ideas for My Work"
+  writing-usage: "Writing Usage"
+  theory-notes: "Theory Notes"
+  metadata: "Metadata"
+quality_hard_rules:
+  min_zh_chars: 3000
+  min_evidence_anchors: 8
+  min_action_items: 3
