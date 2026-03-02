@@ -40,9 +40,9 @@ research-kb/
 | `PAPER_ANALYSIS_SPEC.md` | Single paper analysis specifications (3 tiers) |
 | `COMPARISON_RULES_SPEC.md` | Cross-paper comparison rules (3 levels) |
 | `TREND_GAP_ANALYSIS_SPEC.md` | Trend report and gap analysis rules |
-| `GITEE_UPDATE_SPEC.md` | Continuous update and write rules |
+| `GITHUB/GITEE_UPDATE_SPEC.md` | Continuous update and write rules |
 | `WORKFLOW_SPEC.md` | Full workflow specifications |
-| `GITEE_REPO_DESIGN.md` | Repository structure design |
+| `GITHUB/GITEE_REPO_DESIGN.md` | Repository structure design |
 
 ## Research Directions
 
@@ -59,7 +59,7 @@ research-kb/
 
 ## Phase 2 (Next Steps)
 
-1. Initialize Gitee remote repository
+1. Initialize GitHub remote repository
 2. Push Phase 1 framework to remote
 3. Start systematic paper ingestion (target: 20-30 papers in first month)
 4. Trigger first lightweight cross-paper comparisons
