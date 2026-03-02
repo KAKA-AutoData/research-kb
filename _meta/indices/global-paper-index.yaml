@@ -1,5 +1,5 @@
-generated_at: "2026-03-02T13:09:26.473423+00:00"
-count: 17
+generated_at: "2026-03-02T13:56:37.279809+00:00"
+count: 19
 papers:
   - paper_id: "pmid:41736507"
     title: "Select Small Non-Coding RNAs Are Determinants of Survival in Older Adults."
@@ -56,6 +56,16 @@ papers:
     priority: ""
     domain: ""
     path: "biomed/papers/minimal-archive/2026-words-to-amino-acids.md"
+  - paper_id: "arxiv:2602.24082v1"
+    title: "Preference Packing: Efficient Preference Optimization for Large Language Models"
+    priority: "P1"
+    domain: "comptheory"
+    path: "comptheory/full-analysis/2026-03-02-arxiv-2602-24082v1-preference-packing-efficient-preference-optimization-for-large-language-models.md"
+  - paper_id: "arxiv:2602.24283v1"
+    title: "Taming Momentum: Rethinking Optimizer States Through Low-Rank Approximation"
+    priority: "P1"
+    domain: "comptheory"
+    path: "comptheory/full-analysis/2026-03-02-arxiv-2602-24283v1-taming-momentum-rethinking-optimizer-states-through-low-rank-approximation.md"
   - paper_id: "arxiv:2602.24082v1"
     title: "Preference Packing: Efficient Preference Optimization for Large Language Models"
     priority: "P1"
