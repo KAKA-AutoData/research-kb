@@ -1,7 +1,10 @@
-generated_at: "2026-03-02T13:56:37.280287+00:00"
+generated_at: "2026-03-02T17:35:14.129569+00:00"
 author: "Shuangjia Zheng"
-count: 1
+count: 2
 refs:
   - paper_id: "arxiv:2602.24283v1"
     title: "Taming Momentum: Rethinking Optimizer States Through Low-Rank Approximation"
     path: "comptheory/full-analysis/2026-03-02-arxiv-2602-24283v1-taming-momentum-rethinking-optimizer-states-through-low-rank-approximation.md"
+  - paper_id: "arxiv:2602.24283v1"
+    title: "Taming Momentum: Rethinking Optimizer States Through Low-Rank Approximation"
+    path: "comptheory/full-analysis/2026-03-03-arxiv-2602-24283v1-taming-momentum-rethinking-optimizer-states-through-low-rank-approximation.md"
