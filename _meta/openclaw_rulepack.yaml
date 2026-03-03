@@ -148,9 +148,26 @@ deep_analysis:
     required_sections: 12
     min_evidence_anchors: 8
   daily_output:
-    min_new: 2
+    min_new: 5
     target_new: 5
-    max_new: 5
+    max_new: null
     daily_backfill_upgrade: 1
+    mode: at_least_5_unbounded
   storage:
     p0_p1_path_mode: full_analysis
+  parallel:
+    paper_workers: 24
+    model_fanout: 3
+    no_business_rate_limit: true
+    request_timeout_sec: 220
+    max_retry: 2
+    jitter_backoff: exponential
+  ensemble:
+    strategy: parallel_candidates_with_judge
+    judge_required: true
+    fallback_if_single_model: prompt_variant_ensemble
+    repair_rounds: 1
+  telemetry:
+    write_api_usage_daily: true
+    write_model_health_daily: true
+    write_judge_report_daily: true

@@ -1,17 +1,24 @@
-generated_at: "2026-03-02T17:35:14.129385+00:00"
+generated_at: "2026-03-03T05:12:37.414403+00:00"
 topics:
   - domain: "biomed"
-    count: 3
+    count: 4
     refs:
       - "biomed/papers/full-analysis/2026-03-02-pmid-41736507-select-small-non-coding-rnas-are-determinants-of-survival-in-older-adults.md"
       - "biomed/papers/full-analysis/2026-03-03-pmid-41736507-select-small-non-coding-rnas-are-determinants-of-survival-in-older-adults.md"
+      - "biomed/papers/full-analysis/2026-03-03-pmid-41770961-psa-1dcnn-multimodal-biomarker-and-text-integration-for-lung-cancer-diagnosis.md"
       - "biomed/papers/medium-analysis/2026-03-02-pmid-41736507-select-small-non-coding-rnas-are-determinants-of-survival-in-older-adults.md"
   - domain: "comptheory"
-    count: 5
+    count: 11
     refs:
       - "comptheory/full-analysis/2026-03-02-arxiv-2602-24082v1-preference-packing-efficient-preference-optimization-for-large-language-models.md"
       - "comptheory/full-analysis/2026-03-02-arxiv-2602-24283v1-taming-momentum-rethinking-optimizer-states-through-low-rank-approximation.md"
       - "comptheory/full-analysis/2026-03-03-arxiv-2602-24283v1-taming-momentum-rethinking-optimizer-states-through-low-rank-approximation.md"
+      - "comptheory/full-analysis/2026-03-03-arxiv-2603-00746v1-spectrofusion-vit-a-lightweight-transformer-for-speech-emotion-recognition-using-harmonic-.md"
+      - "comptheory/full-analysis/2026-03-03-arxiv-2603-00812v1-wave-attractor-tree-a-hierarchical-binary-tree-reduction-architecture-for-efficient-sequen.md"
+      - "comptheory/full-analysis/2026-03-03-arxiv-2603-00846v1-tiny-critic-rag-empowering-agentic-fallback-with-parameter-efficient-small-language-models.md"
+      - "comptheory/full-analysis/2026-03-03-arxiv-2603-01426v1-understanding-the-physics-of-key-value-cache-compression-for-llms-through-attention-dynami.md"
+      - "comptheory/full-analysis/2026-03-03-arxiv-2603-02181v1-leveraging-model-soups-to-classify-intangible-cultural-heritage-images-from-the-mekong-del.md"
+      - "comptheory/full-analysis/2026-03-03-arxiv-2603-02188v1-multi-head-low-rank-attention.md"
       - "comptheory/kv-compression/2026-03-02-arxiv-2602-24082v1-preference-packing-efficient-preference-optimization-for-large-language-models.md"
       - "comptheory/lora-analysis/2026-03-02-arxiv-2602-24283v1-taming-momentum-rethinking-optimizer-states-through-low-rank-approximation.md"
   - domain: "unknown"

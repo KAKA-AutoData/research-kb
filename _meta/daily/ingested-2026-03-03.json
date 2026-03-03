@@ -1,7 +1,7 @@
 {
-  "generated_at": "2026-03-02T17:35:14.129646+00:00",
-  "created_count": 0,
+  "generated_at": "2026-03-03T05:12:37.414821+00:00",
+  "created_count": 3,
   "skipped_count": 2,
-  "backfill_status": "upgraded",
+  "backfill_status": "skipped",
   "from_quality_report": "/root/openclaw-workspace/research-kb/_meta/daily/deep-quality-2026-03-03.json"
 }

@@ -1,6 +1,6 @@
-generated_at: "2026-03-02T17:35:14.129569+00:00"
+generated_at: "2026-03-03T05:12:37.414704+00:00"
 author: "Shuangjia Zheng"
-count: 2
+count: 3
 refs:
   - paper_id: "arxiv:2602.24283v1"
     title: "Taming Momentum: Rethinking Optimizer States Through Low-Rank Approximation"
@@ -8,3 +8,6 @@ refs:
   - paper_id: "arxiv:2602.24283v1"
     title: "Taming Momentum: Rethinking Optimizer States Through Low-Rank Approximation"
     path: "comptheory/full-analysis/2026-03-03-arxiv-2602-24283v1-taming-momentum-rethinking-optimizer-states-through-low-rank-approximation.md"
+  - paper_id: "arxiv:2603.02188v1"
+    title: "Multi-Head Low-Rank Attention"
+    path: "comptheory/full-analysis/2026-03-03-arxiv-2603-02188v1-multi-head-low-rank-attention.md"
