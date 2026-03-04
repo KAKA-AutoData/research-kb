@@ -1,0 +1,67 @@
+{
+  "generated_at": "2026-03-03T18:54:31.135546+00:00",
+  "fanout_target": 3,
+  "probe_timeout_sec": 20,
+  "probed": [
+    {
+      "provider": "bailian",
+      "model": "qwen-max",
+      "ok": false,
+      "status": 429,
+      "latency_ms": 86,
+      "error": "HTTP 429"
+    },
+    {
+      "provider": "bailian",
+      "model": "qwen-plus",
+      "ok": false,
+      "status": 429,
+      "latency_ms": 96,
+      "error": "HTTP 429"
+    },
+    {
+      "provider": "bailian",
+      "model": "qwen-turbo",
+      "ok": false,
+      "status": 429,
+      "latency_ms": 92,
+      "error": "HTTP 429"
+    },
+    {
+      "provider": "bailian",
+      "model": "qwen3-coder-plus",
+      "ok": false,
+      "status": 429,
+      "latency_ms": 99,
+      "error": "HTTP 429"
+    },
+    {
+      "provider": "sub2api",
+      "model": "CodeX-3.5",
+      "ok": false,
+      "status": 404,
+      "latency_ms": 856,
+      "error": "HTTP 404"
+    },
+    {
+      "provider": "sub2api",
+      "model": "claude-3-5-sonnet",
+      "ok": false,
+      "status": 404,
+      "latency_ms": 847,
+      "error": "HTTP 404"
+    },
+    {
+      "provider": "sub2api",
+      "model": "claude-sonnet-4-20250514",
+      "ok": false,
+      "status": 404,
+      "latency_ms": 853,
+      "error": "HTTP 404"
+    }
+  ],
+  "healthy_count": 0,
+  "selected_generation_models": [],
+  "selected_judge_model": null,
+  "fallback_mode": "prompt_variant_ensemble"
+}

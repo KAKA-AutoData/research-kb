@@ -1,5 +1,5 @@
-version: 1.1.0
-updated_at: 2026-03-02
+version: 1.2.0
+updated_at: '2026-03-04'
 authority:
   primary_repo: /root/openclaw-workspace/research-kb
   source_docs:
@@ -12,12 +12,35 @@ authority:
 collection_whitelist:
   enforce_only_whitelist: true
   allowed_sources:
-  - arxiv
   - pubmed
+  - crossref
+  - papercrawler
   allowed_domains:
-  - biomed
-  - comptheory
-  - deepseek
+  - pubmed.ncbi.nlm.nih.gov
+  - doi.org
+  - nature.com
+  - science.org
+  - cell.com
+  - ieeexplore.ieee.org
+  - dl.acm.org
+  - springer.com
+  - sciencedirect.com
+  - usenix.org
+  - sigmod.org
+  - kdd.org
+  - icml.cc
+  - nips.cc
+  - cvpr.thecvf.com
+  - aclweb.org
+  - aaai.org
+  - ijcai.org
+  - vldb.org
+  - sigir.org
+  - icde.ieee.org
+  - chi.acm.org
+  - ubicomp.org
+  - acm.org
+  - ieee.org
   min_topic_hits: 1
   fallback_window_days: 7
   allow_google_scholar: false
@@ -43,10 +66,8 @@ source_priority:
     description: strong venue or trusted research outlet
     score: 0.75
     sources:
-    - arxiv
     - pubmed
-    - biorxiv
-    - medrxiv
+    - crossref
   tier2:
     description: weak signal source
     score: 0.5
@@ -55,6 +76,7 @@ weights:
   source_priority: 0.25
   author_priority: 0.2
   novelty: 0.1
+  venue_tier: 0.2
 topic_scope:
   biomed:
     keywords:
@@ -171,3 +193,31 @@ deep_analysis:
     write_api_usage_daily: true
     write_model_health_daily: true
     write_judge_report_daily: true
+    min_api_calls_daily: 3000
+    enforce_mode: hard_floor
+    api_floor_mode: productive_only
+    no_empty_heartbeat_calls: true
+venue_whitelist:
+  version: user_frozen_2026-03-03
+  scope: journals_and_conferences
+  journals_file: /root/openclaw-workspace/research-kb/_meta/whitelist/journals.yaml
+  conferences_file: /root/openclaw-workspace/research-kb/_meta/whitelist/conferences.yaml
+  aliases_file: /root/openclaw-workspace/research-kb/_meta/whitelist/venue_aliases.yaml
+whitelist_policy:
+  reject_preprints: true
+  reject_if_venue_missing: true
+  rejection_codes:
+  - source_not_allowed
+  - venue_not_allowed
+  - preprint_not_allowed
+  - domain_not_allowed
+  - topic_not_allowed
+source_router:
+  cs_pipeline: papercrawler_only
+  non_cs_web_query: agent_reach_only
+verification_gate:
+  enabled: true
+  require_resolvable_identifier: true
+  title_similarity_min: 0.9
+  venue_exact_match: true
+  fail_closed: true

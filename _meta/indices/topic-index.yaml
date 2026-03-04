@@ -1,39 +1,10 @@
-generated_at: "2026-03-03T05:12:37.414403+00:00"
+generated_at: "2026-03-04T17:45:26.735907+00:00"
 topics:
   - domain: "biomed"
-    count: 4
+    count: 5
     refs:
       - "biomed/papers/full-analysis/2026-03-02-pmid-41736507-select-small-non-coding-rnas-are-determinants-of-survival-in-older-adults.md"
       - "biomed/papers/full-analysis/2026-03-03-pmid-41736507-select-small-non-coding-rnas-are-determinants-of-survival-in-older-adults.md"
       - "biomed/papers/full-analysis/2026-03-03-pmid-41770961-psa-1dcnn-multimodal-biomarker-and-text-integration-for-lung-cancer-diagnosis.md"
+      - "biomed/papers/full-analysis/2026-03-05-pmid-41772176-confounding-factors-and-biases-abound-when-predicting-molecular-biomarkers-from-histologic.md"
       - "biomed/papers/medium-analysis/2026-03-02-pmid-41736507-select-small-non-coding-rnas-are-determinants-of-survival-in-older-adults.md"
-  - domain: "comptheory"
-    count: 11
-    refs:
-      - "comptheory/full-analysis/2026-03-02-arxiv-2602-24082v1-preference-packing-efficient-preference-optimization-for-large-language-models.md"
-      - "comptheory/full-analysis/2026-03-02-arxiv-2602-24283v1-taming-momentum-rethinking-optimizer-states-through-low-rank-approximation.md"
-      - "comptheory/full-analysis/2026-03-03-arxiv-2602-24283v1-taming-momentum-rethinking-optimizer-states-through-low-rank-approximation.md"
-      - "comptheory/full-analysis/2026-03-03-arxiv-2603-00746v1-spectrofusion-vit-a-lightweight-transformer-for-speech-emotion-recognition-using-harmonic-.md"
-      - "comptheory/full-analysis/2026-03-03-arxiv-2603-00812v1-wave-attractor-tree-a-hierarchical-binary-tree-reduction-architecture-for-efficient-sequen.md"
-      - "comptheory/full-analysis/2026-03-03-arxiv-2603-00846v1-tiny-critic-rag-empowering-agentic-fallback-with-parameter-efficient-small-language-models.md"
-      - "comptheory/full-analysis/2026-03-03-arxiv-2603-01426v1-understanding-the-physics-of-key-value-cache-compression-for-llms-through-attention-dynami.md"
-      - "comptheory/full-analysis/2026-03-03-arxiv-2603-02181v1-leveraging-model-soups-to-classify-intangible-cultural-heritage-images-from-the-mekong-del.md"
-      - "comptheory/full-analysis/2026-03-03-arxiv-2603-02188v1-multi-head-low-rank-attention.md"
-      - "comptheory/kv-compression/2026-03-02-arxiv-2602-24082v1-preference-packing-efficient-preference-optimization-for-large-language-models.md"
-      - "comptheory/lora-analysis/2026-03-02-arxiv-2602-24283v1-taming-momentum-rethinking-optimizer-states-through-low-rank-approximation.md"
-  - domain: "unknown"
-    count: 13
-    refs:
-      - "biomed/papers/full-analysis/2026-words-to-amino-acids.md"
-      - "biomed/papers/minimal-archive/2026-covalent-drug-discovery.md"
-      - "biomed/papers/minimal-archive/2026-halo-localization.md"
-      - "biomed/papers/minimal-archive/2026-llm-protein-function.md"
-      - "biomed/papers/minimal-archive/2026-peptide-kinetics.md"
-      - "biomed/papers/minimal-archive/2026-plm-diverge-nlp.md"
-      - "biomed/papers/minimal-archive/2026-plm-zinc-binding.md"
-      - "biomed/papers/minimal-archive/2026-venom-peptide-platform.md"
-      - "biomed/papers/minimal-archive/2026-words-to-amino-acids.md"
-      - "deepseek/papers/full-analysis/2026-snapmla.md"
-      - "deepseek/papers/minimal-archive/2025-tpla.md"
-      - "deepseek/papers/minimal-archive/2026-snapmla.md"
-      - "deepseek/papers/minimal-archive/2026-typhoonmla.md"

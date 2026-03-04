@@ -1,0 +1,89 @@
+{
+  "generated_at": "2026-03-03T18:54:36.731750+00:00",
+  "from_generated": "/root/openclaw-workspace/research-kb/inbox/deep_generated-2026-03-04.json",
+  "from_fulltext": "/root/openclaw-workspace/research-kb/inbox/fulltext_pack-2026-03-04.json",
+  "pass_count": 0,
+  "fail_count": 1,
+  "items": [],
+  "passed_items": [],
+  "failed_items": [
+    {
+      "paper_id": "pmid:41772176",
+      "title": "Confounding factors and biases abound when predicting molecular biomarkers from histological images.",
+      "source": "pubmed",
+      "reason": "generation_failed",
+      "candidate_failures": [
+        {
+          "ok": false,
+          "provider": "bailian",
+          "model": "qwen3-coder-plus",
+          "variant": "experiment-heavy",
+          "errors": [
+            {
+              "attempt": 1,
+              "error": "HTTP 429: {\"error\":{\"code\":\"throttling\",\"message\":\"hour allocated quota exceeded.\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"4fd835e3-e227-9eb9-a73f-819abfd7be85\"}"
+            },
+            {
+              "attempt": 2,
+              "error": "HTTP 429: {\"error\":{\"code\":\"throttling\",\"message\":\"hour allocated quota exceeded.\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"dc44664f-449b-931b-a7fb-bd69d6f78357\"}"
+            },
+            {
+              "attempt": 3,
+              "error": "HTTP 429: {\"error\":{\"code\":\"throttling\",\"message\":\"hour allocated quota exceeded.\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"75b0fed1-42d6-99d1-ad52-dc610e61cd66\"}"
+            }
+          ],
+          "api_usage": []
+        },
+        {
+          "ok": false,
+          "provider": "bailian",
+          "model": "qwen3-coder-plus",
+          "variant": "balanced",
+          "errors": [
+            {
+              "attempt": 1,
+              "error": "HTTP 429: {\"error\":{\"code\":\"throttling\",\"message\":\"hour allocated quota exceeded.\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"f2803734-6595-9366-9cc2-b38b3380944d\"}"
+            },
+            {
+              "attempt": 2,
+              "error": "HTTP 429: {\"error\":{\"code\":\"throttling\",\"message\":\"hour allocated quota exceeded.\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"0aeb1fdb-7d56-9420-a96f-525a741813f2\"}"
+            },
+            {
+              "attempt": 3,
+              "error": "HTTP 429: {\"error\":{\"code\":\"throttling\",\"message\":\"hour allocated quota exceeded.\",\"param\":null,\"type\":\"invalid_request_error\"},\"request_id\":\"95ea17d5-3e9c-9b49-bb75-99c3ec5e5a12\"}"
+            }
+          ],
+          "api_usage": []
+        },
+        {
+          "ok": false,
+          "provider": "sub2api",
+          "model": "CodeX-3.5",
+          "variant": "method-heavy",
+          "errors": [
+            {
+              "attempt": 1,
+              "error": "HTTP 404: "
+            },
+            {
+              "attempt": 2,
+              "error": "HTTP 404: "
+            },
+            {
+              "attempt": 3,
+              "error": "HTTP 404: "
+            }
+          ],
+          "api_usage": []
+        }
+      ],
+      "repair_note": ""
+    }
+  ],
+  "acceptance": {
+    "min_zh_chars": 3000,
+    "required_sections": 12,
+    "min_evidence_anchors": 8,
+    "min_action_items": 3
+  }
+}

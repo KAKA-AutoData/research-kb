@@ -1,0 +1,148 @@
+version: user_frozen_2026-03-04
+generated_at: '2026-03-03T18:17:08.047350+00:00'
+vendor_path: /root/openclaw-workspace/vendor/paperCrawler
+venv_path: /root/openclaw-workspace/.venv-papercrawler
+supported_papercrawler_names:
+- aaai
+- acl
+- cvpr
+- iccv
+- icml
+- ijcai
+- ijcv
+- kdd
+- mm
+- nips
+- nmi
+- tip
+- tpami
+- www
+conference_map:
+  aaai: AAAI Conference on Artificial Intelligence
+  ijcai: International Joint Conference on Artificial Intelligence
+  nips: Conference on Neural Information Processing Systems
+  icml: International Conference on Machine Learning
+  cvpr: IEEE/CVF Conference on Computer Vision and Pattern Recognition
+  iccv: International Conference on Computer Vision
+  acl: Annual Meeting of the Association for Computational Linguistics
+  kdd: ACM SIGKDD Conference on Knowledge Discovery and Data Mining
+  www: The Web Conference
+  mm: ACM International Conference on Multimedia
+journal_map:
+  tpami: IEEE Transactions on Pattern Analysis and Machine Intelligence
+  ijcv: International Journal of Computer Vision
+  tip: IEEE Transactions on Image Processing
+  nmi: Nature Machine Intelligence
+unsupported_conferences:
+- ACM CHI Conference on Human Factors in Computing Systems
+- ACM Conference on Computer and Communications Security
+- ACM Conference on Management of Data
+- ACM International Joint Conference on Pervasive and Ubiquitous Computing
+- ACM Joint European Software Engineering Conference and Symposium on the Foundations
+  of Software Engineering
+- ACM SIGCOMM Conference
+- ACM SIGGRAPH Conference
+- ACM SIGPLAN Conference on Programming Language Design and Implementation
+- ACM SIGPLAN International Conference on Object-Oriented Programming, Systems, Languages,
+  and Applications
+- ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming
+- ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages
+- ACM Symposium on Operating Systems Principles
+- ACM Symposium on Theory of Computing
+- Design Automation Conference
+- IEEE International Conference on Computer Communications
+- IEEE International Conference on Data Engineering
+- IEEE International Symposium on High Performance Computer Architecture
+- IEEE Real-Time Systems Symposium
+- IEEE Symposium on Foundations of Computer Science
+- IEEE Symposium on Logic in Computer Science
+- IEEE Symposium on Security and Privacy
+- IEEE/ACM International Symposium on Microarchitecture
+- International ACM SIGIR Conference on Research and Development in Information Retrieval
+- International Conference for High Performance Computing, Networking, Storage and
+  Analysis
+- International Conference on Architectural Support for Programming Languages and
+  Operating Systems
+- International Conference on Automated Software Engineering
+- International Conference on Computer Aided Verification
+- International Conference on Software Engineering
+- International Conference on Very Large Data Bases
+- International Symposium on Computer Architecture
+- International Symposium on Formal Methods
+- International Symposium on Software Testing and Analysis
+- USENIX Annual Technical Conference
+- USENIX Conference on File and Storage Technologies
+- USENIX Security Symposium
+- USENIX Symposium on Operating Systems Design and Implementation
+unsupported_journals:
+- ACM Transactions on Architecture and Code Optimization
+- ACM Transactions on Computer Systems
+- ACM Transactions on Computer-Human Interaction
+- ACM Transactions on Database Systems
+- ACM Transactions on Graphics
+- ACM Transactions on Information Systems
+- ACM Transactions on Programming Languages and Systems
+- ACM Transactions on Software Engineering and Methodology
+- ACM Transactions on Storage
+- Artificial Intelligence
+- Cell
+- IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems
+- IEEE Transactions on Computers
+- IEEE Transactions on Dependable and Secure Computing
+- IEEE Transactions on Information Forensics and Security
+- IEEE Transactions on Information Theory
+- IEEE Transactions on Knowledge and Data Engineering
+- IEEE Transactions on Mobile Computing
+- IEEE Transactions on Parallel and Distributed Systems
+- IEEE Transactions on Software Engineering
+- IEEE Transactions on Visualization and Computer Graphics
+- IEEE/ACM Transactions on Networking
+- Information and Computation
+- International Journal of Human-Computer Studies
+- Journal of Cryptology
+- Journal of Machine Learning Research
+- Journal of the ACM
+- Nature
+- Nature Astronomy
+- Nature Biomedical Engineering
+- Nature Biotechnology
+- Nature Catalysis
+- Nature Cell Biology
+- Nature Chemistry
+- Nature Climate Change
+- Nature Computational Science
+- Nature Ecology & Evolution
+- Nature Electronics
+- Nature Energy
+- Nature Food
+- Nature Genetics
+- Nature Geoscience
+- Nature Human Behaviour
+- Nature Immunology
+- Nature Materials
+- Nature Medicine
+- Nature Methods
+- Nature Nanotechnology
+- Nature Neuroscience
+- Nature Photonics
+- Nature Physics
+- Nature Protocols
+- Nature Reviews Cancer
+- Nature Reviews Chemistry
+- Nature Reviews Genetics
+- Nature Reviews Immunology
+- Nature Reviews Materials
+- Nature Reviews Microbiology
+- Nature Reviews Molecular Cell Biology
+- Nature Reviews Physics
+- Nature Structural & Molecular Biology
+- Nature Sustainability
+- Proceedings of the IEEE
+- SIAM Journal on Computing
+- Science
+- Science Advances
+- Science Immunology
+- Science Robotics
+- Science Signaling
+- Science Translational Medicine
+- The VLDB Journal

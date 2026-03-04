@@ -1,79 +1,79 @@
 {
-  "generated_at": "2026-03-03T05:12:37.014840+00:00",
-  "from_fulltext": "/root/openclaw-workspace/research-kb/inbox/fulltext_pack-2026-03-03.json",
+  "generated_at": "2026-03-04T17:45:26.068573+00:00",
+  "from_fulltext": "/root/openclaw-workspace/research-kb/inbox/fulltext_pack-2026-03-05.json",
   "candidate_fanout": 3,
   "judge_required": true,
   "count": 1,
   "items": [
     {
-      "paper_id": "pmid:41736507",
-      "title": "Select Small Non-Coding RNAs Are Determinants of Survival in Older Adults.",
+      "paper_id": "pmid:41772176",
+      "title": "Confounding factors and biases abound when predicting molecular biomarkers from histological images.",
       "candidate_count": 3,
       "candidates": [
         {
           "provider_model": "bailian/qwen3-coder-plus",
-          "variant": "method-heavy",
-          "score": {
-            "score": 78.086,
-            "zh_chars": 3494,
-            "non_empty_sections": 12,
-            "evidence_count": 8,
-            "action_count": 3,
-            "uniq_ratio": 1.0,
-            "length_quality": 0.9706,
-            "reproducibility_depth": 0.4565,
-            "ideas_depth": 0.4154
-          }
-        },
-        {
-          "provider_model": "bailian/qwen3-coder-plus",
           "variant": "balanced",
           "score": {
-            "score": 82.498,
-            "zh_chars": 3824,
+            "score": 82.33,
+            "zh_chars": 3098,
             "non_empty_sections": 12,
             "evidence_count": 8,
             "action_count": 3,
             "uniq_ratio": 1.0,
-            "length_quality": 1.0,
-            "reproducibility_depth": 0.6106,
-            "ideas_depth": 0.5038
+            "length_quality": 0.8606,
+            "reproducibility_depth": 0.6224,
+            "ideas_depth": 0.6385
           }
         },
         {
           "provider_model": "bailian/qwen3-coder-plus",
           "variant": "experiment-heavy",
           "score": {
-            "score": 81.559,
-            "zh_chars": 3615,
+            "score": 77.388,
+            "zh_chars": 2692,
             "non_empty_sections": 12,
             "evidence_count": 8,
             "action_count": 3,
             "uniq_ratio": 1.0,
-            "length_quality": 1.0,
-            "reproducibility_depth": 0.5788,
-            "ideas_depth": 0.4769
+            "length_quality": 0.7478,
+            "reproducibility_depth": 0.5,
+            "ideas_depth": 0.5788
+          }
+        },
+        {
+          "provider_model": "bailian/qwen3-coder-plus",
+          "variant": "method-heavy",
+          "score": {
+            "score": 77.151,
+            "zh_chars": 2852,
+            "non_empty_sections": 12,
+            "evidence_count": 8,
+            "action_count": 3,
+            "uniq_ratio": 1.0,
+            "length_quality": 0.7922,
+            "reproducibility_depth": 0.5506,
+            "ideas_depth": 0.4635
           }
         }
       ],
       "winner_provider_model": "bailian/qwen3-coder-plus",
       "winner_variant": "balanced",
       "winner_score": {
-        "score": 82.498,
-        "zh_chars": 3824,
+        "score": 82.33,
+        "zh_chars": 3098,
         "non_empty_sections": 12,
         "evidence_count": 8,
         "action_count": 3,
         "uniq_ratio": 1.0,
-        "length_quality": 1.0,
-        "reproducibility_depth": 0.6106,
-        "ideas_depth": 0.5038
+        "length_quality": 0.8606,
+        "reproducibility_depth": 0.6224,
+        "ideas_depth": 0.6385
       },
       "mode": "llm_judge",
-      "winner_index": 1,
+      "winner_index": 0,
       "confidence": 0.85,
-      "reason": "候选1在保持结构完整性的同时，提供了最均衡的内容质量。其摘要部分准确概括了研究的核心发现，包括样本规模、主要结果(AUC值)、因果分析发现等关键信息。可重现性部分详细描述了研究设计的严谨性，包括数据分割策略、验证框架、算法实现等。创新想法部分提出了三个具体可行的方向，涵盖了标志物验证、预测算法开发和功能机制研究。",
-      "notes": "候选1的综合评分最高(82.498)，在证据充分性、可重现性深度和创新想法深度方面都表现良好，且内容长度适中，结构完整，符合学术论文解读的标准要求。",
+      "reason": "候选0在结构完整性、证据充分性和可复现性建议方面表现最佳。摘要部分准确概括了研究的核心发现，包括混杂因素问题、模型学习混杂信号而非因果关系等关键点。可复现性分析详细说明了数据集获取、统计方法标准化等优势，同时诚实地指出了代码库缺失等限制因素。创新想法部分提出了三个具体可行的研究方向：因果推理框架、多模态融合策略和外部验证策略，每个都具有明确的执行路径。",
+      "notes": "候选0的长度质量得分为0.8606，高于其他两个候选；其可复现性深度为0.6224，同样领先；证据数量和行动建议数量均为8和3，保持一致。该候选在保持客观性的同时提供了最具操作性的后续研究建议。",
       "judge_model": "bailian/qwen3-coder-plus",
       "judge_degraded": false
     }

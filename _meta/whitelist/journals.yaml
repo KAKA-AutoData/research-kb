@@ -1,0 +1,183 @@
+version: user_frozen_2026-03-03
+scope: journals
+journals:
+  - name: Nature
+    tier: nsc
+  - name: Nature Biotechnology
+    tier: nsc
+  - name: Nature Cell Biology
+    tier: nsc
+  - name: Nature Genetics
+    tier: nsc
+  - name: Nature Immunology
+    tier: nsc
+  - name: Nature Medicine
+    tier: nsc
+  - name: Nature Materials
+    tier: nsc
+  - name: Nature Nanotechnology
+    tier: nsc
+  - name: Nature Photonics
+    tier: nsc
+  - name: Nature Physics
+    tier: nsc
+  - name: Nature Chemistry
+    tier: nsc
+  - name: Nature Energy
+    tier: nsc
+  - name: Nature Catalysis
+    tier: nsc
+  - name: Nature Neuroscience
+    tier: nsc
+  - name: Nature Methods
+    tier: nsc
+  - name: Nature Protocols
+    tier: nsc
+  - name: Nature Reviews Cancer
+    tier: nsc
+  - name: Nature Reviews Genetics
+    tier: nsc
+  - name: Nature Reviews Immunology
+    tier: nsc
+  - name: Nature Reviews Molecular Cell Biology
+    tier: nsc
+  - name: Nature Reviews Materials
+    tier: nsc
+  - name: Nature Reviews Microbiology
+    tier: nsc
+  - name: Nature Reviews Chemistry
+    tier: nsc
+  - name: Nature Reviews Physics
+    tier: nsc
+  - name: Nature Computational Science
+    tier: nsc
+  - name: Nature Electronics
+    tier: nsc
+  - name: Nature Machine Intelligence
+    tier: nsc
+  - name: Nature Sustainability
+    tier: nsc
+  - name: Nature Biomedical Engineering
+    tier: nsc
+  - name: Nature Human Behaviour
+    tier: nsc
+  - name: Nature Structural & Molecular Biology
+    tier: nsc
+  - name: Nature Food
+    tier: nsc
+  - name: Nature Ecology & Evolution
+    tier: nsc
+  - name: Nature Astronomy
+    tier: nsc
+  - name: Nature Geoscience
+    tier: nsc
+  - name: Nature Climate Change
+    tier: nsc
+  - name: Science
+    tier: nsc
+  - name: Science Advances
+    tier: nsc
+  - name: Science Immunology
+    tier: nsc
+  - name: Science Robotics
+    tier: nsc
+  - name: Science Signaling
+    tier: nsc
+  - name: Science Translational Medicine
+    tier: nsc
+  - name: Cell
+    tier: nsc
+  - name: IEEE Transactions on Pattern Analysis and Machine Intelligence
+    tier: ccf_a
+    aliases: [IEEE TPAMI, TPAMI]
+  - name: International Journal of Computer Vision
+    tier: ccf_a
+    aliases: [IJCV]
+  - name: Artificial Intelligence
+    tier: ccf_a
+  - name: Journal of Machine Learning Research
+    tier: ccf_a
+    aliases: [JMLR]
+  - name: ACM Transactions on Database Systems
+    tier: ccf_a
+    aliases: [TODS]
+  - name: ACM Transactions on Information Systems
+    tier: ccf_a
+    aliases: [TOIS]
+  - name: IEEE Transactions on Knowledge and Data Engineering
+    tier: ccf_a
+    aliases: [TKDE]
+  - name: The VLDB Journal
+    tier: ccf_a
+    aliases: [VLDBJ]
+  - name: ACM Transactions on Graphics
+    tier: ccf_a
+    aliases: [ACM TOG, TOG]
+  - name: IEEE Transactions on Image Processing
+    tier: ccf_a
+    aliases: [IEEE TIP, TIP]
+  - name: IEEE Transactions on Visualization and Computer Graphics
+    tier: ccf_a
+    aliases: [IEEE TVCG, TVCG]
+  - name: ACM Transactions on Software Engineering and Methodology
+    tier: ccf_a
+    aliases: [ACM TOSEM, TOSEM]
+  - name: IEEE Transactions on Software Engineering
+    tier: ccf_a
+    aliases: [IEEE TSE, TSE]
+  - name: ACM Transactions on Programming Languages and Systems
+    tier: ccf_a
+    aliases: [ACM TOPLAS, TOPLAS]
+  - name: ACM Transactions on Computer Systems
+    tier: ccf_a
+    aliases: [ACM TOCS, TOCS]
+  - name: ACM Transactions on Storage
+    tier: ccf_a
+    aliases: [ACM TOS, TOS]
+  - name: IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems
+    tier: ccf_a
+    aliases: [IEEE TCAD, TCAD]
+  - name: IEEE Transactions on Computers
+    tier: ccf_a
+    aliases: [IEEE TC, TC]
+  - name: IEEE Transactions on Parallel and Distributed Systems
+    tier: ccf_a
+    aliases: [IEEE TPDS, TPDS]
+  - name: ACM Transactions on Architecture and Code Optimization
+    tier: ccf_a
+    aliases: [ACM TACO, TACO]
+  - name: IEEE/ACM Transactions on Networking
+    tier: ccf_a
+    aliases: [IEEE/ACM ToN, ToN]
+  - name: IEEE Transactions on Mobile Computing
+    tier: ccf_a
+    aliases: [IEEE TMC, TMC]
+  - name: IEEE Transactions on Dependable and Secure Computing
+    tier: ccf_a
+    aliases: [IEEE TDSC, TDSC]
+  - name: IEEE Transactions on Information Forensics and Security
+    tier: ccf_a
+    aliases: [IEEE TIFS, TIFS]
+  - name: Journal of Cryptology
+    tier: ccf_a
+  - name: Information and Computation
+    tier: ccf_a
+    aliases: [IANDC]
+  - name: SIAM Journal on Computing
+    tier: ccf_a
+    aliases: [SICOMP]
+  - name: IEEE Transactions on Information Theory
+    tier: ccf_a
+    aliases: [IEEE TIT, TIT]
+  - name: ACM Transactions on Computer-Human Interaction
+    tier: ccf_a
+    aliases: [ACM TOCHI, TOCHI]
+  - name: International Journal of Human-Computer Studies
+    tier: ccf_a
+    aliases: [IJHCS]
+  - name: Proceedings of the IEEE
+    tier: ccf_a
+    aliases: [Proc. IEEE]
+  - name: Journal of the ACM
+    tier: ccf_a
+    aliases: [JACM]

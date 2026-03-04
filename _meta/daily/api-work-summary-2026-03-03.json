@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-03-03T14:20:02.066825+00:00",
+  "date": "2026-03-03",
+  "work_items_jsonl": "/root/openclaw-workspace/research-kb/_meta/daily/api-work-items-2026-03-03.jsonl",
+  "work_items_total": 2,
+  "task_type_counts": {
+    "whitelist_triage": 2
+  },
+  "action_samples": [
+    {
+      "task_id": "2026-03-03:pmid:41289126:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41289126",
+      "action": "将该论文添加到已接受文献库中",
+      "priority": "P0",
+      "definition_of_done": "确认pmid:41289126已成功录入accepted_papers数据库，并更新相关分类标签"
+    },
+    {
+      "task_id": "2026-03-03:pmid:41289126:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41289126",
+      "action": "提取论文中的推理模型benchmark数据",
+      "priority": "P1",
+      "definition_of_done": "从论文中提取所有提及的推理基准测试结果、性能对比数据，并结构化存储到benchmark数据库"
+    },
+    {
+      "task_id": "2026-03-03:doi:10.1145/3799693:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "doi:10.1145/3799693",
+      "action": "verify_venue_classification_match",
+      "priority": "P1",
+      "definition_of_done": "确认ACM Transactions on Software Engineering and Methodology期刊分类与comptheory领域匹配度，更新领域分类标准文档"
+    },
+    {
+      "task_id": "2026-03-03:doi:10.1145/3799693:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "doi:10.1145/3799693",
+      "action": "document_domain_boundary_case",
+      "priority": "P1",
+      "definition_of_done": "将此案例记录到领域边界案例库中，作为未来类似交叉领域论文分类的参考依据"
+    }
+  ],
+  "failure_samples": []
+}

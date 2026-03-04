@@ -1,0 +1,187 @@
+version: user_frozen_2026-03-03
+scope: conferences
+conferences:
+  - name: AAAI Conference on Artificial Intelligence
+    tier: ccf_a
+    aliases: [AAAI]
+    query_names: [AAAI]
+  - name: International Joint Conference on Artificial Intelligence
+    tier: ccf_a
+    aliases: [IJCAI]
+    query_names: [IJCAI]
+  - name: Conference on Neural Information Processing Systems
+    tier: ccf_a
+    aliases: [NeurIPS, NIPS]
+    query_names: [NeurIPS, NIPS]
+  - name: International Conference on Machine Learning
+    tier: ccf_a
+    aliases: [ICML]
+    query_names: [ICML]
+  - name: IEEE/CVF Conference on Computer Vision and Pattern Recognition
+    tier: ccf_a
+    aliases: [CVPR]
+    query_names: [CVPR]
+  - name: International Conference on Computer Vision
+    tier: ccf_a
+    aliases: [ICCV]
+    query_names: [ICCV]
+  - name: Annual Meeting of the Association for Computational Linguistics
+    tier: ccf_a
+    aliases: [ACL]
+    query_names: [ACL]
+  - name: ACM Conference on Management of Data
+    tier: ccf_a
+    aliases: [SIGMOD]
+    query_names: [SIGMOD]
+  - name: International Conference on Very Large Data Bases
+    tier: ccf_a
+    aliases: [VLDB]
+    query_names: [VLDB]
+  - name: International ACM SIGIR Conference on Research and Development in Information Retrieval
+    tier: ccf_a
+    aliases: [SIGIR]
+    query_names: [SIGIR]
+  - name: ACM SIGKDD Conference on Knowledge Discovery and Data Mining
+    tier: ccf_a
+    aliases: [KDD]
+    query_names: [KDD]
+  - name: IEEE International Conference on Data Engineering
+    tier: ccf_a
+    aliases: [ICDE]
+    query_names: [ICDE]
+  - name: ACM SIGGRAPH Conference
+    tier: ccf_a
+    aliases: [SIGGRAPH]
+    query_names: [SIGGRAPH]
+  - name: ACM International Conference on Multimedia
+    tier: ccf_a
+    aliases: [ACM MM]
+    query_names: [ACM Multimedia, ACM MM]
+  - name: ACM SIGPLAN Conference on Programming Language Design and Implementation
+    tier: ccf_a
+    aliases: [PLDI]
+    query_names: [PLDI]
+  - name: ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages
+    tier: ccf_a
+    aliases: [POPL]
+    query_names: [POPL]
+  - name: ACM Joint European Software Engineering Conference and Symposium on the Foundations of Software Engineering
+    tier: ccf_a
+    aliases: [FSE, ESEC/FSE]
+    query_names: [FSE, ESEC/FSE]
+  - name: ACM Symposium on Operating Systems Principles
+    tier: ccf_a
+    aliases: [SOSP]
+    query_names: [SOSP]
+  - name: ACM SIGPLAN International Conference on Object-Oriented Programming, Systems, Languages, and Applications
+    tier: ccf_a
+    aliases: [OOPSLA]
+    query_names: [OOPSLA]
+  - name: International Conference on Automated Software Engineering
+    tier: ccf_a
+    aliases: [ASE]
+    query_names: [ASE]
+  - name: International Conference on Software Engineering
+    tier: ccf_a
+    aliases: [ICSE]
+    query_names: [ICSE]
+  - name: International Symposium on Software Testing and Analysis
+    tier: ccf_a
+    aliases: [ISSTA]
+    query_names: [ISSTA]
+  - name: USENIX Symposium on Operating Systems Design and Implementation
+    tier: ccf_a
+    aliases: [OSDI]
+    query_names: [OSDI]
+  - name: International Symposium on Formal Methods
+    tier: ccf_a
+    aliases: [FM]
+    query_names: [Formal Methods Symposium]
+  - name: ACM SIGPLAN Symposium on Principles and Practice of Parallel Programming
+    tier: ccf_a
+    aliases: [PPoPP]
+    query_names: [PPoPP]
+  - name: USENIX Conference on File and Storage Technologies
+    tier: ccf_a
+    aliases: [FAST]
+    query_names: [USENIX FAST, FAST]
+  - name: Design Automation Conference
+    tier: ccf_a
+    aliases: [DAC]
+    query_names: [DAC]
+  - name: IEEE International Symposium on High Performance Computer Architecture
+    tier: ccf_a
+    aliases: [HPCA]
+    query_names: [HPCA]
+  - name: IEEE/ACM International Symposium on Microarchitecture
+    tier: ccf_a
+    aliases: [MICRO]
+    query_names: [MICRO]
+  - name: International Conference for High Performance Computing, Networking, Storage and Analysis
+    tier: ccf_a
+    aliases: [SC]
+    query_names: [SC Conference, Supercomputing]
+  - name: International Conference on Architectural Support for Programming Languages and Operating Systems
+    tier: ccf_a
+    aliases: [ASPLOS]
+    query_names: [ASPLOS]
+  - name: International Symposium on Computer Architecture
+    tier: ccf_a
+    aliases: [ISCA]
+    query_names: [ISCA]
+  - name: USENIX Annual Technical Conference
+    tier: ccf_a
+    aliases: [USENIX ATC]
+    query_names: [USENIX ATC, USENIX Annual Technical Conference]
+  - name: ACM SIGCOMM Conference
+    tier: ccf_a
+    aliases: [SIGCOMM]
+    query_names: [SIGCOMM]
+  - name: IEEE International Conference on Computer Communications
+    tier: ccf_a
+    aliases: [INFOCOM]
+    query_names: [INFOCOM]
+  - name: IEEE Symposium on Security and Privacy
+    tier: ccf_a
+    aliases: [IEEE S&P]
+    query_names: [IEEE Security and Privacy, IEEE S&P]
+  - name: ACM Conference on Computer and Communications Security
+    tier: ccf_a
+    aliases: [CCS]
+    query_names: [ACM CCS, CCS]
+  - name: USENIX Security Symposium
+    tier: ccf_a
+    aliases: [USENIX Security]
+    query_names: [USENIX Security]
+  - name: ACM Symposium on Theory of Computing
+    tier: ccf_a
+    aliases: [STOC]
+    query_names: [STOC]
+  - name: IEEE Symposium on Foundations of Computer Science
+    tier: ccf_a
+    aliases: [FOCS]
+    query_names: [FOCS]
+  - name: IEEE Symposium on Logic in Computer Science
+    tier: ccf_a
+    aliases: [LICS]
+    query_names: [LICS]
+  - name: International Conference on Computer Aided Verification
+    tier: ccf_a
+    aliases: [CAV]
+    query_names: [CAV]
+  - name: ACM CHI Conference on Human Factors in Computing Systems
+    tier: ccf_a
+    aliases: [CHI]
+    query_names: [CHI]
+  - name: ACM International Joint Conference on Pervasive and Ubiquitous Computing
+    tier: ccf_a
+    aliases: [UbiComp]
+    query_names: [UbiComp]
+  - name: IEEE Real-Time Systems Symposium
+    tier: ccf_a
+    aliases: [RTSS]
+    query_names: [RTSS]
+  - name: The Web Conference
+    tier: ccf_a
+    aliases: [WWW]
+    query_names: [WWW, Web Conference]

@@ -1,0 +1,107 @@
+{
+  "generated_at": "2026-03-03T08:22:19.914308+00:00",
+  "dry_run": false,
+  "moved_count": 19,
+  "moved_files": [
+    {
+      "from": "/root/openclaw-workspace/research-kb/biomed/papers/minimal-archive/2026-plm-diverge-nlp.md",
+      "to": "/root/openclaw-workspace/research-kb/_archive/arxiv_legacy/2026-03-03/biomed/papers/minimal-archive/2026-plm-diverge-nlp.md",
+      "relative": "biomed/papers/minimal-archive/2026-plm-diverge-nlp.md"
+    },
+    {
+      "from": "/root/openclaw-workspace/research-kb/biomed/papers/minimal-archive/2026-words-to-amino-acids.md",
+      "to": "/root/openclaw-workspace/research-kb/_archive/arxiv_legacy/2026-03-03/biomed/papers/minimal-archive/2026-words-to-amino-acids.md",
+      "relative": "biomed/papers/minimal-archive/2026-words-to-amino-acids.md"
+    },
+    {
+      "from": "/root/openclaw-workspace/research-kb/biomed/papers/minimal-archive/2026-peptide-kinetics.md",
+      "to": "/root/openclaw-workspace/research-kb/_archive/arxiv_legacy/2026-03-03/biomed/papers/minimal-archive/2026-peptide-kinetics.md",
+      "relative": "biomed/papers/minimal-archive/2026-peptide-kinetics.md"
+    },
+    {
+      "from": "/root/openclaw-workspace/research-kb/biomed/papers/full-analysis/2026-words-to-amino-acids.md",
+      "to": "/root/openclaw-workspace/research-kb/_archive/arxiv_legacy/2026-03-03/biomed/papers/full-analysis/2026-words-to-amino-acids.md",
+      "relative": "biomed/papers/full-analysis/2026-words-to-amino-acids.md"
+    },
+    {
+      "from": "/root/openclaw-workspace/research-kb/deepseek/papers/minimal-archive/2026-typhoonmla.md",
+      "to": "/root/openclaw-workspace/research-kb/_archive/arxiv_legacy/2026-03-03/deepseek/papers/minimal-archive/2026-typhoonmla.md",
+      "relative": "deepseek/papers/minimal-archive/2026-typhoonmla.md"
+    },
+    {
+      "from": "/root/openclaw-workspace/research-kb/deepseek/papers/minimal-archive/2025-tpla.md",
+      "to": "/root/openclaw-workspace/research-kb/_archive/arxiv_legacy/2026-03-03/deepseek/papers/minimal-archive/2025-tpla.md",
+      "relative": "deepseek/papers/minimal-archive/2025-tpla.md"
+    },
+    {
+      "from": "/root/openclaw-workspace/research-kb/deepseek/papers/minimal-archive/2026-snapmla.md",
+      "to": "/root/openclaw-workspace/research-kb/_archive/arxiv_legacy/2026-03-03/deepseek/papers/minimal-archive/2026-snapmla.md",
+      "relative": "deepseek/papers/minimal-archive/2026-snapmla.md"
+    },
+    {
+      "from": "/root/openclaw-workspace/research-kb/deepseek/papers/full-analysis/2026-snapmla.md",
+      "to": "/root/openclaw-workspace/research-kb/_archive/arxiv_legacy/2026-03-03/deepseek/papers/full-analysis/2026-snapmla.md",
+      "relative": "deepseek/papers/full-analysis/2026-snapmla.md"
+    },
+    {
+      "from": "/root/openclaw-workspace/research-kb/comptheory/lora-analysis/2026-03-02-arxiv-2602-24283v1-taming-momentum-rethinking-optimizer-states-through-low-rank-approximation.md",
+      "to": "/root/openclaw-workspace/research-kb/_archive/arxiv_legacy/2026-03-03/comptheory/lora-analysis/2026-03-02-arxiv-2602-24283v1-taming-momentum-rethinking-optimizer-states-through-low-rank-approximation.md",
+      "relative": "comptheory/lora-analysis/2026-03-02-arxiv-2602-24283v1-taming-momentum-rethinking-optimizer-states-through-low-rank-approximation.md"
+    },
+    {
+      "from": "/root/openclaw-workspace/research-kb/comptheory/kv-compression/2026-03-02-arxiv-2602-24082v1-preference-packing-efficient-preference-optimization-for-large-language-models.md",
+      "to": "/root/openclaw-workspace/research-kb/_archive/arxiv_legacy/2026-03-03/comptheory/kv-compression/2026-03-02-arxiv-2602-24082v1-preference-packing-efficient-preference-optimization-for-large-language-models.md",
+      "relative": "comptheory/kv-compression/2026-03-02-arxiv-2602-24082v1-preference-packing-efficient-preference-optimization-for-large-language-models.md"
+    },
+    {
+      "from": "/root/openclaw-workspace/research-kb/comptheory/full-analysis/2026-03-03-arxiv-2603-00746v1-spectrofusion-vit-a-lightweight-transformer-for-speech-emotion-recognition-using-harmonic-.md",
+      "to": "/root/openclaw-workspace/research-kb/_archive/arxiv_legacy/2026-03-03/comptheory/full-analysis/2026-03-03-arxiv-2603-00746v1-spectrofusion-vit-a-lightweight-transformer-for-speech-emotion-recognition-using-harmonic-.md",
+      "relative": "comptheory/full-analysis/2026-03-03-arxiv-2603-00746v1-spectrofusion-vit-a-lightweight-transformer-for-speech-emotion-recognition-using-harmonic-.md"
+    },
+    {
+      "from": "/root/openclaw-workspace/research-kb/comptheory/full-analysis/2026-03-03-arxiv-2603-00846v1-tiny-critic-rag-empowering-agentic-fallback-with-parameter-efficient-small-language-models.md",
+      "to": "/root/openclaw-workspace/research-kb/_archive/arxiv_legacy/2026-03-03/comptheory/full-analysis/2026-03-03-arxiv-2603-00846v1-tiny-critic-rag-empowering-agentic-fallback-with-parameter-efficient-small-language-models.md",
+      "relative": "comptheory/full-analysis/2026-03-03-arxiv-2603-00846v1-tiny-critic-rag-empowering-agentic-fallback-with-parameter-efficient-small-language-models.md"
+    },
+    {
+      "from": "/root/openclaw-workspace/research-kb/comptheory/full-analysis/2026-03-03-arxiv-2603-01426v1-understanding-the-physics-of-key-value-cache-compression-for-llms-through-attention-dynami.md",
+      "to": "/root/openclaw-workspace/research-kb/_archive/arxiv_legacy/2026-03-03/comptheory/full-analysis/2026-03-03-arxiv-2603-01426v1-understanding-the-physics-of-key-value-cache-compression-for-llms-through-attention-dynami.md",
+      "relative": "comptheory/full-analysis/2026-03-03-arxiv-2603-01426v1-understanding-the-physics-of-key-value-cache-compression-for-llms-through-attention-dynami.md"
+    },
+    {
+      "from": "/root/openclaw-workspace/research-kb/comptheory/full-analysis/2026-03-03-arxiv-2603-02188v1-multi-head-low-rank-attention.md",
+      "to": "/root/openclaw-workspace/research-kb/_archive/arxiv_legacy/2026-03-03/comptheory/full-analysis/2026-03-03-arxiv-2603-02188v1-multi-head-low-rank-attention.md",
+      "relative": "comptheory/full-analysis/2026-03-03-arxiv-2603-02188v1-multi-head-low-rank-attention.md"
+    },
+    {
+      "from": "/root/openclaw-workspace/research-kb/comptheory/full-analysis/2026-03-03-arxiv-2603-02181v1-leveraging-model-soups-to-classify-intangible-cultural-heritage-images-from-the-mekong-del.md",
+      "to": "/root/openclaw-workspace/research-kb/_archive/arxiv_legacy/2026-03-03/comptheory/full-analysis/2026-03-03-arxiv-2603-02181v1-leveraging-model-soups-to-classify-intangible-cultural-heritage-images-from-the-mekong-del.md",
+      "relative": "comptheory/full-analysis/2026-03-03-arxiv-2603-02181v1-leveraging-model-soups-to-classify-intangible-cultural-heritage-images-from-the-mekong-del.md"
+    },
+    {
+      "from": "/root/openclaw-workspace/research-kb/comptheory/full-analysis/2026-03-03-arxiv-2602-24283v1-taming-momentum-rethinking-optimizer-states-through-low-rank-approximation.md",
+      "to": "/root/openclaw-workspace/research-kb/_archive/arxiv_legacy/2026-03-03/comptheory/full-analysis/2026-03-03-arxiv-2602-24283v1-taming-momentum-rethinking-optimizer-states-through-low-rank-approximation.md",
+      "relative": "comptheory/full-analysis/2026-03-03-arxiv-2602-24283v1-taming-momentum-rethinking-optimizer-states-through-low-rank-approximation.md"
+    },
+    {
+      "from": "/root/openclaw-workspace/research-kb/comptheory/full-analysis/2026-03-02-arxiv-2602-24283v1-taming-momentum-rethinking-optimizer-states-through-low-rank-approximation.md",
+      "to": "/root/openclaw-workspace/research-kb/_archive/arxiv_legacy/2026-03-03/comptheory/full-analysis/2026-03-02-arxiv-2602-24283v1-taming-momentum-rethinking-optimizer-states-through-low-rank-approximation.md",
+      "relative": "comptheory/full-analysis/2026-03-02-arxiv-2602-24283v1-taming-momentum-rethinking-optimizer-states-through-low-rank-approximation.md"
+    },
+    {
+      "from": "/root/openclaw-workspace/research-kb/comptheory/full-analysis/2026-03-03-arxiv-2603-00812v1-wave-attractor-tree-a-hierarchical-binary-tree-reduction-architecture-for-efficient-sequen.md",
+      "to": "/root/openclaw-workspace/research-kb/_archive/arxiv_legacy/2026-03-03/comptheory/full-analysis/2026-03-03-arxiv-2603-00812v1-wave-attractor-tree-a-hierarchical-binary-tree-reduction-architecture-for-efficient-sequen.md",
+      "relative": "comptheory/full-analysis/2026-03-03-arxiv-2603-00812v1-wave-attractor-tree-a-hierarchical-binary-tree-reduction-architecture-for-efficient-sequen.md"
+    },
+    {
+      "from": "/root/openclaw-workspace/research-kb/comptheory/full-analysis/2026-03-02-arxiv-2602-24082v1-preference-packing-efficient-preference-optimization-for-large-language-models.md",
+      "to": "/root/openclaw-workspace/research-kb/_archive/arxiv_legacy/2026-03-03/comptheory/full-analysis/2026-03-02-arxiv-2602-24082v1-preference-packing-efficient-preference-optimization-for-large-language-models.md",
+      "relative": "comptheory/full-analysis/2026-03-02-arxiv-2602-24082v1-preference-packing-efficient-preference-optimization-for-large-language-models.md"
+    }
+  ],
+  "index_stats": {
+    "global_count": 9,
+    "domain_count": 2,
+    "zsj_count": 0
+  }
+}
