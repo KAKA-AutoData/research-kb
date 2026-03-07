@@ -1,5 +1,5 @@
-generated_at: "2026-03-04T17:45:26.735692+00:00"
-count: 5
+generated_at: "2026-03-07T17:37:36.636082+00:00"
+count: 6
 papers:
   - paper_id: "pmid:41736507"
     title: "Select Small Non-Coding RNAs Are Determinants of Survival in Older Adults."
@@ -21,6 +21,11 @@ papers:
     priority: "P1"
     domain: "biomed"
     path: "biomed/papers/full-analysis/2026-03-05-pmid-41772176-confounding-factors-and-biases-abound-when-predicting-molecular-biomarkers-from-histologic.md"
+  - paper_id: "pmid:41792137"
+    title: "AMR-GNN: a multi-representation graph neural network framework to enable genomic antimicrobial resistance prediction."
+    priority: "P1"
+    domain: "biomed"
+    path: "biomed/papers/full-analysis/2026-03-08-pmid-41792137-amr-gnn-a-multi-representation-graph-neural-network-framework-to-enable-genomic-antimicrob.md"
   - paper_id: "pmid:41736507"
     title: "Select Small Non-Coding RNAs Are Determinants of Survival in Older Adults."
     priority: "P1"

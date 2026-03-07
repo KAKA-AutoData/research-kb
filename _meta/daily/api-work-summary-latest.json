@@ -1,678 +1,738 @@
 {
-  "generated_at": "2026-03-04T16:20:01.350426+00:00",
-  "date": "2026-03-05",
-  "work_items_jsonl": "/root/openclaw-workspace/research-kb/_meta/daily/api-work-items-2026-03-05.jsonl",
-  "work_items_total": 2998,
+  "generated_at": "2026-03-07T16:20:02.202529+00:00",
+  "date": "2026-03-08",
+  "work_items_jsonl": "/root/openclaw-workspace/research-kb/_meta/daily/api-work-items-2026-03-08.jsonl",
+  "work_items_total": 2992,
   "task_type_counts": {
-    "whitelist_triage": 680,
-    "venue_alias_proposal": 464,
-    "topic_alignment": 464,
-    "analysis_backlog_plan": 462,
-    "quality_guard_check": 464,
-    "actionable_next_step": 464
+    "whitelist_triage": 510,
+    "venue_alias_proposal": 498,
+    "topic_alignment": 498,
+    "analysis_backlog_plan": 490,
+    "quality_guard_check": 498,
+    "actionable_next_step": 498
   },
   "action_samples": [
     {
-      "task_id": "2026-03-05:pmid:41289566:whitelist_triage:0",
+      "task_id": "2026-03-08:pmid:41781648:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "pmid:41289566",
-      "action": "记录期刊'Cancer research'作为潜在白名单扩展候选",
-      "priority": "P1",
-      "definition_of_done": "在白名单扩展建议数据库中创建记录，包含期刊影响因子、专业领域、近3年相关论文质量分析"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41289566:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41289566",
-      "action": "分析该研究方法学严谨性并评估临床转化风险",
-      "priority": "P1",
-      "definition_of_done": "完成方法学评估报告，包括数据集规模、验证策略、临床适用性声明等关键指标评分"
-    },
-    {
-      "task_id": "2026-03-05:doi:10.1515/reveh-2025-0123:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "doi:10.1515/reveh-2025-0123",
-      "action": "将 Reviews on Environmental Health 期刊加入未来白名单扩展候选列表",
-      "priority": "P1",
-      "definition_of_done": "在白名单扩展建议数据库中创建新条目，记录期刊ISSN、影响因子、学科领域等元数据"
-    },
-    {
-      "task_id": "2026-03-05:doi:10.1515/reveh-2025-0123:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "doi:10.1515/reveh-2025-0123",
-      "action": "分析该期刊的学术指标和声誉评估",
-      "priority": "P1",
-      "definition_of_done": "获取期刊的最新影响因子、CiteScore、中科院分区等指标，并与现有白名单期刊进行对比分析"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41184128:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41184128",
-      "action": "add_venue_to_future_whitelist_expansion",
-      "priority": "P1",
-      "definition_of_done": "将 'Cold Spring Harbor perspectives in medicine' 添加到白名单扩展候选列表中，并记录本次案例作为支持证据"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41184128:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41184128",
-      "action": "process_paper_content_for_analysis",
-      "priority": "P0",
-      "definition_of_done": "对PMID 41184128的全文内容进行提取、解析并存入知识库供后续分析使用"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41770475:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41770475",
-      "action": "记录期刊信息到待评估列表",
-      "priority": "P1",
-      "definition_of_done": "将Progress in Orthodontics期刊信息添加到白名单扩展候选列表，并标记为正畸学领域专业期刊"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41770475:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41770475",
-      "action": "分析论文AI技术贡献度",
-      "priority": "P1",
-      "definition_of_done": "评估该论文中深度学习方法的技术创新点和算法改进程度，确定是否符合AI研究标准"
-    },
-    {
-      "task_id": "2026-03-05:doi:10.46889/josr.2026.7112:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "doi:10.46889/josr.2026.7112",
-      "action": "verify_journal_accreditation_status",
-      "priority": "P1",
-      "definition_of_done": "查询Journal of Orthopaedic Science and Research的ISSN、影响因子、出版商信息，并确认其是否被PubMed、Scopus等主流数据库收录"
-    },
-    {
-      "task_id": "2026-03-05:doi:10.46889/josr.2026.7112:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "doi:10.46889/josr.2026.7112",
-      "action": "assess_publisher_credibility",
-      "priority": "P1",
-      "definition_of_done": "验证该期刊的出版商资质、同行评议流程、开放获取政策以及是否存在掠夺性出版嫌疑"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41772176:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41772176",
-      "action": "将该论文添加到已接受队列中",
-      "priority": "P0",
-      "definition_of_done": "确认论文ID pmid:41772176已移至accepted_papers.json文件中，并更新状态为processed"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41772176:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41772176",
-      "action": "提取论文中的关键发现用于方法论风险评估",
-      "priority": "P1",
-      "definition_of_done": "从摘要中提取关于'混杂因素'、'因果关系vs相关关系'等关键概念，并存入methodology_risks数据库中"
-    },
-    {
-      "task_id": "2026-03-05:doi:10.70962/jhi.20250119:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "doi:10.70962/jhi.20250119",
-      "action": "记录此期刊为潜在白名单候选",
-      "priority": "P1",
-      "definition_of_done": "将'Journal of Human Immunity'添加到白名单扩展待评估列表中，并标记为免疫学相关期刊"
-    },
-    {
-      "task_id": "2026-03-05:doi:10.70962/jhi.20250119:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "doi:10.70962/jhi.20250119",
-      "action": "分析该期刊的出版商和影响因子指标",
-      "priority": "P1",
-      "definition_of_done": "获取该期刊的ISSN、出版商信息、JCR分区及影响因子数据，用于白名单准入评估"
-    },
-    {
-      "task_id": "2026-03-05:doi:10.1515/revneuro-2025-0141:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "doi:10.1515/revneuro-2025-0141",
-      "action": "submit_future_whitelist_expansion_proposal",
-      "priority": "P1",
-      "definition_of_done": "向白名单管理团队提交将'Reviews in the Neurosciences'期刊纳入白名单的正式申请，附带影响因子、中科院分区、JCR分区等指标数据"
-    },
-    {
-      "task_id": "2026-03-05:doi:10.1515/revneuro-2025-0141:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "doi:10.1515/revneuro-2025-0141",
-      "action": "document_venue_evaluation_criteria",
-      "priority": "P1",
-      "definition_of_done": "记录该期刊的基本信息包括ISSN、影响因子、出版商、同行评议状态等，用于后续白名单规则优化参考"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41772339:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41772339",
+      "paper_id": "pmid:41781648",
       "action": "记录当前拒绝决策到审核日志",
       "priority": "P1",
-      "definition_of_done": "在whitelist_rejected日志中添加此条目的详细拒绝理由和决策时间戳"
+      "definition_of_done": "在 whitelist_rejected_log 表中添加该条目的详细拒绝原因、决策时间戳和审核人员信息"
     },
     {
-      "task_id": "2026-03-05:pmid:41772339:whitelist_triage:0",
+      "task_id": "2026-03-08:pmid:41781648:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "pmid:41772339",
-      "action": "评估期刊准入阈值是否需要调整",
+      "paper_id": "pmid:41781648",
+      "action": "评估期刊 Medical & biological engineering & computing 的收录标准",
       "priority": "P2",
-      "definition_of_done": "分析过去6个月内该期刊发表的其他论文的技术含量，确定是否需要将此期刊加入观察列表或调整准入标准"
+      "definition_of_done": "分析该期刊近2年发表的计算机理论相关论文比例，若超过30%则建议将其加入白名单候选"
     },
     {
-      "task_id": "2026-03-05:doi:10.1088/1361-6404/ae45df:whitelist_triage:0",
+      "task_id": "2026-03-08:doi:10.14233/ajchem.2026.33062:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "doi:10.1088/1361-6404/ae45df",
-      "action": "记录此案例作为白名单扩展候选",
+      "paper_id": "doi:10.14233/ajchem.2026.33062",
+      "action": "将Asian Journal of Chemistry加入venue_blacklist",
       "priority": "P1",
-      "definition_of_done": "将此期刊名称'European Journal of Physics'添加到白名单扩展待审列表中，并标记为物理教育类期刊"
+      "definition_of_done": "在blacklist配置文件中添加该期刊名称及其变体形式，并更新到生产环境"
     },
     {
-      "task_id": "2026-03-05:doi:10.1088/1361-6404/ae45df:whitelist_triage:0",
+      "task_id": "2026-03-08:doi:10.14233/ajchem.2026.33062:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "doi:10.1088/1361-6404/ae45df",
-      "action": "更新拒绝统计日志",
+      "paper_id": "doi:10.14233/ajchem.2026.33062",
+      "action": "记录本次拒绝案例用于模型训练数据增强",
       "priority": "P2",
-      "definition_of_done": "在拒绝日志中记录此条目的误拒情况，包括期刊名称、影响因子估算、以及实际内容与拒绝理由的对比分析"
+      "definition_of_done": "将该条目的完整信息、拒绝理由和决策依据保存到训练数据集供后续模型优化使用"
     },
     {
-      "task_id": "2026-03-05:pmid:41755502:whitelist_triage:0",
+      "task_id": "2026-03-08:pmid:41700746:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "pmid:41755502",
-      "action": "将 Annals of Medicine 纳入白名单期刊候选列表进行进一步评估",
-      "priority": "P1",
-      "definition_of_done": "完成对该期刊的影响因子、AI/ML相关论文占比、学术声誉等指标的详细分析报告"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41755502:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41755502",
-      "action": "记录本案例作为白名单扩展的参考依据",
-      "priority": "P2",
-      "definition_of_done": "在白名单扩展数据库中创建条目，包含期刊名称、影响因子、代表性AI论文示例等信息"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41771583:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41771583",
-      "action": "将 Journal of Sleep Research 纳入白名单期刊候选列表进行评估",
-      "priority": "P1",
-      "definition_of_done": "完成对该期刊的影响因子、出版商、同行评议质量评估，并提交白名单扩展申请"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41771583:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41771583",
-      "action": "记录当前拒绝案例作为白名单扩展依据",
-      "priority": "P2",
-      "definition_of_done": "在白名单扩展数据库中创建条目，包含期刊名称、影响因子、研究领域等元数据"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41703778:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41703778",
-      "action": "将 Analytical Chemistry 期刊添加到白名单期刊列表中作为未来扩展建议",
-      "priority": "P1",
-      "definition_of_done": "在白名单配置文件中创建 Analytical Chemistry 期刊条目，并标记为待审核状态"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41703778:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41703778",
-      "action": "记录该论文的领域特征和期刊指标用于白名单规则优化",
-      "priority": "P2",
-      "definition_of_done": "将期刊影响因子、学科分类、论文主题等元数据存入白名单扩展数据库"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41698321:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41698321",
-      "action": "记录期刊Physics in medicine and biology为潜在白名单扩展候选",
-      "priority": "P2",
-      "definition_of_done": "在白名单扩展建议数据库中添加该期刊，并标记为医学物理领域高相关性期刊"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41698321:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41698321",
-      "action": "分析该论文研究领域关键词并归类",
-      "priority": "P1",
-      "definition_of_done": "提取论文中的关键技术术语（perfusion imaging, Voronoi discretization, PFT等）并分类到医学影像处理子领域"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41769977:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41769977",
-      "action": "verify_journal_impact_factor_and_accreditation",
-      "priority": "P1",
-      "definition_of_done": "查询Endocrine-related cancer期刊的最新影响因子、JCR分区、中科院分区，并确认是否被SCI/SCIE收录，记录具体数值和排名"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41769977:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41769977",
-      "action": "assess_paper_type_and_research_depth",
-      "priority": "P1",
-      "definition_of_done": "获取完整论文确认是否为系统性综述、荟萃分析或原创研究，评估方法学严谨性和数据质量，确定是否符合收录标准"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41766559:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41766559",
-      "action": "保持当前拒绝状态，不修改现有白名单规则",
+      "paper_id": "pmid:41700746",
+      "action": "将该论文添加到白名单数据库中",
       "priority": "P0",
-      "definition_of_done": "确认该条目继续保留在拒绝列表中，不对venue_not_allowed规则进行任何修改"
+      "definition_of_done": "在 whitelist_approved.json 中创建新条目，包含完整的 paper_id、title、venue 等元数据"
     },
     {
-      "task_id": "2026-03-05:pmid:41766559:whitelist_triage:0",
+      "task_id": "2026-03-08:pmid:41700746:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "pmid:41766559",
-      "action": "记录未来白名单扩展建议：考虑将Journal of Chemical Information and Modeling中涉及生物医学应用的高质量计算生物学论文纳入例外范围",
+      "paper_id": "pmid:41700746",
+      "action": "记录白名单扩展建议到 future_expansion_suggestions 表",
+      "priority": "P1",
+      "definition_of_done": "在建议表中添加新记录，标记 venue_norm='analytical chemistry' 为潜在白名单扩展候选"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41782096:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41782096",
+      "action": "提交白名单扩展建议至审核流程",
+      "priority": "P1",
+      "definition_of_done": "将该期刊BMC Bioinformatics纳入白名单候选列表，并提交给领域专家进行最终确认"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41782096:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41782096",
+      "action": "记录该论文的技术特征用于模型训练",
       "priority": "P2",
-      "definition_of_done": "在白名单扩展建议数据库中添加该期刊+生物医学应用领域的组合作为潜在扩展方向"
+      "definition_of_done": "提取论文的关键词、技术栈、应用领域等元数据，更新到白名单决策模型的训练集中"
     },
     {
-      "task_id": "2026-03-05:pmid:41717938:whitelist_triage:0",
+      "task_id": "2026-03-08:pmid:41779699:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "pmid:41717938",
-      "action": "提交未来白名单扩展建议，将 Journal of the American Heart Association 纳入允许期刊列表",
-      "priority": "P1",
-      "definition_of_done": "正式文档记录该期刊的学术声誉、影响因子、专业领域等信息，并提交给规则管理团队评估"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41717938:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41717938",
-      "action": "验证期刊的最新影响因子和中科院分区，确认其学术地位",
-      "priority": "P1",
-      "definition_of_done": "获取2023年最新JCR影响因子数据和中科院SCI分区信息，确认期刊为Q1区或Q2区"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41771757:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41771757",
-      "action": "add_venue_to_future_whitelist",
-      "priority": "P1",
-      "definition_of_done": "将Wiley Interdisciplinary Reviews系列期刊添加到白名单候选列表，待季度评审时考虑纳入正式白名单"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41771757:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41771757",
-      "action": "update_venue_classification",
-      "priority": "P1",
-      "definition_of_done": "重新评估Wiley Interdisciplinary Reviews Nanomedicine and Nanobiotechnology期刊的准入标准，记录其在生物医学AI应用领域的重要性"
-    },
-    {
-      "task_id": "2026-03-05:doi:10.17973/mmsj.2026_03_2025149:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "doi:10.17973/mmsj.2026_03_2025149",
+      "paper_id": "pmid:41779699",
       "action": "记录期刊白名单扩展需求",
       "priority": "P1",
-      "definition_of_done": "在白名单扩展建议数据库中创建新条目，包含期刊名称、影响因子评估、学科领域分类、以及本次拒绝案例作为参考"
+      "definition_of_done": "将PLOS ONE期刊添加到白名单扩展待办列表中，并标记为医学图像处理相关期刊"
     },
     {
-      "task_id": "2026-03-05:doi:10.17973/mmsj.2026_03_2025149:whitelist_triage:0",
+      "task_id": "2026-03-08:pmid:41779699:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "doi:10.17973/mmsj.2026_03_2025149",
-      "action": "分析期刊质量指标",
+      "paper_id": "pmid:41779699",
+      "action": "分析领域关键词模式",
       "priority": "P1",
-      "definition_of_done": "获取MM Science Journal的ISSN、影响因子、出版商信息、同行评议状态，并评估其在工程技术领域的学术声誉等级"
+      "definition_of_done": "提取该论文的医学图像分割、深度学习、肾微血管结构等关键词，用于优化白名单规则"
     },
     {
-      "task_id": "2026-03-05:doi:10.17973/mmsj.2026_03_2025117:whitelist_triage:0",
+      "task_id": "2026-03-08:pmid:41786919:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "doi:10.17973/mmsj.2026_03_2025117",
-      "action": "记录期刊 MM Science Journal 到待评估期刊池",
+      "paper_id": "pmid:41786919",
+      "action": "提交白名单扩展建议至审核团队",
       "priority": "P1",
-      "definition_of_done": "在期刊评估数据库中创建新条目，包含期刊名称、ISSN(如可用)、首次出现时间、拒绝次数统计"
+      "definition_of_done": "正式文档提交包含期刊名称、影响因子数据、论文质量评估的白名单扩展申请"
     },
     {
-      "task_id": "2026-03-05:doi:10.17973/mmsj.2026_03_2025117:whitelist_triage:0",
+      "task_id": "2026-03-08:pmid:41786919:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "doi:10.17973/mmsj.2026_03_2025117",
-      "action": "分析期刊 MM Science Journal 的影响因子和学术声誉指标",
+      "paper_id": "pmid:41786919",
+      "action": "记录该期刊为潜在白名单候选",
+      "priority": "P2",
+      "definition_of_done": "在白名单管理数据库中创建该期刊条目，标记为待进一步评估状态"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41787245:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41787245",
+      "action": "将 'Environmental toxicology' 期刊加入未来白名单扩展候选列表",
+      "priority": "P2",
+      "definition_of_done": "在白名单扩展建议文档中记录该期刊名称、影响因子、相关领域，并标注为环境健康与毒理学方向的潜在扩展目标"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41787245:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41787245",
+      "action": "记录当前拒绝规则 'venue_not_allowed' 的触发频率统计",
       "priority": "P1",
-      "definition_of_done": "获取期刊的JCR分区、CiteScore、H指数等指标，并与当前白名单期刊标准进行对比分析"
+      "definition_of_done": "更新拒绝原因统计表，记录 'venue_not_allowed' 触发次数，为后续规则优化提供数据支持"
     },
     {
-      "task_id": "2026-03-05:doi:10.1515/cclm-2026-0056:whitelist_triage:0",
+      "task_id": "2026-03-08:pmid:41774255:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "doi:10.1515/cclm-2026-0056",
+      "paper_id": "pmid:41774255",
+      "action": "记录该期刊为潜在低质量期刊",
+      "priority": "P1",
+      "definition_of_done": "将International Ophthalmology期刊添加到监控列表中，统计其后续相关论文质量分布"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41774255:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41774255",
+      "action": "更新期刊质量评估数据库",
+      "priority": "P2",
+      "definition_of_done": "在期刊质量评估系统中记录本次拒绝决策，为未来类似期刊评估提供参考依据"
+    },
+    {
+      "task_id": "2026-03-08:doi:10.3389/fcell.2026.1795359:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "doi:10.3389/fcell.2026.1795359",
+      "action": "submit_future_whitelist_expansion_proposal",
+      "priority": "P1",
+      "definition_of_done": "提交包含期刊Frontiers in Cell and Developmental Biology的白名单扩展申请，附影响因子、中科院分区、JCR分区等指标数据支撑"
+    },
+    {
+      "task_id": "2026-03-08:doi:10.3389/fcell.2026.1795359:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "doi:10.3389/fcell.2026.1795359",
+      "action": "document_clinical_relevance_metrics",
+      "priority": "P1",
+      "definition_of_done": "记录该论文涉及的NAT10作为诊断预后标志物和治疗靶点的具体临床应用潜力描述，用于后续相关领域决策参考"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41774661:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41774661",
+      "action": "add_venue_to_future_whitelist_proposal",
+      "priority": "P1",
+      "definition_of_done": "将IEEE Transactions on Computational Biology and Bioinformatics期刊添加到白名单扩展建议列表中，并记录影响因子、出版商信息及近3年发文量统计"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41774661:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41774661",
+      "action": "extract_domain_metadata_for_training",
+      "priority": "P1",
+      "definition_of_done": "从该论文提取领域标签[computational_biology, bioinformatics, deep_learning, protein_identification]并更新领域分类模型训练数据集"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41772255:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41772255",
+      "action": "add_to_manual_review_queue_for_whitelist_expansion_consideration",
+      "priority": "P1",
+      "definition_of_done": "将该期刊Clinical & Translational Oncology添加到白名单扩展待审队列中，供后续批量评估"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41772255:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41772255",
+      "action": "document_venue_acceptance_criteria_for_oncology_journals",
+      "priority": "P2",
+      "definition_of_done": "记录该期刊的详细信息（ISSN、影响因子、出版社等）作为未来肿瘤学领域期刊准入参考标准"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41787197:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41787197",
+      "action": "记录期刊评估数据",
+      "priority": "P1",
+      "definition_of_done": "将期刊 'Clinical and experimental medicine' 的影响因子、JCR分区、中科院分区等指标录入期刊评估数据库，并标记此拒绝案例"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41787197:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41787197",
+      "action": "分析论文引用价值",
+      "priority": "P1",
+      "definition_of_done": "获取该论文的引用次数、H指数、作者机构影响力等指标，评估是否值得考虑扩展白名单"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41679738:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41679738",
+      "action": "记录期刊白名单扩展需求",
+      "priority": "P1",
+      "definition_of_done": "在期刊白名单扩展待办列表中添加 Journal of proteome research，并标注此案例作为支持证据"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41679738:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41679738",
+      "action": "分析期刊影响因子和相关性",
+      "priority": "P1",
+      "definition_of_done": "查询 Journal of proteome research 的最新影响因子、中科院分区、JCR分区等指标，评估其学术声誉和与生物医学领域的相关性"
+    },
+    {
+      "task_id": "2026-03-08:doi:10.35848/1347-4065/ae4700:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "doi:10.35848/1347-4065/ae4700",
+      "action": "提交白名单扩展建议至venue_allowlist",
+      "priority": "P1",
+      "definition_of_done": "将Japanese Journal of Applied Physics添加到白名单扩展候选列表，并标注为应用物理领域权威期刊"
+    },
+    {
+      "task_id": "2026-03-08:doi:10.35848/1347-4065/ae4700:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "doi:10.35848/1347-4065/ae4700",
+      "action": "标记该论文为光学工程领域高质量样本",
+      "priority": "P2",
+      "definition_of_done": "在quality_samples数据库中添加该DOI记录，分类为optics_photonics，用于后续模型训练参考"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41786814:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41786814",
+      "action": "verify_venue_quality_metrics",
+      "priority": "P1",
+      "definition_of_done": "确认Scientific Reports在环境科学/公共卫生领域的声誉评分、影响因子、同行评议质量，并检查该期刊在此类研究的发表标准"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41786814:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41786814",
+      "action": "assess_paper_methodology_rigor",
+      "priority": "P1",
+      "definition_of_done": "完整阅读论文全文，评估机器学习模型的验证方法、统计显著性、数据质量控制措施，以及结果的可重现性"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41289842:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41289842",
+      "action": "记录本案例作为边界案例存档",
+      "priority": "P1",
+      "definition_of_done": "将此PMID及拒绝理由存入boundary_cases数据库，标记为光谱学与生物医学交叉领域的典型示例"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41289842:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41289842",
+      "action": "评估光谱学相关期刊纳入白名单的可行性",
+      "priority": "P2",
+      "definition_of_done": "调研Spectrochimica Acta Part A等光谱学期刊在生物医学应用方面的发文比例和影响因子，形成是否扩展白名单的决策报告"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41784445:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41784445",
+      "action": "add_venue_to_future_whitelist_consideration",
+      "priority": "P1",
+      "definition_of_done": "将期刊 'Multidisciplinary respiratory medicine' 添加到未来白名单扩展候选列表中，并记录影响因子和相关领域指标"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41784445:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41784445",
+      "action": "document_conference_proceedings_pattern",
+      "priority": "P2",
+      "definition_of_done": "记录意大利国家肺部影像学大会相关模式，包括会议性质、主办机构(SIP-IRS)等信息用于后续规则优化"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41783483:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41783483",
+      "action": "记录此期刊为潜在白名单候选",
+      "priority": "P1",
+      "definition_of_done": "将DEN open期刊添加到白名单扩展待评估列表中，并标记此案例作为支持证据"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41783483:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41783483",
+      "action": "分析期刊影响因子和学术声誉",
+      "priority": "P1",
+      "definition_of_done": "查询DEN open期刊的IF、出版商、同行评议状态等指标，形成评估报告"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41781782:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41781782",
       "action": "记录本次拒绝决策到审核日志",
       "priority": "P1",
-      "definition_of_done": "在whitelist_audit_log中添加该DOI的拒绝记录，包含拒绝时间、原因、处理人员信息"
+      "definition_of_done": "在 whitelist_rejection_log 中添加该条目的详细拒绝原因、决策时间戳和操作员ID"
     },
     {
-      "task_id": "2026-03-05:doi:10.1515/cclm-2026-0056:whitelist_triage:0",
+      "task_id": "2026-03-08:pmid:41781782:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "doi:10.1515/cclm-2026-0056",
-      "action": "收集同类型临床化学期刊数据用于白名单扩展评估",
+      "paper_id": "pmid:41781782",
+      "action": "评估 Molecular Diversity 期刊是否适合加入白名单扩展候选",
       "priority": "P2",
-      "definition_of_done": "收集至少5个同领域的临床化学实验室期刊影响因子、发表量、质量指标数据并形成分析报告"
+      "definition_of_done": "完成对该期刊近2年发表的生物医学计算研究文章质量分析报告，包括影响因子、发文量、同行评议质量等指标"
     },
     {
-      "task_id": "2026-03-05:doi:10.1186/s12995-026-00503-x:whitelist_triage:0",
+      "task_id": "2026-03-08:doi:10.1038/s41467-026-69217-2:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "doi:10.1186/s12995-026-00503-x",
-      "action": "记录期刊信息到白名单扩展候选库",
-      "priority": "P1",
-      "definition_of_done": "将Journal of Occupational Medicine and Toxicology期刊信息添加到whitelist_expansion_candidates数据库中，并标记为职业健康相关领域"
-    },
-    {
-      "task_id": "2026-03-05:doi:10.1186/s12995-026-00503-x:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "doi:10.1186/s12995-026-00503-x",
-      "action": "分析期刊发表模式和内容特征",
-      "priority": "P1",
-      "definition_of_done": "收集该期刊近3年发表的职业健康、流行病学相关论文数量统计，形成期刊特征报告用于后续白名单规则优化决策"
-    },
-    {
-      "task_id": "2026-03-05:doi:10.1063/5.0295035:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "doi:10.1063/5.0295035",
-      "action": "将The Journal of Chemical Physics添加到白名单候选期刊列表中进行进一步评估",
-      "priority": "P1",
-      "definition_of_done": "完成对该期刊的历史发文质量、影响因子、同行评议标准的全面分析，并形成正式的白名单扩展建议报告"
-    },
-    {
-      "task_id": "2026-03-05:doi:10.1063/5.0295035:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "doi:10.1063/5.0295035",
-      "action": "记录当前拒绝案例作为白名单规则优化的数据支撑",
-      "priority": "P2",
-      "definition_of_done": "在拒绝案例数据库中标记此条目为'高质量误拒'，并关联到相关白名单扩展建议流程"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41772128:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41772128",
-      "action": "记录期刊信息到白名单扩展候选库",
-      "priority": "P2",
-      "definition_of_done": "将NPJ Precision Oncology期刊信息、影响因子、相关论文类型统计录入白名单扩展评估数据库"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41772128:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41772128",
-      "action": "分析该期刊生物信息学相关论文比例",
-      "priority": "P2",
-      "definition_of_done": "统计NPJ Precision Oncology近3年发表的生物信息学相关论文数量和占比，形成期刊评估报告"
-    },
-    {
-      "task_id": "2026-03-05:doi:10.1038/s41556-026-01873-4:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "doi:10.1038/s41556-026-01873-4",
-      "action": "记录该案例作为未来白名单扩展参考",
-      "priority": "P1",
-      "definition_of_done": "在whitelist_expansion_proposals.csv中添加该DOI及其主题分类，标记为'developmental_biology_embryology'候选"
-    },
-    {
-      "task_id": "2026-03-05:doi:10.1038/s41556-026-01873-4:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "doi:10.1038/s41556-026-01873-4",
-      "action": "分析类似主题模式以支持规则扩展决策",
-      "priority": "P2",
-      "definition_of_done": "检索过去6个月被拒绝的'developmental_biology'相关文章数量和影响因子分布，形成统计报告"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41772529:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41772529",
-      "action": "add_venue_to_future_consideration_list",
-      "priority": "P2",
-      "definition_of_done": "将BMC Surgery期刊添加到未来白名单扩展候选列表中，并记录当前拒绝理由和论文特征分析结果"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41772529:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41772529",
-      "action": "document_ml_healthcare_pattern",
-      "priority": "P1",
-      "definition_of_done": "创建关于医疗健康领域ML应用的模式文档，记录此类论文的特征、质量指标和潜在收录价值评估"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41774326:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41774326",
-      "action": "add_journal_to_future_whitelist",
-      "priority": "P1",
-      "definition_of_done": "将 'Insights into imaging' 期刊添加到白名单候选列表，并设置监控机制跟踪该期刊后续发表的AI相关论文质量"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41774326:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41774326",
-      "action": "create_journal_evaluation_report",
-      "priority": "P1",
-      "definition_of_done": "生成该期刊的影响因子、中科院分区、JCR分区等指标报告，评估其在医学影像领域的学术声誉和质量水平"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41774232:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41774232",
-      "action": "maintain_current_rejection_status",
+      "paper_id": "doi:10.1038/s41467-026-69217-2",
+      "action": "获取完整论文摘要和全文内容进行详细主题分析",
       "priority": "P0",
-      "definition_of_done": "确认该条目保持拒绝状态，不修改现有白名单规则，记录拒绝决策到triage_log"
+      "definition_of_done": "获得该DOI对应的完整摘要文本，并完成主题分类评估"
     },
     {
-      "task_id": "2026-03-05:pmid:41774232:whitelist_triage:0",
+      "task_id": "2026-03-08:doi:10.1038/s41467-026-69217-2:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "pmid:41774232",
-      "action": "document_future_whitelist_expansion_criteria",
+      "paper_id": "doi:10.1038/s41467-026-69217-2",
+      "action": "更新crossref元数据同步机制以确保abstract字段完整性",
       "priority": "P1",
-      "definition_of_done": "将期刊'supportive care in cancer'及类似支持性护理期刊纳入未来白名单扩展评估清单，当肿瘤预康复/围手术期管理成为重点研究领域时重新评估"
+      "definition_of_done": "验证crossref数据源配置并修复摘要获取流程，确保后续类似条目有完整abstract"
     },
     {
-      "task_id": "2026-03-05:pmid:41738407:whitelist_triage:0",
+      "task_id": "2026-03-08:pmid:41787391:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "pmid:41738407",
-      "action": "记录该期刊作为潜在白名单候选",
+      "paper_id": "pmid:41787391",
+      "action": "验证期刊BMC Neurology的影响因子和中科院分区",
       "priority": "P1",
-      "definition_of_done": "将Giornale italiano di cardiologia添加到白名单评估队列中，并标记其为心脏病学相关期刊"
+      "definition_of_done": "查询最新JCR影响因子和中科院SCI分区数据，确认是否达到白名单期刊标准"
     },
     {
-      "task_id": "2026-03-05:pmid:41738407:whitelist_triage:0",
+      "task_id": "2026-03-08:pmid:41787391:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "pmid:41738407",
-      "action": "分析该期刊的历史影响因子和学科覆盖范围",
+      "paper_id": "pmid:41787391",
+      "action": "评估论文研究内容与神经科学核心领域的匹配度",
+      "priority": "P1",
+      "definition_of_done": "分析标题关键词与神经科学、脑科学等核心概念的关联强度评分"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41781618:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41781618",
+      "action": "add_to_manual_review_queue_for_topic_expansion",
+      "priority": "P1",
+      "definition_of_done": "将该论文标记为'表观遗传学疾病诊断'类别样本，纳入主题规则扩展训练集"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41781618:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41781618",
+      "action": "extract_key_terms_for_rule_refinement",
+      "priority": "P1",
+      "definition_of_done": "提取'cf-EpiTracing', 'histone modifications', 'cell-free DNA', 'epigenetic signatures', 'disease diagnosis'等关键词，用于优化topic_not_allowed规则边界"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41787525:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41787525",
+      "action": "记录期刊拒稿决策并统计拒稿模式",
+      "priority": "P1",
+      "definition_of_done": "在whitelist_rejection_log中添加此条目的详细拒稿原因，包括期刊名称、影响因子范围、拒稿频次统计"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41787525:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41787525",
+      "action": "评估该期刊是否符合未来白名单扩展标准",
       "priority": "P2",
-      "definition_of_done": "收集该期刊近5年的影响因子数据、JCR分区、以及主要发表的医学子领域信息"
+      "definition_of_done": "收集该期刊的最新影响因子、中科院分区、生物医学相关发文比例等指标，判断是否达到P2级别收录标准"
     },
     {
-      "task_id": "2026-03-05:pmid:41755757:whitelist_triage:0",
+      "task_id": "2026-03-08:doi:10.3389/fcell.2026.1680076:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "pmid:41755757",
-      "action": "将 Medical Physics 期刊纳入白名单扩展候选列表进行影响因子和引用分析",
+      "paper_id": "doi:10.3389/fcell.2026.1680076",
+      "action": "记录期刊质量评估数据",
       "priority": "P1",
-      "definition_of_done": "完成该期刊近5年影响因子统计、CiteScore评估，并与已白名单期刊进行对比分析报告"
+      "definition_of_done": "将该期刊的影响因子、中科院分区、预警情况等指标录入期刊质量数据库，并标记为待进一步评估状态"
     },
     {
-      "task_id": "2026-03-05:pmid:41755757:whitelist_triage:0",
+      "task_id": "2026-03-08:doi:10.3389/fcell.2026.1680076:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "pmid:41755757",
-      "action": "建立医学物理类期刊分类评估标准并制定准入门槛",
-      "priority": "P1",
-      "definition_of_done": "形成医学物理期刊评估框架文档，包括影响因子阈值、专业排名要求、发文量统计等具体指标"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41771797:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41771797",
-      "action": "将The Journal of Pathology加入未来白名单扩展候选列表进行影响因子和声誉评估",
-      "priority": "P1",
-      "definition_of_done": "完成该期刊的JCR分区、影响因子、中科院分区等指标收集，并形成白名单扩展建议报告"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41771797:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41771797",
-      "action": "记录此条目的拒绝统计用于白名单规则优化分析",
+      "paper_id": "doi:10.3389/fcell.2026.1680076",
+      "action": "生成白名单扩展建议报告",
       "priority": "P2",
-      "definition_of_done": "在拒绝日志中添加此条目信息，包括期刊名称、文章类型、拒绝原因等字段用于后续规则调整参考"
+      "definition_of_done": "撰写针对 Frontiers in Cell and Developmental Biology 期刊的详细评估报告，包括影响因子趋势、发文量变化、同行评议质量分析，提交给规则制定团队"
     },
     {
-      "task_id": "2026-03-05:pmid:41766648:whitelist_triage:0",
+      "task_id": "2026-03-08:doi:10.1186/s12916-026-04746-7:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "pmid:41766648",
-      "action": "记录本案例作为白名单扩展候选期刊数据点",
+      "paper_id": "doi:10.1186/s12916-026-04746-7",
+      "action": "将BMC Medicine添加至白名单期刊列表中",
       "priority": "P1",
-      "definition_of_done": "将期刊Briefings in bioinformatics及其影响因子、分区信息录入白名单扩展评估数据库，标记为P2优先级候选项"
+      "definition_of_done": "在whitelist_rules.json中添加\"bmc medicine\"到allowed_venues数组，并更新last_modified时间戳"
     },
     {
-      "task_id": "2026-03-05:pmid:41766648:whitelist_triage:0",
+      "task_id": "2026-03-08:doi:10.1186/s12916-026-04746-7:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "pmid:41766648",
-      "action": "分析论文引用网络中相关期刊的白名单准入情况",
+      "paper_id": "doi:10.1186/s12916-026-04746-7",
+      "action": "创建医学领域白名单扩展策略文档",
       "priority": "P2",
-      "definition_of_done": "检索该论文参考文献中的目标期刊是否已在白名单中，统计相关领域期刊覆盖率并生成报告"
+      "definition_of_done": "完成research-kb/whitelist_expansion_strategy.md文档，明确医学类高质量期刊纳入标准和评估流程"
     },
     {
-      "task_id": "2026-03-05:pmid:41760271:whitelist_triage:0",
+      "task_id": "2026-03-08:pmid:41784143:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "pmid:41760271",
-      "action": "add_anticancer_research_to_future_whitelist_for_hqol_studies",
+      "paper_id": "pmid:41784143",
+      "action": "add_nanoscale_journal_to_whitelist_proposal",
       "priority": "P1",
-      "definition_of_done": "将Anticancer Research期刊添加到白名单扩展候选列表，专门针对健康相关生命质量(HRQOL)评估研究类别"
+      "definition_of_done": "提交Nanoscale期刊加入白名单的正式提案，包括期刊影响因子、中科院分区、相关领域重要性分析"
     },
     {
-      "task_id": "2026-03-05:pmid:41760271:whitelist_triage:0",
+      "task_id": "2026-03-08:pmid:41784143:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "pmid:41760271",
-      "action": "create_rule_exception_for_eq5d_instrument_studies",
+      "paper_id": "pmid:41784143",
+      "action": "analyze_similar_venues_pattern",
+      "priority": "P2",
+      "definition_of_done": "识别其他纳米材料/生物传感领域的高质量期刊，建立相似期刊白名单扩展候选列表"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41539275:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41539275",
+      "action": "add_venue_to_future_whitelist_expansion",
       "priority": "P1",
-      "definition_of_done": "建立EQ-5D量表相关研究的特殊审核规则，允许此类生命质量评估工具验证研究进入白名单"
+      "definition_of_done": "将european journal of medicinal chemistry添加到白名单扩展建议列表中，并记录当前拒绝案例作为支持证据"
     },
     {
-      "task_id": "2026-03-05:pmid:41418101:whitelist_triage:0",
+      "task_id": "2026-03-08:pmid:41539275:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "pmid:41418101",
-      "action": "记录该期刊'Cancer research'作为潜在白名单扩展候选",
+      "paper_id": "pmid:41539275",
+      "action": "process_current_item_through_approved_pipeline",
+      "priority": "P0",
+      "definition_of_done": "将该条目从whitelist_rejected.json移至已处理队列，确保其进入正常的KB构建流程"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41705667:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41705667",
+      "action": "add_journal_to_whitelist_candidate",
       "priority": "P1",
-      "definition_of_done": "将'Cancer research'添加到白名单扩展待评估列表，并记录影响因子、中科院分区等相关指标"
+      "definition_of_done": "将 Journal of Materials Chemistry B 添加到白名单候选列表中，并记录此案例作为支持证据"
     },
     {
-      "task_id": "2026-03-05:pmid:41418101:whitelist_triage:0",
+      "task_id": "2026-03-08:pmid:41705667:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "pmid:41418101",
-      "action": "分析该论文的研究方法学价值并评估白名单准入标准",
+      "paper_id": "pmid:41705667",
+      "action": "create_venue_evaluation_report",
       "priority": "P1",
-      "definition_of_done": "完成对该论文中机器学习、深度学习方法的具体应用分析报告，包括算法类型、数据规模、性能指标等关键信息"
+      "definition_of_done": "生成该期刊的影响因子、中科院分区、生物医学相关度评估报告，为白名单决策提供数据支撑"
     },
     {
-      "task_id": "2026-03-05:pmid:41469162:whitelist_triage:0",
+      "task_id": "2026-03-08:pmid:41772886:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "pmid:41469162",
-      "action": "记录本次拒绝决策到审核日志",
+      "paper_id": "pmid:41772886",
+      "action": "记录期刊信息到白名单扩展候选库",
+      "priority": "P2",
+      "definition_of_done": "将Journal of medical radiation sciences期刊信息、影响因子、出版商等元数据录入白名单扩展候选数据库，并标记为放射治疗教育领域"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41772886:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41772886",
+      "action": "分析期刊质量指标决定是否推荐白名单扩展",
+      "priority": "P2",
+      "definition_of_done": "获取该期刊的JCR分区、影响因子、CiteScore等指标，若满足学术质量标准则生成白名单扩展建议报告"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41785238:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41785238",
+      "action": "将PLOS ONE期刊纳入白名单候选列表进行批量评估",
       "priority": "P1",
-      "definition_of_done": "在whitelist_audit_log中添加该PMID的拒绝记录，包含拒绝原因、决策时间戳和决策人标识"
+      "definition_of_done": "完成PLOS ONE期刊近3年相关领域论文质量统计分析报告，包括影响因子分布、引用情况和内容相关性评分"
     },
     {
-      "task_id": "2026-03-05:pmid:41469162:whitelist_triage:0",
+      "task_id": "2026-03-08:pmid:41785238:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "pmid:41469162",
+      "paper_id": "pmid:41785238",
+      "action": "建立生物医学AI虚拟筛选领域期刊白名单扩展标准",
+      "priority": "P1",
+      "definition_of_done": "制定包含期刊影响因子阈值、领域相关性权重、发文量限制的具体白名单准入规则文档"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41780317:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41780317",
+      "action": "记录期刊 Computers in Biology and Medicine 的相关特征和拒稿模式",
+      "priority": "P1",
+      "definition_of_done": "在期刊白名单审核日志中记录该期刊的学科分类、影响因子、以及本次拒稿的具体原因分析"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41780317:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41780317",
+      "action": "评估生物医学NLP类期刊的白名单扩展必要性",
+      "priority": "P2",
+      "definition_of_done": "完成对 Computers in Biology and Medicine 等生物信息学交叉期刊的调研报告，包括期刊排名、生物医学内容占比、是否适合纳入未来白名单"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41786570:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41786570",
+      "action": "记录当前拒绝决策到审核日志",
+      "priority": "P1",
+      "definition_of_done": "在whitelist_audit_log中添加该条目的拒绝记录，包含决策时间、操作人、决策理由和置信度"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41786570:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41786570",
       "action": "生成未来白名单扩展建议",
       "priority": "P2",
-      "definition_of_done": "向whiteilist_expansion_proposals表中提交建议：考虑将Journal of Nuclear Medicine等核医学权威期刊纳入白名单范围，理由是其发表高质量医学影像AI应用研究"
+      "definition_of_done": "创建白名单扩展建议工单，建议评估'Annals of oncology'期刊是否适合加入白名单，基于其影响因子、专业相关性和发表质量"
     },
     {
-      "task_id": "2026-03-05:pmid:41772255:whitelist_triage:0",
+      "task_id": "2026-03-08:pmid:41774185:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "pmid:41772255",
-      "action": "记录期刊信息到白名单扩展候选库",
-      "priority": "P2",
-      "definition_of_done": "将Clinical & Translational Oncology期刊信息、影响因子、出版商信息录入白名单扩展候选数据库，并标记为肿瘤学领域中等影响力期刊"
-    },
-    {
-      "task_id": "2026-03-05:pmid:41772255:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "pmid:41772255",
-      "action": "分析同作者/机构其他发表物质量",
-      "priority": "P2",
-      "definition_of_done": "检索该论文通讯作者及其他合作者在过去3年内的其他发表物，统计其发表期刊分布和影响因子情况，形成质量评估报告"
-    },
-    {
-      "task_id": "2026-03-05:doi:10.1038/s41467-026-70210-y:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "doi:10.1038/s41467-026-70210-y",
-      "action": "记录本次拒绝案例到审核日志",
+      "paper_id": "pmid:41774185",
+      "action": "查询期刊Chirurgie (Heidelberg, Germany)的完整信息包括影响因子、JCR分区、中科院分区等指标",
       "priority": "P1",
-      "definition_of_done": "在whitelist_rejected日志中添加该条目的详细拒绝记录，包括论文标题、主题分析、拒绝理由和决策时间戳"
+      "definition_of_done": "获取该期刊2023年最新影响因子、JCR Q分区、中科院医学大类分区，并记录在期刊评估表中"
     },
     {
-      "task_id": "2026-03-05:doi:10.1038/s41467-026-70210-y:whitelist_triage:0",
+      "task_id": "2026-03-08:pmid:41774185:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "doi:10.1038/s41467-026-70210-y",
-      "action": "提取论文主题关键词用于白名单规则优化分析",
+      "paper_id": "pmid:41774185",
+      "action": "评估prehabilitation(预康复)领域在当前知识库中的覆盖情况和研究热度",
+      "priority": "P1",
+      "definition_of_done": "统计过去2年内预康复相关论文数量，分析该领域核心期刊列表，确定是否需要扩展相关领域白名单"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41775248:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41775248",
+      "action": "add_journal_to_whitelist_candidate",
+      "priority": "P1",
+      "definition_of_done": "将Obstetrics & gynecology science期刊添加到白名单候选列表，并设置自动监控机制跟踪后续发表的相关领域论文"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41775248:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41775248",
+      "action": "create_manual_review_flag",
       "priority": "P2",
-      "definition_of_done": "从标题和已知信息中提取'土壤湿度-大气反馈'、'热浪'、'气候科学'等关键词，归档到白名单扩展需求池"
+      "definition_of_done": "为该期刊建立人工复审流程，当同一期刊再次出现时触发专家评审，确认是否正式加入白名单"
     },
     {
-      "task_id": "2026-03-05:doi:10.1038/s41467-026-70086-y:whitelist_triage:0",
+      "task_id": "2026-03-08:pmid:41776328:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "doi:10.1038/s41467-026-70086-y",
-      "action": "记录本条目作为未来白名单扩展候选，标记为基因组稳定性研究类别",
+      "paper_id": "pmid:41776328",
+      "action": "将Scientific Reports期刊添加到白名单扩展候选列表中，记录影响因子和中科院分区信息",
       "priority": "P1",
-      "definition_of_done": "在白名单扩展数据库中创建条目，分类为'genomic_stability_research'，并标注相关关键词如chromoanasynthesis、MM-BIR、chromosomal_rearrangement"
+      "definition_of_done": "在白名单扩展数据库中创建Scientific Reports条目，记录其IF>4.0、JCR Q2-Q3分区等指标，并标记为高优先级扩展候选"
     },
     {
-      "task_id": "2026-03-05:doi:10.1038/s41467-026-70086-y:whitelist_triage:0",
+      "task_id": "2026-03-08:pmid:41776328:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "doi:10.1038/s41467-026-70086-y",
-      "action": "分析类似主题论文模式，为白名单规则优化提供数据支持",
+      "paper_id": "pmid:41776328",
+      "action": "分析该期刊在生物医学AI领域的发表频率和质量，评估是否符合白名单收录标准",
+      "priority": "P1",
+      "definition_of_done": "统计近3年Scientific Reports发表的生物医学AI相关论文数量≥50篇，平均引用≥20次，且无明显掠夺性出版特征"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41776195:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41776195",
+      "action": "submit_future_whitelist_expansion_request",
+      "priority": "P1",
+      "definition_of_done": "向白名单管理团队提交Scientific Reports期刊纳入白名单的正式申请，附带影响因子、CiteScore等指标数据"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41776195:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41776195",
+      "action": "document_current_decision_for_review",
+      "priority": "P1",
+      "definition_of_done": "在决策日志中记录本次放行决定，标注为临时放行，设置6个月后重新评估该期刊白名单状态"
+    },
+    {
+      "task_id": "2026-03-08:doi:10.1038/s44221-026-00592-2:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "doi:10.1038/s44221-026-00592-2",
+      "action": "add_venue_to_future_whitelist_candidate",
+      "priority": "P1",
+      "definition_of_done": "Create whitelist expansion proposal including 'Nature Water' as approved venue with domain classification 'environmental_science'"
+    },
+    {
+      "task_id": "2026-03-08:doi:10.1038/s44221-026-00592-2:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "doi:10.1038/s44221-026-00592-2",
+      "action": "classify_paper_domain",
+      "priority": "P1",
+      "definition_of_done": "Assign paper to 'environmental_science' or 'materials_engineering' domain based on abstract analysis when available and update metadata"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41781638:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41781638",
+      "action": "记录本次审查决策和理由到 triage 审查日志",
+      "priority": "P1",
+      "definition_of_done": "在 triage_log 表中创建新记录，包含 task_id、decision、confidence、reasons 和审查时间戳"
+    },
+    {
+      "task_id": "2026-03-08:pmid:41781638:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "pmid:41781638",
+      "action": "生成未来白名单扩展建议并提交评估",
       "priority": "P2",
-      "definition_of_done": "提取本论文的MeSH主题词、关键词和摘要特征，与已拒绝/接受的同类论文进行对比分析，形成规则优化建议报告"
+      "definition_of_done": "创建白名单扩展建议工单，包含期刊名称、影响因子、相关性分析、以及基于此案例的扩展理由"
     },
     {
-      "task_id": "2026-03-05:pmid:41772886:whitelist_triage:0",
+      "task_id": "2026-03-08:doi:10.1007/s10489-026-07095-3:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "pmid:41772886",
-      "action": "add_journal_to_future_whitelist_consideration",
+      "paper_id": "doi:10.1007/s10489-026-07095-3",
+      "action": "记录本条目作为白名单扩展候选案例",
+      "priority": "P1",
+      "definition_of_done": "将该DOI、标题、期刊信息存入白名单扩展评估队列，标记为传统中医NLP应用类别"
+    },
+    {
+      "task_id": "2026-03-08:doi:10.1007/s10489-026-07095-3:whitelist_triage:0",
+      "task_type": "whitelist_triage",
+      "paper_id": "doi:10.1007/s10489-026-07095-3",
+      "action": "分析Applied Intelligence期刊影响因子及AI相关发文趋势",
       "priority": "P2",
-      "definition_of_done": "将 Journal of medical radiation sciences 添加到未来白名单扩展候选列表，并标记为AI教育应用相关期刊待进一步评估"
+      "definition_of_done": "获取该期刊近3年影响因子数据、AI/ML相关论文占比统计，形成期刊评估报告"
     },
     {
-      "task_id": "2026-03-05:pmid:41772886:whitelist_triage:0",
+      "task_id": "2026-03-08:doi:10.1007/s42114-026-01636-7:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "pmid:41772886",
-      "action": "document_venue_exception_criteria",
+      "paper_id": "doi:10.1007/s42114-026-01636-7",
+      "action": "记录期刊信息到待评估列表",
       "priority": "P1",
-      "definition_of_done": "记录该期刊的详细信息包括影响因子、出版商、专业领域，为后续白名单规则扩展提供数据支撑"
+      "definition_of_done": "将 Advanced Composites and Hybrid Materials 期刊信息添加到期刊评估队列，包括ISSN、影响因子、中科院分区等指标待后续分析"
     },
     {
-      "task_id": "2026-03-05:doi:10.3389/fcimb.2026.1728182:whitelist_triage:0",
+      "task_id": "2026-03-08:doi:10.1007/s42114-026-01636-7:whitelist_triage:0",
       "task_type": "whitelist_triage",
-      "paper_id": "doi:10.3389/fcimb.2026.1728182",
-      "action": "记录期刊白名单扩展建议到待评估列表",
-      "priority": "P1",
-      "definition_of_done": "将venue 'frontiers in cellular and infection microbiology'添加到白名单候选池，并标记为泌尿微生物学相关领域"
-    },
-    {
-      "task_id": "2026-03-05:doi:10.3389/fcimb.2026.1728182:whitelist_triage:0",
-      "task_type": "whitelist_triage",
-      "paper_id": "doi:10.3389/fcimb.2026.1728182",
-      "action": "建立该期刊的质量评估档案",
-      "priority": "P1",
-      "definition_of_done": "收集该期刊的影响因子、CiteScore、同行评议质量、撤稿记录等指标，形成完整的风险评估报告"
+      "paper_id": "doi:10.1007/s42114-026-01636-7",
+      "action": "提取论文领域特征用于白名单规则优化",
+      "priority": "P2",
+      "definition_of_done": "从标题和元数据中提取材料科学关键词，形成领域标签，为未来白名单扩展提供决策依据"
     }
   ],
   "failure_samples": [
     {
-      "task_id": "2026-03-05:doi:10.1038/s41419-026-08502-w:analysis_backlog_plan:0",
+      "task_id": "2026-03-08:doi:10.3389/fcell.2026.1795359:analysis_backlog_plan:0",
       "task_type": "analysis_backlog_plan",
-      "paper_id": "doi:10.1038/s41419-026-08502-w",
-      "title": "Mesenchymal stromal cells modulate survival and regeneration of human hematopoietic stem cells via PGE2/cAMP signaling",
+      "paper_id": "doi:10.3389/fcell.2026.1795359",
+      "title": "Functional roles and mechanisms of NAT10-mediated RNA ac4C modification in normal development and cancer progression",
+      "error": "Expecting ',' delimiter: line 26 column 6 (char 995)",
+      "provider": "bailian",
+      "model": "qwen3-coder-plus",
+      "latency_ms": 38173
+    },
+    {
+      "task_id": "2026-03-08:doi:10.1038/s41419-026-08494-7:analysis_backlog_plan:0",
+      "task_type": "analysis_backlog_plan",
+      "paper_id": "doi:10.1038/s41419-026-08494-7",
+      "title": "Lactylation as a metabolic-epigenetic switch in cancer: dual roles in cell death resistance and therapeutic vulnerability",
+      "error": "Expecting ',' delimiter: line 26 column 6 (char 922)",
+      "provider": "bailian",
+      "model": "qwen3-coder-plus",
+      "latency_ms": 38068
+    },
+    {
+      "task_id": "2026-03-08:doi:10.65339/ijsair.v2.i1.86:analysis_backlog_plan:0",
+      "task_type": "analysis_backlog_plan",
+      "paper_id": "doi:10.65339/ijsair.v2.i1.86",
+      "title": "Factors that Motivates Nurses to Transfer to other Fields of Nursing",
       "error": "HTTP 404 ",
       "provider": "sub2api",
       "model": "CodeX-3.5",
-      "latency_ms": 3860
+      "latency_ms": 4289
     },
     {
-      "task_id": "2026-03-05:pmid:41768366:analysis_backlog_plan:1",
+      "task_id": "2026-03-08:pmid:41776328:analysis_backlog_plan:0",
       "task_type": "analysis_backlog_plan",
-      "paper_id": "pmid:41768366",
-      "title": "Cerebrospinal Fluid Genetics Enhance Risk Stratification in Bipolar Disorder.",
-      "error": "Expecting ',' delimiter: line 26 column 6 (char 975)",
+      "paper_id": "pmid:41776328",
+      "title": "Integration of circulating tumor DNA data enhances lung cancer prediction in patients with COPD.",
+      "error": "Expecting ',' delimiter: line 26 column 6 (char 927)",
       "provider": "bailian",
       "model": "qwen3-coder-plus",
-      "latency_ms": 39098
+      "latency_ms": 75856
+    },
+    {
+      "task_id": "2026-03-08:doi:10.3389/fcell.2026.1795359:analysis_backlog_plan:1",
+      "task_type": "analysis_backlog_plan",
+      "paper_id": "doi:10.3389/fcell.2026.1795359",
+      "title": "Functional roles and mechanisms of NAT10-mediated RNA ac4C modification in normal development and cancer progression",
+      "error": "Expecting ',' delimiter: line 26 column 6 (char 998)",
+      "provider": "bailian",
+      "model": "qwen3-coder-plus",
+      "latency_ms": 40720
+    },
+    {
+      "task_id": "2026-03-08:doi:10.1038/s41419-026-08494-7:analysis_backlog_plan:1",
+      "task_type": "analysis_backlog_plan",
+      "paper_id": "doi:10.1038/s41419-026-08494-7",
+      "title": "Lactylation as a metabolic-epigenetic switch in cancer: dual roles in cell death resistance and therapeutic vulnerability",
+      "error": "Expecting ',' delimiter: line 26 column 6 (char 959)",
+      "provider": "bailian",
+      "model": "qwen3-coder-plus",
+      "latency_ms": 40271
+    },
+    {
+      "task_id": "2026-03-08:pmid:41679738:analysis_backlog_plan:1",
+      "task_type": "analysis_backlog_plan",
+      "paper_id": "pmid:41679738",
+      "title": "Comprehensive Serum Proteomics Uncovers Epigenetic and Inflammatory Pathways Underlying Primary Open-Angle Glaucoma.",
+      "error": "Expecting ',' delimiter: line 26 column 6 (char 967)",
+      "provider": "bailian",
+      "model": "qwen3-coder-plus",
+      "latency_ms": 39767
+    },
+    {
+      "task_id": "2026-03-08:doi:10.3389/fpls.2026.1774066:analysis_backlog_plan:1",
+      "task_type": "analysis_backlog_plan",
+      "paper_id": "doi:10.3389/fpls.2026.1774066",
+      "title": "Transcriptome-based analysis of oil accumulation pattern and key gene screening in Gardenia jasminoides fruits",
+      "error": "HTTP 404 ",
+      "provider": "sub2api",
+      "model": "CodeX-3.5",
+      "latency_ms": 4898
     }
   ]
 }

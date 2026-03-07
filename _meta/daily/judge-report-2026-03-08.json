@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-03-07T17:37:35.758085+00:00",
+  "from_fulltext": "/root/openclaw-workspace/research-kb/inbox/fulltext_pack-2026-03-08.json",
+  "candidate_fanout": 3,
+  "judge_required": true,
+  "count": 1,
+  "items": [
+    {
+      "paper_id": "pmid:41792137",
+      "title": "AMR-GNN: a multi-representation graph neural network framework to enable genomic antimicrobial resistance prediction.",
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "provider_model": "bailian/qwen3-coder-plus",
+          "variant": "method-heavy",
+          "score": {
+            "score": 82.945,
+            "zh_chars": 3052,
+            "non_empty_sections": 12,
+            "evidence_count": 8,
+            "action_count": 3,
+            "uniq_ratio": 1.0,
+            "length_quality": 0.8478,
+            "reproducibility_depth": 0.5482,
+            "ideas_depth": 0.7654
+          }
+        },
+        {
+          "provider_model": "bailian/qwen3-coder-plus",
+          "variant": "balanced",
+          "score": {
+            "score": 82.361,
+            "zh_chars": 3102,
+            "non_empty_sections": 12,
+            "evidence_count": 8,
+            "action_count": 3,
+            "uniq_ratio": 1.0,
+            "length_quality": 0.8617,
+            "reproducibility_depth": 0.6,
+            "ideas_depth": 0.6615
+          }
+        },
+        {
+          "provider_model": "bailian/qwen3-coder-plus",
+          "variant": "experiment-heavy",
+          "score": {
+            "score": 79.998,
+            "zh_chars": 2969,
+            "non_empty_sections": 12,
+            "evidence_count": 8,
+            "action_count": 3,
+            "uniq_ratio": 1.0,
+            "length_quality": 0.8247,
+            "reproducibility_depth": 0.5612,
+            "ideas_depth": 0.5942
+          }
+        }
+      ],
+      "winner_provider_model": "bailian/qwen3-coder-plus",
+      "winner_variant": "balanced",
+      "winner_score": {
+        "score": 82.361,
+        "zh_chars": 3102,
+        "non_empty_sections": 12,
+        "evidence_count": 8,
+        "action_count": 3,
+        "uniq_ratio": 1.0,
+        "length_quality": 0.8617,
+        "reproducibility_depth": 0.6,
+        "ideas_depth": 0.6615
+      },
+      "mode": "llm_judge",
+      "winner_index": 1,
+      "confidence": 0.85,
+      "reason": "该候选在保持结构完整性的同时，在可复现性方面表现最佳(0.6 vs 0.5482/0.5612)，提供了更具体的可复现性建议包括容器化技术、数据处理流水线等。思想深度适中且实用性强，平衡了理论创新与实际应用。",
+      "notes": "variant为balanced的候选在各项指标间取得了最好平衡，避免了过度偏向某一方面的问题，其可复现性建议更具操作性",
+      "judge_model": "bailian/qwen3-coder-plus",
+      "judge_degraded": false
+    }
+  ]
+}

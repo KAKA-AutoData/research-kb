@@ -1,10 +1,11 @@
-generated_at: "2026-03-04T17:45:26.735907+00:00"
+generated_at: "2026-03-07T17:37:36.636396+00:00"
 topics:
   - domain: "biomed"
-    count: 5
+    count: 6
     refs:
       - "biomed/papers/full-analysis/2026-03-02-pmid-41736507-select-small-non-coding-rnas-are-determinants-of-survival-in-older-adults.md"
       - "biomed/papers/full-analysis/2026-03-03-pmid-41736507-select-small-non-coding-rnas-are-determinants-of-survival-in-older-adults.md"
       - "biomed/papers/full-analysis/2026-03-03-pmid-41770961-psa-1dcnn-multimodal-biomarker-and-text-integration-for-lung-cancer-diagnosis.md"
       - "biomed/papers/full-analysis/2026-03-05-pmid-41772176-confounding-factors-and-biases-abound-when-predicting-molecular-biomarkers-from-histologic.md"
+      - "biomed/papers/full-analysis/2026-03-08-pmid-41792137-amr-gnn-a-multi-representation-graph-neural-network-framework-to-enable-genomic-antimicrob.md"
       - "biomed/papers/medium-analysis/2026-03-02-pmid-41736507-select-small-non-coding-rnas-are-determinants-of-survival-in-older-adults.md"

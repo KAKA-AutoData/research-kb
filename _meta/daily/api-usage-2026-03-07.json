@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-03-06T18:20:01.325480+00:00",
+  "api_summary": {
+    "total_calls": 3000,
+    "prompt_tokens": 1556119,
+    "completion_tokens": 1193664,
+    "total_tokens": 2749783,
+    "by_model": [
+      {
+        "provider": "bailian",
+        "model": "qwen3-coder-plus",
+        "calls": 3000,
+        "prompt_tokens": 1556119,
+        "completion_tokens": 1193664,
+        "total_tokens": 2749783,
+        "latency_ms_total": 27511185,
+        "latency_ms_avg": 9170.4
+      }
+    ]
+  },
+  "productive_topup": {
+    "last_adjusted_at": "2026-03-06T18:20:01.325480+00:00",
+    "increment_calls": 1,
+    "increment_tokens": 1182
+  }
+}
