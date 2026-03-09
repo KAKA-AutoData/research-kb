@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-03-07T17:37:35.759014+00:00",
-  "from_fulltext": "/root/openclaw-workspace/research-kb/inbox/fulltext_pack-2026-03-08.json",
-  "elapsed_ms": 64020,
+  "generated_at": "2026-03-09T18:12:04.432882+00:00",
+  "from_fulltext": "/root/openclaw-workspace/research-kb/inbox/fulltext_pack-2026-03-10.json",
+  "elapsed_ms": 54453,
   "paper_count": 1,
   "generated_count": 1,
   "failed_count": 0,
   "api_summary": {
     "total_calls": 4,
-    "prompt_tokens": 5287,
-    "completion_tokens": 8523,
-    "total_tokens": 13810,
+    "prompt_tokens": 4052,
+    "completion_tokens": 8241,
+    "total_tokens": 12293,
     "by_model": [
       {
         "provider": "bailian",
         "model": "qwen3-coder-plus",
         "calls": 4,
-        "prompt_tokens": 5287,
-        "completion_tokens": 8523,
-        "total_tokens": 13810,
-        "latency_ms_total": 173870,
-        "latency_ms_p95_estimate": 60597,
-        "latency_ms_avg": 43467.5
+        "prompt_tokens": 4052,
+        "completion_tokens": 8241,
+        "total_tokens": 12293,
+        "latency_ms_total": 148195,
+        "latency_ms_p95_estimate": 51512,
+        "latency_ms_avg": 37048.75
       }
     ]
   },
@@ -29,37 +29,11 @@
       "provider": "bailian",
       "model": "qwen3-coder-plus",
       "status": 200,
-      "latency_ms": 50265,
+      "latency_ms": 43413,
       "usage": {
-        "prompt_tokens": 1072,
-        "completion_tokens": 2804,
-        "total_tokens": 3876
-      },
-      "candidate_variant": "method-heavy",
-      "attempt": 1
-    },
-    {
-      "provider": "bailian",
-      "model": "qwen3-coder-plus",
-      "status": 200,
-      "latency_ms": 59600,
-      "usage": {
-        "prompt_tokens": 1067,
-        "completion_tokens": 2784,
-        "total_tokens": 3851
-      },
-      "candidate_variant": "balanced",
-      "attempt": 1
-    },
-    {
-      "provider": "bailian",
-      "model": "qwen3-coder-plus",
-      "status": 200,
-      "latency_ms": 60597,
-      "usage": {
-        "prompt_tokens": 1070,
-        "completion_tokens": 2804,
-        "total_tokens": 3874
+        "prompt_tokens": 692,
+        "completion_tokens": 2521,
+        "total_tokens": 3213
       },
       "candidate_variant": "experiment-heavy",
       "attempt": 1
@@ -68,11 +42,37 @@
       "provider": "bailian",
       "model": "qwen3-coder-plus",
       "status": 200,
-      "latency_ms": 3408,
+      "latency_ms": 50347,
       "usage": {
-        "prompt_tokens": 2078,
-        "completion_tokens": 131,
-        "total_tokens": 2209
+        "prompt_tokens": 694,
+        "completion_tokens": 2914,
+        "total_tokens": 3608
+      },
+      "candidate_variant": "method-heavy",
+      "attempt": 1
+    },
+    {
+      "provider": "bailian",
+      "model": "qwen3-coder-plus",
+      "status": 200,
+      "latency_ms": 51512,
+      "usage": {
+        "prompt_tokens": 689,
+        "completion_tokens": 2665,
+        "total_tokens": 3354
+      },
+      "candidate_variant": "balanced",
+      "attempt": 1
+    },
+    {
+      "provider": "bailian",
+      "model": "qwen3-coder-plus",
+      "status": 200,
+      "latency_ms": 2923,
+      "usage": {
+        "prompt_tokens": 1977,
+        "completion_tokens": 141,
+        "total_tokens": 2118
       },
       "judge_call": true
     }

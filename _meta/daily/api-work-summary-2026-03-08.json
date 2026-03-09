@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-03-07T16:20:02.202529+00:00",
+  "generated_at": "2026-03-08T14:20:01.466461+00:00",
   "date": "2026-03-08",
   "work_items_jsonl": "/root/openclaw-workspace/research-kb/_meta/daily/api-work-items-2026-03-08.jsonl",
-  "work_items_total": 2992,
+  "work_items_total": 5913,
   "task_type_counts": {
-    "whitelist_triage": 510,
-    "venue_alias_proposal": 498,
-    "topic_alignment": 498,
-    "analysis_backlog_plan": 490,
-    "quality_guard_check": 498,
-    "actionable_next_step": 498
+    "whitelist_triage": 1162,
+    "venue_alias_proposal": 1145,
+    "topic_alignment": 908,
+    "analysis_backlog_plan": 896,
+    "quality_guard_check": 901,
+    "actionable_next_step": 901
   },
   "action_samples": [
     {
@@ -653,86 +653,5 @@
       "definition_of_done": "从标题和元数据中提取材料科学关键词，形成领域标签，为未来白名单扩展提供决策依据"
     }
   ],
-  "failure_samples": [
-    {
-      "task_id": "2026-03-08:doi:10.3389/fcell.2026.1795359:analysis_backlog_plan:0",
-      "task_type": "analysis_backlog_plan",
-      "paper_id": "doi:10.3389/fcell.2026.1795359",
-      "title": "Functional roles and mechanisms of NAT10-mediated RNA ac4C modification in normal development and cancer progression",
-      "error": "Expecting ',' delimiter: line 26 column 6 (char 995)",
-      "provider": "bailian",
-      "model": "qwen3-coder-plus",
-      "latency_ms": 38173
-    },
-    {
-      "task_id": "2026-03-08:doi:10.1038/s41419-026-08494-7:analysis_backlog_plan:0",
-      "task_type": "analysis_backlog_plan",
-      "paper_id": "doi:10.1038/s41419-026-08494-7",
-      "title": "Lactylation as a metabolic-epigenetic switch in cancer: dual roles in cell death resistance and therapeutic vulnerability",
-      "error": "Expecting ',' delimiter: line 26 column 6 (char 922)",
-      "provider": "bailian",
-      "model": "qwen3-coder-plus",
-      "latency_ms": 38068
-    },
-    {
-      "task_id": "2026-03-08:doi:10.65339/ijsair.v2.i1.86:analysis_backlog_plan:0",
-      "task_type": "analysis_backlog_plan",
-      "paper_id": "doi:10.65339/ijsair.v2.i1.86",
-      "title": "Factors that Motivates Nurses to Transfer to other Fields of Nursing",
-      "error": "HTTP 404 ",
-      "provider": "sub2api",
-      "model": "CodeX-3.5",
-      "latency_ms": 4289
-    },
-    {
-      "task_id": "2026-03-08:pmid:41776328:analysis_backlog_plan:0",
-      "task_type": "analysis_backlog_plan",
-      "paper_id": "pmid:41776328",
-      "title": "Integration of circulating tumor DNA data enhances lung cancer prediction in patients with COPD.",
-      "error": "Expecting ',' delimiter: line 26 column 6 (char 927)",
-      "provider": "bailian",
-      "model": "qwen3-coder-plus",
-      "latency_ms": 75856
-    },
-    {
-      "task_id": "2026-03-08:doi:10.3389/fcell.2026.1795359:analysis_backlog_plan:1",
-      "task_type": "analysis_backlog_plan",
-      "paper_id": "doi:10.3389/fcell.2026.1795359",
-      "title": "Functional roles and mechanisms of NAT10-mediated RNA ac4C modification in normal development and cancer progression",
-      "error": "Expecting ',' delimiter: line 26 column 6 (char 998)",
-      "provider": "bailian",
-      "model": "qwen3-coder-plus",
-      "latency_ms": 40720
-    },
-    {
-      "task_id": "2026-03-08:doi:10.1038/s41419-026-08494-7:analysis_backlog_plan:1",
-      "task_type": "analysis_backlog_plan",
-      "paper_id": "doi:10.1038/s41419-026-08494-7",
-      "title": "Lactylation as a metabolic-epigenetic switch in cancer: dual roles in cell death resistance and therapeutic vulnerability",
-      "error": "Expecting ',' delimiter: line 26 column 6 (char 959)",
-      "provider": "bailian",
-      "model": "qwen3-coder-plus",
-      "latency_ms": 40271
-    },
-    {
-      "task_id": "2026-03-08:pmid:41679738:analysis_backlog_plan:1",
-      "task_type": "analysis_backlog_plan",
-      "paper_id": "pmid:41679738",
-      "title": "Comprehensive Serum Proteomics Uncovers Epigenetic and Inflammatory Pathways Underlying Primary Open-Angle Glaucoma.",
-      "error": "Expecting ',' delimiter: line 26 column 6 (char 967)",
-      "provider": "bailian",
-      "model": "qwen3-coder-plus",
-      "latency_ms": 39767
-    },
-    {
-      "task_id": "2026-03-08:doi:10.3389/fpls.2026.1774066:analysis_backlog_plan:1",
-      "task_type": "analysis_backlog_plan",
-      "paper_id": "doi:10.3389/fpls.2026.1774066",
-      "title": "Transcriptome-based analysis of oil accumulation pattern and key gene screening in Gardenia jasminoides fruits",
-      "error": "HTTP 404 ",
-      "provider": "sub2api",
-      "model": "CodeX-3.5",
-      "latency_ms": 4898
-    }
-  ]
+  "failure_samples": []
 }

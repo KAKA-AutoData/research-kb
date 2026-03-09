@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-03-09T18:09:02.583984+00:00",
+  "date": "2026-03-10",
+  "source_pass_counts": {
+    "papercrawler": 4,
+    "pubmed": 1
+  },
+  "source_reject_counts": {
+    "crossref": 40,
+    "papercrawler": 108,
+    "pubmed": 65
+  },
+  "reason_counts": {
+    "papercrawler_not_supported": 107,
+    "source_not_allowed": 6,
+    "topic_not_allowed": 73,
+    "venue_not_allowed": 101
+  },
+  "cs_pipeline": "papercrawler_only"
+}

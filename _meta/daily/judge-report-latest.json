@@ -1,79 +1,79 @@
 {
-  "generated_at": "2026-03-07T17:37:35.758085+00:00",
-  "from_fulltext": "/root/openclaw-workspace/research-kb/inbox/fulltext_pack-2026-03-08.json",
+  "generated_at": "2026-03-09T18:12:04.431706+00:00",
+  "from_fulltext": "/root/openclaw-workspace/research-kb/inbox/fulltext_pack-2026-03-10.json",
   "candidate_fanout": 3,
   "judge_required": true,
   "count": 1,
   "items": [
     {
-      "paper_id": "pmid:41792137",
-      "title": "AMR-GNN: a multi-representation graph neural network framework to enable genomic antimicrobial resistance prediction.",
+      "paper_id": "doi:https://doi.org/10.1145/3746027.3755045",
+      "title": "DS-Det: Single-Query Paradigm and Attention Disentangled Learning for Flexible Object Detection.",
       "candidate_count": 3,
       "candidates": [
         {
           "provider_model": "bailian/qwen3-coder-plus",
-          "variant": "method-heavy",
+          "variant": "experiment-heavy",
           "score": {
-            "score": 82.945,
-            "zh_chars": 3052,
+            "score": 80.15,
+            "zh_chars": 3721,
             "non_empty_sections": 12,
             "evidence_count": 8,
             "action_count": 3,
             "uniq_ratio": 1.0,
-            "length_quality": 0.8478,
-            "reproducibility_depth": 0.5482,
-            "ideas_depth": 0.7654
+            "length_quality": 1.0,
+            "reproducibility_depth": 0.56,
+            "ideas_depth": 0.4077
+          }
+        },
+        {
+          "provider_model": "bailian/qwen3-coder-plus",
+          "variant": "method-heavy",
+          "score": {
+            "score": 82.591,
+            "zh_chars": 3586,
+            "non_empty_sections": 12,
+            "evidence_count": 8,
+            "action_count": 3,
+            "uniq_ratio": 1.0,
+            "length_quality": 0.9961,
+            "reproducibility_depth": 0.54,
+            "ideas_depth": 0.5846
           }
         },
         {
           "provider_model": "bailian/qwen3-coder-plus",
           "variant": "balanced",
           "score": {
-            "score": 82.361,
-            "zh_chars": 3102,
+            "score": 78.439,
+            "zh_chars": 3565,
             "non_empty_sections": 12,
             "evidence_count": 8,
             "action_count": 3,
             "uniq_ratio": 1.0,
-            "length_quality": 0.8617,
-            "reproducibility_depth": 0.6,
-            "ideas_depth": 0.6615
-          }
-        },
-        {
-          "provider_model": "bailian/qwen3-coder-plus",
-          "variant": "experiment-heavy",
-          "score": {
-            "score": 79.998,
-            "zh_chars": 2969,
-            "non_empty_sections": 12,
-            "evidence_count": 8,
-            "action_count": 3,
-            "uniq_ratio": 1.0,
-            "length_quality": 0.8247,
-            "reproducibility_depth": 0.5612,
-            "ideas_depth": 0.5942
+            "length_quality": 0.9903,
+            "reproducibility_depth": 0.5294,
+            "ideas_depth": 0.3423
           }
         }
       ],
       "winner_provider_model": "bailian/qwen3-coder-plus",
-      "winner_variant": "balanced",
+      "winner_variant": "method-heavy",
       "winner_score": {
-        "score": 82.361,
-        "zh_chars": 3102,
+        "score": 82.591,
+        "zh_chars": 3586,
         "non_empty_sections": 12,
         "evidence_count": 8,
         "action_count": 3,
         "uniq_ratio": 1.0,
-        "length_quality": 0.8617,
-        "reproducibility_depth": 0.6,
-        "ideas_depth": 0.6615
+        "length_quality": 0.9961,
+        "reproducibility_depth": 0.54,
+        "ideas_depth": 0.5846
       },
       "mode": "llm_judge",
       "winner_index": 1,
       "confidence": 0.85,
-      "reason": "该候选在保持结构完整性的同时，在可复现性方面表现最佳(0.6 vs 0.5482/0.5612)，提供了更具体的可复现性建议包括容器化技术、数据处理流水线等。思想深度适中且实用性强，平衡了理论创新与实际应用。",
-      "notes": "variant为balanced的候选在各项指标间取得了最好平衡，避免了过度偏向某一方面的问题，其可复现性建议更具操作性",
+      "reason": "候选1在方法描述的深度和完整性方面表现最佳，提供了更详细的技术架构说明，特别是关于单查询范式和注意力解耦的具体实现机制。可复现性部分提供了更具体的环境要求、代码实现细节和预期结果指标，包括Docker镜像支持等实用信息。创新点部分也展现了更广泛的应用前景和更深入的技术思考。",
+      "notes": "候选1的方法重制衡变体在技术深度和可操作性方面优于其他候选，特别是在重现指导方面提供了更具体的环境配置和验证标准",
       "judge_model": "bailian/qwen3-coder-plus",
       "judge_degraded": false
     }
