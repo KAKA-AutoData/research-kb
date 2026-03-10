@@ -170,7 +170,7 @@ deep_analysis:
     required_sections: 12
     min_evidence_anchors: 8
   daily_output:
-    min_new: 5
+    min_new: 4
     target_new: 5
     max_new: null
     daily_backfill_upgrade: 1

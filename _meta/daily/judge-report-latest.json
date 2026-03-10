@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-03-09T18:12:04.431706+00:00",
-  "from_fulltext": "/root/openclaw-workspace/research-kb/inbox/fulltext_pack-2026-03-10.json",
+  "generated_at": "2026-03-10T17:29:34.959580+00:00",
+  "from_fulltext": "/root/openclaw-workspace/research-kb/inbox/fulltext_pack-2026-03-11.json",
   "candidate_fanout": 3,
   "judge_required": true,
   "count": 1,
@@ -12,68 +12,68 @@
       "candidates": [
         {
           "provider_model": "bailian/qwen3-coder-plus",
-          "variant": "experiment-heavy",
+          "variant": "balanced",
           "score": {
-            "score": 80.15,
-            "zh_chars": 3721,
+            "score": 79.702,
+            "zh_chars": 3544,
             "non_empty_sections": 12,
             "evidence_count": 8,
             "action_count": 3,
             "uniq_ratio": 1.0,
-            "length_quality": 1.0,
-            "reproducibility_depth": 0.56,
-            "ideas_depth": 0.4077
+            "length_quality": 0.9844,
+            "reproducibility_depth": 0.5553,
+            "ideas_depth": 0.4019
           }
         },
         {
           "provider_model": "bailian/qwen3-coder-plus",
           "variant": "method-heavy",
           "score": {
-            "score": 82.591,
-            "zh_chars": 3586,
+            "score": 82.876,
+            "zh_chars": 3548,
             "non_empty_sections": 12,
             "evidence_count": 8,
             "action_count": 3,
             "uniq_ratio": 1.0,
-            "length_quality": 0.9961,
-            "reproducibility_depth": 0.54,
-            "ideas_depth": 0.5846
+            "length_quality": 0.9856,
+            "reproducibility_depth": 0.5447,
+            "ideas_depth": 0.6096
           }
         },
         {
           "provider_model": "bailian/qwen3-coder-plus",
-          "variant": "balanced",
+          "variant": "experiment-heavy",
           "score": {
-            "score": 78.439,
-            "zh_chars": 3565,
+            "score": 84.159,
+            "zh_chars": 3758,
             "non_empty_sections": 12,
             "evidence_count": 8,
             "action_count": 3,
             "uniq_ratio": 1.0,
-            "length_quality": 0.9903,
-            "reproducibility_depth": 0.5294,
-            "ideas_depth": 0.3423
+            "length_quality": 1.0,
+            "reproducibility_depth": 0.6106,
+            "ideas_depth": 0.6077
           }
         }
       ],
       "winner_provider_model": "bailian/qwen3-coder-plus",
-      "winner_variant": "method-heavy",
+      "winner_variant": "experiment-heavy",
       "winner_score": {
-        "score": 82.591,
-        "zh_chars": 3586,
+        "score": 84.159,
+        "zh_chars": 3758,
         "non_empty_sections": 12,
         "evidence_count": 8,
         "action_count": 3,
         "uniq_ratio": 1.0,
-        "length_quality": 0.9961,
-        "reproducibility_depth": 0.54,
-        "ideas_depth": 0.5846
+        "length_quality": 1.0,
+        "reproducibility_depth": 0.6106,
+        "ideas_depth": 0.6077
       },
       "mode": "llm_judge",
-      "winner_index": 1,
-      "confidence": 0.85,
-      "reason": "候选1在方法描述的深度和完整性方面表现最佳，提供了更详细的技术架构说明，特别是关于单查询范式和注意力解耦的具体实现机制。可复现性部分提供了更具体的环境要求、代码实现细节和预期结果指标，包括Docker镜像支持等实用信息。创新点部分也展现了更广泛的应用前景和更深入的技术思考。",
-      "notes": "候选1的方法重制衡变体在技术深度和可操作性方面优于其他候选，特别是在重现指导方面提供了更具体的环境配置和验证标准",
+      "winner_index": 2,
+      "confidence": 0.84,
+      "reason": "候选2在实验细节和可复现性方面表现最佳，提供了完整的实现配置（PyTorch 1.9.0、CUDA 11.1、ResNet-50等），详细的超参数设置（批次大小32、学习率1e-4、训练300轮等），以及具体的数据预处理和评估协议，满足可复现研究的严格要求",
+      "notes": "候选2的实验部分最为详实，包含了完整的训练配置、评估标准和实现环境，为其他研究者提供了清晰的复现路径",
       "judge_model": "bailian/qwen3-coder-plus",
       "judge_degraded": false
     }

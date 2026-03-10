@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-09T18:09:10.977033+00:00",
+  "generated_at": "2026-03-09T18:22:57.897750+00:00",
   "fanout_target": 3,
   "probe_timeout_sec": 20,
   "probed": [
@@ -8,7 +8,7 @@
       "model": "qwen-max",
       "ok": false,
       "status": 400,
-      "latency_ms": 48,
+      "latency_ms": 69,
       "error": "HTTP 400"
     },
     {
@@ -16,7 +16,7 @@
       "model": "qwen-plus",
       "ok": false,
       "status": 400,
-      "latency_ms": 62,
+      "latency_ms": 60,
       "error": "HTTP 400"
     },
     {
@@ -32,7 +32,7 @@
       "model": "qwen3-coder-plus",
       "ok": true,
       "status": 200,
-      "latency_ms": 517,
+      "latency_ms": 659,
       "error": null,
       "sample": "ok"
     },
@@ -41,7 +41,7 @@
       "model": "CodeX-3.5",
       "ok": false,
       "status": 404,
-      "latency_ms": 1191,
+      "latency_ms": 811,
       "error": "HTTP 404"
     },
     {
@@ -49,7 +49,7 @@
       "model": "claude-3-5-sonnet",
       "ok": false,
       "status": 404,
-      "latency_ms": 938,
+      "latency_ms": 825,
       "error": "HTTP 404"
     },
     {
@@ -57,7 +57,7 @@
       "model": "claude-sonnet-4-20250514",
       "ok": false,
       "status": 404,
-      "latency_ms": 934,
+      "latency_ms": 807,
       "error": "HTTP 404"
     }
   ],

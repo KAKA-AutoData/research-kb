@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-03-09T16:20:01.434651+00:00",
+  "generated_at": "2026-03-10T14:20:02.115141+00:00",
   "date": "2026-03-10",
   "work_items_jsonl": "/root/openclaw-workspace/research-kb/_meta/daily/api-work-items-2026-03-10.jsonl",
-  "work_items_total": 2998,
+  "work_items_total": 5994,
   "task_type_counts": {
-    "whitelist_triage": 504,
-    "venue_alias_proposal": 504,
-    "topic_alignment": 504,
-    "analysis_backlog_plan": 502,
-    "quality_guard_check": 504,
-    "actionable_next_step": 480
+    "whitelist_triage": 1144,
+    "venue_alias_proposal": 1143,
+    "topic_alignment": 997,
+    "analysis_backlog_plan": 910,
+    "quality_guard_check": 900,
+    "actionable_next_step": 900
   },
   "action_samples": [
     {
@@ -653,26 +653,5 @@
       "definition_of_done": "统计该期刊近3年发表的生物医学相关论文比例，确定是否需要将其加入白名单期刊列表"
     }
   ],
-  "failure_samples": [
-    {
-      "task_id": "2026-03-10:pmid:41793534:analysis_backlog_plan:1",
-      "task_type": "analysis_backlog_plan",
-      "paper_id": "pmid:41793534",
-      "title": "Application of untargeted plasma metabolomics and machine learning to construct a diagnostic model for hypertrophic cardiomyopathy: a case-control study.",
-      "error": "HTTP 404 ",
-      "provider": "sub2api",
-      "model": "CodeX-3.5",
-      "latency_ms": 5484
-    },
-    {
-      "task_id": "2026-03-10:doi:10.5492/wjccm.v15.i1.112345:analysis_backlog_plan:1",
-      "task_type": "analysis_backlog_plan",
-      "paper_id": "doi:10.5492/wjccm.v15.i1.112345",
-      "title": "Comparison of intubating laryngeal mask airway and video laryngoscope during emergency intubation in patients who are critically ill",
-      "error": "HTTP 404 ",
-      "provider": "sub2api",
-      "model": "CodeX-3.5",
-      "latency_ms": 11549
-    }
-  ]
+  "failure_samples": []
 }
