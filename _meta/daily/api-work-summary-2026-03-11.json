@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-03-10T16:20:01.653213+00:00",
+  "generated_at": "2026-03-11T14:20:01.557386+00:00",
   "date": "2026-03-11",
   "work_items_jsonl": "/root/openclaw-workspace/research-kb/_meta/daily/api-work-items-2026-03-11.jsonl",
-  "work_items_total": 2997,
+  "work_items_total": 5904,
   "task_type_counts": {
-    "whitelist_triage": 610,
-    "venue_alias_proposal": 478,
-    "topic_alignment": 478,
-    "analysis_backlog_plan": 475,
-    "quality_guard_check": 478,
-    "actionable_next_step": 478
+    "whitelist_triage": 1114,
+    "venue_alias_proposal": 959,
+    "topic_alignment": 959,
+    "analysis_backlog_plan": 954,
+    "quality_guard_check": 959,
+    "actionable_next_step": 959
   },
   "action_samples": [
     {
@@ -653,36 +653,5 @@
       "definition_of_done": "制定胃肠肿瘤影像学相关期刊的纳入标准，包括影响因子、出版商声誉、同行评议质量等指标"
     }
   ],
-  "failure_samples": [
-    {
-      "task_id": "2026-03-11:pmid:41795028:analysis_backlog_plan:0",
-      "task_type": "analysis_backlog_plan",
-      "paper_id": "pmid:41795028",
-      "title": "Diagnostic Performance of CT, MRI, and ERUS in Preoperative T- and N-Staging of Colorectal Cancer: A Retrospective Single-Center Analysis.",
-      "error": "Expecting ',' delimiter: line 26 column 6 (char 937)",
-      "provider": "bailian",
-      "model": "qwen3-coder-plus",
-      "latency_ms": 37365
-    },
-    {
-      "task_id": "2026-03-11:doi:10.1108/ir-11-2025-0407:analysis_backlog_plan:0",
-      "task_type": "analysis_backlog_plan",
-      "paper_id": "doi:10.1108/ir-11-2025-0407",
-      "title": "Lightweight SLAM with a hierarchical dynamic-object discrimination mechanism",
-      "error": "Expecting ',' delimiter: line 26 column 6 (char 973)",
-      "provider": "bailian",
-      "model": "qwen3-coder-plus",
-      "latency_ms": 38651
-    },
-    {
-      "task_id": "2026-03-11:doi:10.1182/bloodadvances.2025017752:analysis_backlog_plan:1",
-      "task_type": "analysis_backlog_plan",
-      "paper_id": "doi:10.1182/bloodadvances.2025017752",
-      "title": "Clinical trial success rate in lymphoma: fate of trials and agents from 2000 to 2019",
-      "error": "HTTP 404 ",
-      "provider": "sub2api",
-      "model": "CodeX-3.5",
-      "latency_ms": 5756
-    }
-  ]
+  "failure_samples": []
 }

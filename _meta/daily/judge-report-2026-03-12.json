@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-03-11T17:33:30.454745+00:00",
+  "from_fulltext": "/root/openclaw-workspace/research-kb/inbox/fulltext_pack-2026-03-12.json",
+  "candidate_fanout": 3,
+  "judge_required": true,
+  "count": 1,
+  "items": [
+    {
+      "paper_id": "pmid:41807392",
+      "title": "Behavioral screening defines the molecular Parkinsonism-related subgroups in Drosophila.",
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "provider_model": "bailian/qwen3-coder-plus",
+          "variant": "balanced",
+          "score": {
+            "score": 77.734,
+            "zh_chars": 3880,
+            "non_empty_sections": 12,
+            "evidence_count": 8,
+            "action_count": 3,
+            "uniq_ratio": 1.0,
+            "length_quality": 1.0,
+            "reproducibility_depth": 0.4282,
+            "ideas_depth": 0.3885
+          }
+        },
+        {
+          "provider_model": "bailian/qwen3-coder-plus",
+          "variant": "experiment-heavy",
+          "score": {
+            "score": 83.869,
+            "zh_chars": 3400,
+            "non_empty_sections": 12,
+            "evidence_count": 8,
+            "action_count": 3,
+            "uniq_ratio": 1.0,
+            "length_quality": 0.9444,
+            "reproducibility_depth": 0.5588,
+            "ideas_depth": 0.7038
+          }
+        },
+        {
+          "provider_model": "bailian/qwen3-coder-plus",
+          "variant": "method-heavy",
+          "score": {
+            "score": 80.735,
+            "zh_chars": 3456,
+            "non_empty_sections": 12,
+            "evidence_count": 8,
+            "action_count": 3,
+            "uniq_ratio": 1.0,
+            "length_quality": 0.96,
+            "reproducibility_depth": 0.5435,
+            "ideas_depth": 0.5058
+          }
+        }
+      ],
+      "winner_provider_model": "bailian/qwen3-coder-plus",
+      "winner_variant": "experiment-heavy",
+      "winner_score": {
+        "score": 83.869,
+        "zh_chars": 3400,
+        "non_empty_sections": 12,
+        "evidence_count": 8,
+        "action_count": 3,
+        "uniq_ratio": 1.0,
+        "length_quality": 0.9444,
+        "reproducibility_depth": 0.5588,
+        "ideas_depth": 0.7038
+      },
+      "mode": "llm_judge",
+      "winner_index": 1,
+      "confidence": 0.92,
+      "reason": "候选1在保持结构完整性的同时，提供了最详尽的可复现性验证方案，包含具体的实验步骤、参数设置和验证标准。其创新想法部分也最具实用价值，提出了系统性疾病模型库和机器学习驱动分析的具体实施方案。证据支持充分，涵盖了实验验证的各个关键环节。",
+      "notes": "候选1的repro_excerpt部分提供了最详细的可复现性验证步骤，包括具体的实验条件、设备参数、算法设置等，确保其他研究者能够准确复现实验结果。ideas_excerpt部分提出的系统性疾病模型库构建方案具有很强的可执行性。",
+      "judge_model": "bailian/qwen3-coder-plus",
+      "judge_degraded": false
+    }
+  ]
+}
