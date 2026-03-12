@@ -1,0 +1,81 @@
+{
+  "generated_at": "2026-03-12T17:32:04.815799+00:00",
+  "from_fulltext": "/root/openclaw-workspace/research-kb/inbox/fulltext_pack-2026-03-13.json",
+  "candidate_fanout": 3,
+  "judge_required": true,
+  "count": 1,
+  "items": [
+    {
+      "paper_id": "doi:https://doi.org/10.1145/3690624.3709223",
+      "title": "Graph Triple Attention Networks: A Decoupled Perspective.",
+      "candidate_count": 3,
+      "candidates": [
+        {
+          "provider_model": "bailian/qwen3-coder-plus",
+          "variant": "balanced",
+          "score": {
+            "score": 79.753,
+            "zh_chars": 3779,
+            "non_empty_sections": 12,
+            "evidence_count": 8,
+            "action_count": 3,
+            "uniq_ratio": 1.0,
+            "length_quality": 1.0,
+            "reproducibility_depth": 0.5294,
+            "ideas_depth": 0.4135
+          }
+        },
+        {
+          "provider_model": "bailian/qwen3-coder-plus",
+          "variant": "experiment-heavy",
+          "score": {
+            "score": 81.535,
+            "zh_chars": 3762,
+            "non_empty_sections": 12,
+            "evidence_count": 8,
+            "action_count": 3,
+            "uniq_ratio": 1.0,
+            "length_quality": 1.0,
+            "reproducibility_depth": 0.5024,
+            "ideas_depth": 0.5519
+          }
+        },
+        {
+          "provider_model": "bailian/qwen3-coder-plus",
+          "variant": "method-heavy",
+          "score": {
+            "score": 83.489,
+            "zh_chars": 3886,
+            "non_empty_sections": 12,
+            "evidence_count": 8,
+            "action_count": 3,
+            "uniq_ratio": 1.0,
+            "length_quality": 1.0,
+            "reproducibility_depth": 0.6129,
+            "ideas_depth": 0.5635
+          }
+        }
+      ],
+      "winner_provider_model": "bailian/qwen3-coder-plus",
+      "winner_variant": "method-heavy",
+      "winner_score": {
+        "score": 83.489,
+        "zh_chars": 3886,
+        "non_empty_sections": 12,
+        "evidence_count": 8,
+        "action_count": 3,
+        "uniq_ratio": 1.0,
+        "length_quality": 1.0,
+        "reproducibility_depth": 0.6129,
+        "ideas_depth": 0.5635
+      },
+      "mode": "llm_judge",
+      "winner_index": 2,
+      "confidence": 0.85,
+      "reason": "候选2在方法论阐述最为深入，详细解释了GTAN的三元注意力机制设计原理，将图结构分解为节点间相似性、边权重信息和全局上下文信息三种关系类型的方法论基础清晰。可复现性部分提供了具体的实现步骤和技术细节，包括三个关键组件的实现要求，复现指导更加具体可行。",
+      "notes": "候选2的方法论深度最高，提供了最清晰的技术实现路径，可复现性指导最为详细，适合实际工程应用",
+      "judge_model": "bailian/qwen3-coder-plus",
+      "judge_degraded": false
+    }
+  ]
+}

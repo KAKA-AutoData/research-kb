@@ -1,15 +1,15 @@
 {
-  "generated_at": "2026-03-11T16:20:01.366098+00:00",
+  "generated_at": "2026-03-12T14:20:01.625180+00:00",
   "date": "2026-03-12",
   "work_items_jsonl": "/root/openclaw-workspace/research-kb/_meta/daily/api-work-items-2026-03-12.jsonl",
-  "work_items_total": 2996,
+  "work_items_total": 5845,
   "task_type_counts": {
-    "whitelist_triage": 536,
-    "venue_alias_proposal": 535,
-    "topic_alignment": 536,
-    "analysis_backlog_plan": 533,
-    "quality_guard_check": 536,
-    "actionable_next_step": 320
+    "whitelist_triage": 1119,
+    "venue_alias_proposal": 1121,
+    "topic_alignment": 987,
+    "analysis_backlog_plan": 896,
+    "quality_guard_check": 904,
+    "actionable_next_step": 818
   },
   "action_samples": [
     {
@@ -653,46 +653,5 @@
       "definition_of_done": "检索该期刊近3年发表的医疗系统建模、仿真优化类论文数量及占比，形成统计报告"
     }
   ],
-  "failure_samples": [
-    {
-      "task_id": "2026-03-12:doi:https://doi.org/10.1145/3690624.3709226:venue_alias_proposal:0",
-      "task_type": "venue_alias_proposal",
-      "paper_id": "doi:https://doi.org/10.1145/3690624.3709226",
-      "title": "Brain Effective Connectivity Estimation via Fourier Spatiotemporal Attention.",
-      "error": "Expecting ',' delimiter: line 26 column 6 (char 1130)",
-      "provider": "bailian",
-      "model": "qwen3-coder-plus",
-      "latency_ms": 28574
-    },
-    {
-      "task_id": "2026-03-12:pmid:41803650:analysis_backlog_plan:0",
-      "task_type": "analysis_backlog_plan",
-      "paper_id": "pmid:41803650",
-      "title": "MedFusion-gP-AKI: development and multicenter validation of a machine learning fusion model for early prediction of KDIGO stage 3 acute kidney injury in critically ill traumatic cervicothoracic spinal cord injury patients.",
-      "error": "HTTP 404 ",
-      "provider": "sub2api",
-      "model": "CodeX-3.5",
-      "latency_ms": 5191
-    },
-    {
-      "task_id": "2026-03-12:pmid:41701342:analysis_backlog_plan:0",
-      "task_type": "analysis_backlog_plan",
-      "paper_id": "pmid:41701342",
-      "title": "IALA-LNN: Deep Learning for Peptide Retention Time Prediction Based on Improved Artificial Lemming Algorithm-Optimized Liquid Neural Networks.",
-      "error": "HTTP 404 ",
-      "provider": "sub2api",
-      "model": "CodeX-3.5",
-      "latency_ms": 6982
-    },
-    {
-      "task_id": "2026-03-12:doi:10.1515/cclm-2025-1366:analysis_backlog_plan:1",
-      "task_type": "analysis_backlog_plan",
-      "paper_id": "doi:10.1515/cclm-2025-1366",
-      "title": "An isotope dilution-liquid chromatography-tandem mass spectrometry-based candidate reference measurement procedure for the quantification of linezolid in human serum and plasma",
-      "error": "HTTP 404 ",
-      "provider": "sub2api",
-      "model": "CodeX-3.5",
-      "latency_ms": 4810
-    }
-  ]
+  "failure_samples": []
 }

@@ -1,0 +1,80 @@
+{
+  "generated_at": "2026-03-12T17:32:04.816815+00:00",
+  "from_fulltext": "/root/openclaw-workspace/research-kb/inbox/fulltext_pack-2026-03-13.json",
+  "elapsed_ms": 64453,
+  "paper_count": 1,
+  "generated_count": 1,
+  "failed_count": 0,
+  "api_summary": {
+    "total_calls": 4,
+    "prompt_tokens": 4113,
+    "completion_tokens": 8404,
+    "total_tokens": 12517,
+    "by_model": [
+      {
+        "provider": "bailian",
+        "model": "qwen3-coder-plus",
+        "calls": 4,
+        "prompt_tokens": 4113,
+        "completion_tokens": 8404,
+        "total_tokens": 12517,
+        "latency_ms_total": 171613,
+        "latency_ms_p95_estimate": 61016,
+        "latency_ms_avg": 42903.25
+      }
+    ]
+  },
+  "raw_calls": [
+    {
+      "provider": "bailian",
+      "model": "qwen3-coder-plus",
+      "status": 200,
+      "latency_ms": 48875,
+      "usage": {
+        "prompt_tokens": 691,
+        "completion_tokens": 2447,
+        "total_tokens": 3138
+      },
+      "candidate_variant": "balanced",
+      "attempt": 1
+    },
+    {
+      "provider": "bailian",
+      "model": "qwen3-coder-plus",
+      "status": 200,
+      "latency_ms": 58310,
+      "usage": {
+        "prompt_tokens": 694,
+        "completion_tokens": 2968,
+        "total_tokens": 3662
+      },
+      "candidate_variant": "experiment-heavy",
+      "attempt": 1
+    },
+    {
+      "provider": "bailian",
+      "model": "qwen3-coder-plus",
+      "status": 200,
+      "latency_ms": 61016,
+      "usage": {
+        "prompt_tokens": 696,
+        "completion_tokens": 2857,
+        "total_tokens": 3553
+      },
+      "candidate_variant": "method-heavy",
+      "attempt": 1
+    },
+    {
+      "provider": "bailian",
+      "model": "qwen3-coder-plus",
+      "status": 200,
+      "latency_ms": 3412,
+      "usage": {
+        "prompt_tokens": 2032,
+        "completion_tokens": 132,
+        "total_tokens": 2164
+      },
+      "judge_call": true
+    }
+  ]
+}

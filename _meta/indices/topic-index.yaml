@@ -1,7 +1,7 @@
-generated_at: "2026-03-11T17:33:30.827104+00:00"
+generated_at: "2026-03-12T17:32:05.210820+00:00"
 topics:
   - domain: "biomed"
-    count: 11
+    count: 14
     refs:
       - "biomed/papers/full-analysis/2026-03-02-pmid-41736507-select-small-non-coding-rnas-are-determinants-of-survival-in-older-adults.md"
       - "biomed/papers/full-analysis/2026-03-03-pmid-41736507-select-small-non-coding-rnas-are-determinants-of-survival-in-older-adults.md"
@@ -13,9 +13,12 @@ topics:
       - "biomed/papers/full-analysis/2026-03-12-pmid-41803255-predictive-biomarkers-of-response-to-chimeric-antigen-receptor-car-t-cell-therapy-for-pan-.md"
       - "biomed/papers/full-analysis/2026-03-12-pmid-41807392-behavioral-screening-defines-the-molecular-parkinsonism-related-subgroups-in-drosophila.md"
       - "biomed/papers/full-analysis/2026-03-12-pmid-41807414-a-meta-learning-and-task-adaptive-approach-for-drug-target-affinity-prediction.md"
+      - "biomed/papers/full-analysis/2026-03-13-pmid-41807392-behavioral-screening-defines-the-molecular-parkinsonism-related-subgroups-in-drosophila.md"
+      - "biomed/papers/full-analysis/2026-03-13-pmid-41807414-a-meta-learning-and-task-adaptive-approach-for-drug-target-affinity-prediction.md"
+      - "biomed/papers/full-analysis/2026-03-13-pmid-41814061-af2bind-predicting-small-molecule-binding-sites-using-the-pair-representation-of-alphafold.md"
       - "biomed/papers/medium-analysis/2026-03-02-pmid-41736507-select-small-non-coding-rnas-are-determinants-of-survival-in-older-adults.md"
   - domain: "comptheory"
-    count: 6
+    count: 8
     refs:
       - "comptheory/papers/full-analysis/2026-03-10-doi-https--doi-org-10-1145-3690624-3709223-graph-triple-attention-networks-a-decoupled-perspective.md"
       - "comptheory/papers/full-analysis/2026-03-10-doi-https--doi-org-10-1145-3690624-3709226-brain-effective-connectivity-estimation-via-fourier-spatiotemporal-attention.md"
@@ -23,3 +26,5 @@ topics:
       - "comptheory/papers/full-analysis/2026-03-11-doi-https--doi-org-10-1145-3690624-3709226-brain-effective-connectivity-estimation-via-fourier-spatiotemporal-attention.md"
       - "comptheory/papers/full-analysis/2026-03-11-doi-https--doi-org-10-1145-3746027-3755045-ds-det-single-query-paradigm-and-attention-disentangled-learning-for-flexible-object-detec.md"
       - "comptheory/papers/full-analysis/2026-03-11-doi-https--doi-org-10-1145-3746027-3755579-dhgcn-dual-hypergraph-convolutional-network-for-eeg-based-auditory-attention-detection.md"
+      - "comptheory/papers/full-analysis/2026-03-13-doi-https--doi-org-10-1145-3690624-3709223-graph-triple-attention-networks-a-decoupled-perspective.md"
+      - "comptheory/papers/full-analysis/2026-03-13-doi-https--doi-org-10-1145-3690624-3709226-brain-effective-connectivity-estimation-via-fourier-spatiotemporal-attention.md"

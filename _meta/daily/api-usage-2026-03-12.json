@@ -1,26 +1,26 @@
 {
-  "generated_at": "2026-03-11T17:33:30.455646+00:00",
+  "generated_at": "2026-03-12T04:20:01.555125+00:00",
   "from_fulltext": "/root/openclaw-workspace/research-kb/inbox/fulltext_pack-2026-03-12.json",
   "elapsed_ms": 59095,
   "paper_count": 1,
   "generated_count": 1,
   "failed_count": 0,
   "api_summary": {
-    "total_calls": 4,
-    "prompt_tokens": 5164,
-    "completion_tokens": 7641,
-    "total_tokens": 12805,
+    "total_calls": 2853,
+    "prompt_tokens": 1604024,
+    "completion_tokens": 1138227,
+    "total_tokens": 2742251,
     "by_model": [
       {
         "provider": "bailian",
         "model": "qwen3-coder-plus",
-        "calls": 4,
-        "prompt_tokens": 5164,
-        "completion_tokens": 7641,
-        "total_tokens": 12805,
-        "latency_ms_total": 146916,
+        "calls": 2853,
+        "prompt_tokens": 1604024,
+        "completion_tokens": 1138227,
+        "total_tokens": 2742251,
+        "latency_ms_total": 32975625,
         "latency_ms_p95_estimate": 54539,
-        "latency_ms_avg": 36729.0
+        "latency_ms_avg": 11558.23
       }
     ]
   },
@@ -76,5 +76,10 @@
       },
       "judge_call": true
     }
-  ]
+  ],
+  "productive_topup": {
+    "last_adjusted_at": "2026-03-12T04:20:01.555125+00:00",
+    "increment_calls": 1,
+    "increment_tokens": 1338
+  }
 }
